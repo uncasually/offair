@@ -1,10 +1,11 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Records
 metaDescription: A sample Blog page listing various posts and authors.
-date: 2017-01-01
+date: 2021-03-02T00:00:00.000Z
 permalink: /blog/index.html
 eleventyNavigation:
-  key: Blog
+  key: Records
   order: 2
 ---
+# Listen with intention
