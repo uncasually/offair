@@ -120,7 +120,7 @@ header > em {
 /* Header Nav */
 header nav ul {
 	list-style: none;
-	width: 30%;
+	width: 40%;
   display: flex;
   justify-content: space-evenly;
   margin: 0 0 0 auto;
@@ -140,7 +140,7 @@ header nav li {
   width: 100%;
   border: 1px solid;
 	border-right: 0;
-  padding: .25em 2rem;
+  padding: .25rem;
   text-align: center;
   text-transform: uppercase;
 }
