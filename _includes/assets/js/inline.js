@@ -9,8 +9,8 @@ if (window.netlifyIdentity) {
 }
 
 var darkgrey = "#1d1c1d";
-//var divWidth = parseInt(d3.select("#word-snake").style("width"));
-var divWidth = document.getElementById('word-snake').offsetWidth;
+//var divWidth = parseInt(d3.select("#quote-wave").style("width"));
+var divWidth = document.getElementById('quote-wave').offsetWidth;
 var margin = {
   top: 0,
   right: 0,
@@ -22,7 +22,7 @@ var height = width;
 //console.log(divWidth, width, height);
 //SVG container
 var svg = d3
-  .select("#word-snake")
+  .select("#quote-wave")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -62,18 +62,18 @@ function calculateGrid() {
 } //function calculateGrid
 
 var grid = calculateGrid();
-var top100Overall = [
-  { translation: "We create deeper experiences with music" },
-  { translation: "OFFAIR" },
-  { translation: "Listen with intention" },
-  { translation: "OFFAIR" },
-  { translation: "Your favorite artist’s side project" },
-  { translation: "OFFAIR" },
-  { translation: "Music to experience" },
-  { translation: "OFFAIR" }
+var quotes = [
+  { quote: "We create deeper experiences with music" },
+  { quote: "OFFAIR" },
+  { quote: "Listen with intention" },
+  { quote: "OFFAIR" },
+  { quote: "Your favorite artist’s side project" },
+  { quote: "OFFAIR" },
+  { quote: "Music to experience" },
+  { quote: "OFFAIR" }
 ];
-drawWordSnake("", top100Overall);
-function drawWordSnake(error, top100Overall) {
+drawQuoteWave("", quotes);
+function drawQuoteWave(error, quotes) {
   n = 4;
 
   //Create the outer circular path
@@ -86,13 +86,13 @@ function drawWordSnake(error, top100Overall) {
 
   //Create the text itself
   var wordString = " ";
-  top100Overall.forEach(function (d, i) {
-    wordString = wordString + d.translation + "\u00A0\u00A0";
+  quotes.forEach(function (d, i) {
+    wordString = wordString + d.quote + "\u00A0\u00A0";
   });
   //console.log(wordString);
 
   //Create text on path
-  var wordSnake = svg
+  var quoteWave = svg
     .append("text")
     .attr("class", "circle-path-text noselect")
     .style("fill", "none")
@@ -106,8 +106,8 @@ function drawWordSnake(error, top100Overall) {
     .text(wordString + "\u00A0\u00A0" + wordString);
   
   repeat();
-  //animateWordSnake();
-} //function drawWordSnake
+  //animateQuoteWave();
+} //function drawQuoteWave
 
 function calculateSnakePath(grid, n) {
   var pos = 0,
@@ -155,7 +155,7 @@ function calculateSnakePath(grid, n) {
 
   //Adjust the height of the SVG
   height = yOld;
-  d3.select("#word-snake svg").attr(
+  d3.select("#quote-wave svg").attr(
     "height",
     height + margin.top + margin.bottom
   );
@@ -163,9 +163,9 @@ function calculateSnakePath(grid, n) {
   return path;
 } //function calculateSnakePath
 
-//function animateWordSnake() {
+//function animateQuoteWave() {
 function repeat() {
-  var animateWordSnake = d3.select("#top-word-string")
+  var animateQuoteWave = d3.select("#top-word-string")
     .transition("move")
     .duration(140000)
     .ease(d3.easeLinear)
@@ -175,4 +175,4 @@ function repeat() {
     .ease(d3.easeLinear)
     .attr("startOffset", "0%")
     .on("end", repeat);
-} //function animateWordSnake
+} //function animateQuoteWave

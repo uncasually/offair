@@ -2,7 +2,7 @@
 	--primary: #1d1c1d;
 	--secondary: #3e3c3d;
 	--white: #f5f5f5;
-	--background: #dbd4c9;
+	--background: #dad9d4;
 }
 
 @font-face {
@@ -238,13 +238,14 @@ button {
 	}
 }
 
-#word-snake {
+#quote-wave {
 	position: absolute;
   font-size: 14px;
   white-space: pre;
   cursor: default;
   width: 1200px;
   margin: 0 auto;
+	opacity: .35;
 }
 
 .circle-path {
