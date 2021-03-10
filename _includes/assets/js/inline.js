@@ -9,7 +9,8 @@ if (window.netlifyIdentity) {
 }
 
 var darkgrey = "#1d1c1d";
-var divWidth = parseInt(d3.select("#word-snake").style("width"));
+//var divWidth = parseInt(d3.select("#word-snake").style("width"));
+var divWidth = document.getElementById('word-snake').offsetWidth;
 var margin = {
   top: 0,
   right: 0,
