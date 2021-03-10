@@ -1,7 +1,7 @@
 :root {
 	--primary: #1d1c1d;
 	--secondary: #3e3c3d;
-	--white: #f5f5f5
+	--white: #f5f5f5;
 	--background: #dbd4c9;
 }
 
@@ -119,26 +119,35 @@ header > em {
 
 /* Header Nav */
 header nav ul {
-	padding: 0;
 	list-style: none;
+	width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 0 auto;
+	padding: 0;
 }
 
 header nav ul :first-child {
 	margin-left: 0;
 }
 
+header nav ul :last-child {
+	border-right: 1px solid;
+}
+
 header nav li {
 	margin: 0;
-  border: 1px solid;
-  border-left: 0;
   width: 100%;
+  border: 1px solid;
+	border-right: 0;
+  padding: .25em 2rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 header nav li a {
-	padding: .25em .5em;
-	border-radius: .25em;
+	width: 100%;
+	border: 0 !important;
 }
 
 header nav li a[href]:not(:hover) {
