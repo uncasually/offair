@@ -48,7 +48,7 @@ body {
 }
 
 main {
-	max-width: 37.5em;
+	max-width: 60em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +67,7 @@ a[href]:visited {
 	color: var(--primary);
 }
 
-a[href]:not(:hover) {
+a[href]:hover, a[href]:not(:hover) {
 	text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ img {
 header,
 main,
 footer {
-	padding: 1em;
+	padding: 3em;
 }
 
 main {
@@ -89,6 +89,7 @@ main {
 main :first-child,
 main > article :first-child {
 	margin-top: 0;
+	text-transform: uppercase;
 }
 
 pre {
@@ -111,10 +112,13 @@ pre {
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
-	font-size: 2em;
-	margin: .67em 0;
+	font-size: 3.5em;
+	margin: 0;
+	padding: 	.05em .5em;
 	font-family: 'BG medium';
 	font-style: normal;
+	position: fixed;
+	border: 1px solid;
 }
 
 /* Header Nav */
@@ -243,9 +247,10 @@ button {
   font-size: 14px;
   white-space: pre;
   cursor: default;
-  width: 1200px;
+  width: 1500px;
   margin: 0 auto;
 	opacity: .35;
+	pointer-events: none;
 }
 
 .circle-path {
