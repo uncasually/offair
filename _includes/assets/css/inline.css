@@ -237,3 +237,23 @@ button {
 		font-size: 1.1rem;
 	}
 }
+
+#word-snake {
+	position: absolute;
+  font-size: 14px;
+  white-space: pre;
+  cursor: default;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.circle-path {
+  fill: none;
+  pointer-events: none;
+}
+
+.circle-path-text {
+  font-family: "Brandon Grotesque";
+  font-size: 3rem;
+  pointer-events: none;
+}
