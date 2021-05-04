@@ -162,6 +162,25 @@ header nav li a[data-current="current item"] {
 	background-color: white;
 }
 
+.pl-form fieldset{
+	display: flex;
+}
+.pl-form p {
+	font-size: 2rem;;
+}
+
+.pl-select {
+	padding: 1rem;
+	background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid;
+  width: 110px;
+}
+
+.pl-select option {
+	font-size: 2.5rem;
+}
+
 /* Posts List */
 article {
 	margin-bottom: 1em;

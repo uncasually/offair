@@ -5,11 +5,11 @@ section: home
 
 {{ layoutContent | safe }}
 
-<form action="#" method="post" id="demoForm" class="demoForm">
+<form action="#" method="post" id="plForm" class="pl-form">
   <fieldset>
-    <legend>Demo: Select Lists</legend>
+    <legend>Select Lists</legend>
 
-    <select name="category" id="category" class="categories">
+    <select name="category" id="category" class="pl-select categories">
       <option value="hold" selected>❓</option>
       <option value="morning">☕</option>
       <option value="evening">🌆</option>
@@ -19,13 +19,11 @@ section: home
       <option value="cooking">👩‍🍳</option>
       <option value="meditation">☮️</option>
     </select>
-    +
-    <select name="choices" id="choices" class="choices">
+    <p>+</p>
+    <select name="choices" id="choices" class="pl-select choices">
       <!-- js populates -->
     </select>
-    =
+    <p>=</p>
     <button type="button" id="link">Link <span id="result"></span></button>
   </fieldset>
 </form>
-<div></div>
-<p><b>Link:</b><span id="result"></span></p>
