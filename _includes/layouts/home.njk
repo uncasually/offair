@@ -4,3 +4,28 @@ section: home
 ---
 
 {{ layoutContent | safe }}
+
+<form action="#" method="post" id="demoForm" class="demoForm">
+  <fieldset>
+    <legend>Demo: Select Lists</legend>
+
+    <select name="category" id="category" class="categories">
+      <option value="hold" selected>❓</option>
+      <option value="morning">☕</option>
+      <option value="evening">🌆</option>
+      <option value="sleep">💤</option>
+      <option value="focus">⚙️</option>
+      <option value="relax">🕯️</option>
+      <option value="cooking">👩‍🍳</option>
+      <option value="meditation">☮️</option>
+    </select>
+    +
+    <select name="choices" id="choices" class="choices">
+      <!-- js populates -->
+    </select>
+    =
+    <button type="button" id="link">Link <span id="result"></span></button>
+  </fieldset>
+</form>
+<div></div>
+<p><b>Link:</b><span id="result"></span></p>
