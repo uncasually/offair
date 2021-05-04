@@ -1,5 +1,5 @@
 ---
-title: Who we are
+title: We create deeper experiences with music
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
@@ -9,10 +9,6 @@ eleventyNavigation:
   key: Who we are
   order: 1
 ---
-## **We create deeper experiences with music**
-
-
-
 ### Connect
 
 [OFFAIR@versuscreative.com](mailto:OFFAIR@versuscreative.com) 
