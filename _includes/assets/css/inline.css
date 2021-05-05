@@ -292,9 +292,11 @@ button {
   white-space: pre;
   cursor: default;
   width: 1500px;
+	height: 100%;
   margin: 0 auto;
 	opacity: .35;
 	pointer-events: none;
+  overflow: hidden;
 }
 
 .circle-path {
