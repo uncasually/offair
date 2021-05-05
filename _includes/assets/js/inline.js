@@ -525,11 +525,11 @@ $( "#choices" )
   (function ($) {
     count = 0;
     setInterval(function () {
-      $("#moment").fadeOut(600, function () {
-        $(this).text(moment[count % moment.length]).fadeIn(600);
+      $("#moment").fadeOut(500, function () {
+        $(this).text(moment[count % moment.length]).fadeIn(500);
       });
       count++;
-    }, 2500);
+    }, 1500);
 })(jQuery);
 
 var darkgrey = "#1d1c1d";

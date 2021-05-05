@@ -485,7 +485,7 @@ button {
 
 #moment {
 	-webkit-animation: colorchange 20s infinite alternate;
-					animation: colorchange 5s infinite alternate;
+					animation: colorchange 2s infinite alternate;
     }
 
     @-webkit-keyframes colorchange {
