@@ -104,7 +104,7 @@ function drawQuoteWave(error, quotes) {
     .attr("xlink:href", "#circle-word-path")
     .attr("startOffset", "0%")
     .text(wordString + "\u00A0\u00A0" + wordString);
-  
+
   repeat();
   //animateQuoteWave();
 } //function drawQuoteWave
@@ -175,7 +175,7 @@ function repeat() {
     .ease(d3.easeLinear)
     .attr("startOffset", "0%")
     .on("end", repeat);
-} //function animateQuoteWave
+  } ;//function animateQuoteWave
 
 var Select_List_Data = {
   'choices': { // name of associated select list
@@ -210,8 +210,8 @@ var Select_List_Data = {
     meditation: {
       text: ['❓', '🎹', '🎛️', '⬜', '🎼', '🎵', '🎷','🎚️','🍃'],
       value: ['0', 'piano', 'lofi', 'noise', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-        }  
-    }    
+        }
+    }
 };
 
 function removeAllOptions(sel, removeGrp) {
@@ -223,7 +223,7 @@ function removeAllOptions(sel, removeGrp) {
             sel.removeChild( groups[i-1] );
         }
     }
-    
+
     len = sel.options.length;
     for (var i=len; i; i--) {
         par = sel.options[i-1].parentNode;
@@ -231,42 +231,27 @@ function removeAllOptions(sel, removeGrp) {
     }
 }
 
-/*function checkTwoValues(checkFields, value1,value2)
-{
-  var match1 = 0;
-  var match2 = 0;
-  
-  if ((match1) && (match2))
-  {
-      return 1;
-   }
-  else
-  {
-      return 0;
-  }
-}*/
-
 function appendDataToSelect(sel, obj) {
     var f = document.createDocumentFragment();
     var labels = [], group, opts;
-    
+
     function addOptions(obj) {
         var f = document.createDocumentFragment();
         var o;
-        
+
         for (var i=0, len=obj.text.length; i<len; i++) {
             o = document.createElement('option');
             o.appendChild( document.createTextNode( obj.text[i] ) );
-            
+
             if ( obj.value ) {
                 o.value = obj.value[i];
             }
-            
+
             f.appendChild(o);
         }
         return f;
     }
-    
+
     if ( obj.text ) {
         opts = addOptions(obj);
         f.appendChild(opts);
@@ -276,7 +261,7 @@ function appendDataToSelect(sel, obj) {
                 labels.push(prop);
             }
         }
-        
+
         for (var i=0, len=labels.length; i<len; i++) {
             group = document.createElement('optgroup');
             group.label = labels[i];
@@ -297,23 +282,23 @@ document.forms['plForm'].elements['category'].onchange = function(e) {
 };
 
 (function() {
-    
+
     var form = document.forms['plForm'];
     var sel = form.elements['category'];
     sel.selectedIndex = 0;
     var relName = 'choices';
     var rel = form.elements[ relName ];
     var data = Select_List_Data[ relName ][ sel.value ];
-    
+
     appendDataToSelect(rel, data);
-    
+
 }());
 
 $( "form" ).submit(function( event ) {
   //console.log( $( this ).serializeArray() );
   event.preventDefault();
 });
-  
+
 $( "#choices" )
   .change(function() {
     var str = "";
@@ -603,42 +588,42 @@ $( "#choices" )
       //cooking Piano
       if ((cooking == true) && (piano == true)) {
         //$( "span" ).text( "Match ☕🎹 cooking Piano" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/6fM8K7HaLr3c6wy4a4rzBX?si=DMo29ypRT--MMQ4K3F4WOQ" target="_blank">👩‍🎹</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/6fM8K7HaLr3c6wy4a4rzBX?si=DMo29ypRT--MMQ4K3F4WOQ" target="_blank">👩‍🍳🎹</a>');
         return;
       }
 
       //cooking Lofi
       if ((cooking == true) && (lofi == true)) {
         //$( "span" ).text( "Match cooking Lofi" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/5BMiqIJKwuMKnlItTphaaL?si=rtnNloCOS-2EuRmIS6wJQg" target="_blank">👩‍🎛️</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/5BMiqIJKwuMKnlItTphaaL?si=rtnNloCOS-2EuRmIS6wJQg" target="_blank">"👩‍🍳🎛️</a>');
         return;
       }
 
       //cooking Classical
       if ((cooking == true) && (classic == true)) {
         //$( "span" ).text( "Match cooking Classical" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/5qq7akiiqd6UAaFfxBXj4F?si=lHITDW-FS3qVq7avL-R5oQ" target="_blank">☕👩‍🎼</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/5qq7akiiqd6UAaFfxBXj4F?si=lHITDW-FS3qVq7avL-R5oQ" target="_blank">👩‍🍳🎼</a>');
         return;
       }
 
       //cooking Acoustic
       if ((cooking == true) && (acoustic == true)) {
         //$( "span" ).text( "Match cooking Acoustic" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/0Ew4yuXL6ZLUzRnHGDX34B?si=UDc_-dFRRAmFcG4FDUdqKA" target="_blank">👩‍🎵</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/0Ew4yuXL6ZLUzRnHGDX34B?si=UDc_-dFRRAmFcG4FDUdqKA" target="_blank">👩‍🍳🎵</a>');
         return;
       }
 
       //cooking Jazz
       if ((cooking == true) && (jazz == true)) {
         //$( "span" ).text( "Match cooking Jazz" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/0qeQG3PRn6A66cmPP8mRHi?si=EM2JAJn1SQOK_Ww9Ttsedg" target="_blank">👩‍🎷</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/0qeQG3PRn6A66cmPP8mRHi?si=EM2JAJn1SQOK_Ww9Ttsedg" target="_blank">👩‍🍳🎷</a>');
         return;
       }
 
       //cooking Electronic
       if ((cooking == true) && (electronic == true)) {
         //$( "span" ).text( "Match cooking Electronic" ).show();
-        $('#link').html('<a href="https://open.spotify.com/playlist/3oDm3tPsWSkYYpx8VwYhF5?si=bNmTHYDjSai_EBWVf2xqiA" target="_blank">👩‍🎚️</a>');
+        $('#link').html('<a href="https://open.spotify.com/playlist/3oDm3tPsWSkYYpx8VwYhF5?si=bNmTHYDjSai_EBWVf2xqiA" target="_blank">👩‍🍳🎚️</a>');
         return;
       }
       //meditate Piano
@@ -696,11 +681,22 @@ $( "#choices" )
         $('#link').html('<a href="https://open.spotify.com/playlist/2x9Qc9Ttt25xuoGpFpIMtq?si=c0gtJsu0TD2s_NVnCLwkNw" target="_blank">☮️🍃</a>');
         return;
       }
-      else  { $( "span" ).text( "No Match" ).show(); }
+      else  { $('#link').text( "❓❓" ).show(); }
   //event.preventDefault();
     });
 })
-  
+
   .trigger( "change" );
-    
-  
+
+  // Our array of words
+ const moment = [ "mood", "mind", "activity", "experience", "moment" ];
+
+  (function ($) {
+    count = 0;
+    setInterval(function () {
+      $("#moment").fadeOut(600, function () {
+        $(this).text(moment[count % moment.length]).fadeIn(600);
+      });
+      count++;
+    }, 2500);
+})(jQuery);

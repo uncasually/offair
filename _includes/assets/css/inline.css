@@ -32,6 +32,13 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+*::-webkit-input-placeholder { color: #999; }
+*:-moz-placeholder { color: #999; }
+*::-moz-placeholder { color: #999; }
+*:-ms-input-placeholder { color: #999; }
+::-webkit-validation-bubble-message { display: none; }
+*:focus, *:active, *:hover { outline: none; }
+
 
 html,
 body {
@@ -84,11 +91,12 @@ footer {
 
 main {
 	padding-bottom: 2em;
+  margin: 0 auto;
 }
 
 main :first-child,
 main > article :first-child {
-	margin-top: 0;
+	/*margin-top: 0;*/
 	text-transform: uppercase;
 }
 
@@ -164,21 +172,38 @@ header nav li a[data-current="current item"] {
 
 .pl-form fieldset{
 	display: flex;
+	border: 0;
 }
 .pl-form p {
-	font-size: 2rem;;
+	font-size: 3rem;
+  padding: 0 2rem;
+	margin: 15px 0;
 }
 
 .pl-select {
-	padding: 1rem;
+	font-size: 4rem;
+  height: 5rem;
+	margin: 10px 0;
+	padding: 0 1rem;
 	background-color: transparent;
   border: 0;
   border-bottom: 2px solid;
-  width: 110px;
+	appearance: none;
 }
 
 .pl-select option {
 	font-size: 2.5rem;
+}
+
+#link {
+	font-family: "BG Light",Avenir,"Avenir Next",sans-serif;
+	font-size: 4rem;
+  width: unset;
+	height: 6rem;
+	margin: 0 15px;
+	padding: 10px;
+	background-color: transparent;
+	border: 2px solid var(--primary);
 }
 
 /* Posts List */
@@ -282,3 +307,19 @@ button {
   font-size: 3rem;
   pointer-events: none;
 }
+
+#moment {
+	-webkit-animation: colorchange 20s infinite alternate;
+					animation: colorchange 5s infinite alternate;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% { color: #b18965; }
+			10% { color: #637668; }
+			30% { color: #026e47; }
+			40% { color: #0e4033; }
+			50% { color: #183840; }
+			70% { color: #76959c; }
+      80% { color: #05223c; }
+			100% { color: #dbd4c9; }
+    }
