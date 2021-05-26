@@ -92,6 +92,7 @@ footer {
 main {
 	padding-bottom: 2em;
   margin: 0 auto;
+  z-index: 1;
 }
 
 main :first-child,
