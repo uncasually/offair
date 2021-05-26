@@ -65,7 +65,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "BG Medium", "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: 'Title Book', "BG Medium", "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -80,8 +80,8 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'BG medium';
-	font-weight: 500;
+	font-family: 'Title Book';
+	/*font-weight: 500;*/
 }
 
 p,
@@ -490,7 +490,7 @@ button {
   width: 1500px;
 	height: 100%;
   margin: 0 auto;
-	opacity: .35;
+	opacity: .2;
 	pointer-events: none;
   overflow: hidden;
 }
@@ -501,12 +501,17 @@ button {
 }
 
 .circle-path-text {
-  font-family: "Brandon Grotesque";
-  font-size: 3rem;
+  font-family: 'Title Book';
+  font-size: 2rem;
   pointer-events: none;
 }
 
+.listen-title {
+  width: 50vw;
+}
+
 #moment {
+  width: 250px;
 	-webkit-animation: colorchange 20s infinite alternate;
 					animation: colorchange 2s infinite alternate;
     }
