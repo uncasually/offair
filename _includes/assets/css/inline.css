@@ -241,6 +241,7 @@ header nav li[data-current="current item"] {
 }
 
 header nav li a {
+  font-family: 'Title Book', serif;
 	width: 100%;
 	border: 0 !important;
 }
