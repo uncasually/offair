@@ -264,10 +264,10 @@ header nav li a[href]:not(:hover) {
   z-index: 1;
   box-shadow: -0.5em 0.5em rgba(255, 255, 255, 0);
   transform-origin: left bottom;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out, background-color 300ms ease-in-out;
+  -moz-transition: transform 200ms ease-in-out, background-color 300ms ease-in-out;
+  -o-transition: transform 200ms ease-in-out, background-color 300ms ease-in-out;
+  transition: transform 200ms ease-in-out, background-color 300ms ease-in-out;
 }
 .nav-btn:before, .nav-btn:after {
   border: 2px var(--primary) solid;
