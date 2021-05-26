@@ -7,34 +7,34 @@
 
 @font-face {
 	font-family: 'BG light';
-	src: url('../fonts/BrandonGrotesque-Light.eot');
+	src: url('/static/fonts/BrandonGrotesque-Light.eot');
 	src: local('Brandon Grotesque Light'), local('BrandonGrotesque-Light'),
-		url('../fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/BrandonGrotesque-Light.woff2') format('woff2'),
-		url('../fonts/BrandonGrotesque-Light.woff') format('woff'),
-		url('../fonts/BrandonGrotesque-Light.ttf') format('truetype');
+		url('/static/fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+		url('/static/fonts/BrandonGrotesque-Light.woff') format('woff'),
+		url('/static/fonts/BrandonGrotesque-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'BG medium';
-	src: url('../fonts/BrandonGrotesque-Medium.eot');
+	src: url('/static/fonts/BrandonGrotesque-Medium.eot');
 	src: local('Brandon Grotesque Medium'), local('BrandonGrotesque-Medium'),
-		url('../fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
-		url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
-		url('../fonts/BrandonGrotesque-Medium.ttf') format('truetype');
+		url('/static/fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+		url('/static/fonts/BrandonGrotesque-Medium.woff') format('woff'),
+		url('/static/fonts/BrandonGrotesque-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Title Bold';
-	src: url('/static/img/conglomeratebold.woff2');
+	src: url('/static/fonts/conglomeratebold.woff2');
 	src: local('Conglomerate Bold'), local('Conglomerate-Bold'),
 		url('/static/img/conglomeratebold.woff2') format('woff2'),
-		url('../fonts/conglomeratebold.woff') format('woff');
+		url('/static/fonts/conglomeratebold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -42,10 +42,10 @@
 @font-face {
 	font-family: 'Title Book';
 	
-	src: url('../fonts/conglomeratebook.woff2');
+	src: url('/static/fonts/conglomeratebook.woff2');
 	src: local('Conglomerate Book'), local('Conglomerate-Book'),
-		url('../fonts/conglomeratebook.woff2') format('woff2'),
-		url('../fonts/conglomeratebook.woff') format('woff');
+		url('/static/fonts/conglomeratebook.woff2') format('woff2'),
+		url('/static/fonts/conglomeratebook.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
