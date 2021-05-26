@@ -29,6 +29,27 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Title Bold';
+	src: url('../fonts/conglomeratebold.woff2');
+	src: local('Conglomerate Bold'), local('Conglomerate-Bold'),
+		url('../fonts/conglomeratebold.woff2') format('woff2'),
+		url('../fonts/conglomeratebold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Title Book';
+	
+	src: url('../fonts/conglomeratebook.woff2');
+	src: local('Conglomerate Book'), local('Conglomerate-Book'),
+		url('../fonts/conglomeratebook.woff2') format('woff2'),
+		url('../fonts/conglomeratebook.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
