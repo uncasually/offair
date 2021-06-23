@@ -22,7 +22,6 @@ const Record = createClass({
                   )
                 }</time
               >
-              ${" by Author"}
             </small>
           </p>
 
@@ -30,14 +29,6 @@ const Record = createClass({
 
           ${this.props.widgetFor("body")}
           <p>
-            ${
-              entry.getIn(["data", "tags"], []).map(
-                tag =>
-                  html`
-                    <a href="#" rel="tag">${tag}</a>
-                  `
-              )
-            }
           </p>
         </article>
       </main>

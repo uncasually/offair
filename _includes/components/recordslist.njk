@@ -17,7 +17,7 @@
 			{% endif %}
 			<p>
 				<time datetime="{{ record.date | machineDate }}">
-					<small>{{ record.date | readableDate }} by <a href="/authors/{{ record.data.author | slug }}/">{{ record.data.author }}</a></small>
+					<small>{{ record.date | readableDate }}</small>
 				</time>
 			</p>
 			{% if record.data.tags %}
