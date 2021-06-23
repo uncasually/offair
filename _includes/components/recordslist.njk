@@ -1,0 +1,35 @@
+<section>
+	{% for record in recordslist | reverse %}
+		<article{% if record.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ record.url | url }}">
+					{% if record.data.title %}
+						{{ record.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if record.data.summary %}
+				<p>
+					{{ record.data.summary }}
+				</p>
+			{% endif %}
+			<p>
+				<time datetime="{{ record.date | machineDate }}">
+					<small>{{ record.date | readableDate }} by <a href="/authors/{{ record.data.author | slug }}/">{{ record.data.author }}</a></small>
+				</time>
+			</p>
+			{% if record.data.tags %}
+				<p>
+					{% for tag in record.data.tags %}
+		  			{%- if tag != "record" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
+		</article>
+	{% endfor %}
+</section>

@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+section: records
+permalink: /records/index.html
+---
+<h1>{{ title }}</h1>
+
+{{ layoutContent | safe }}
+
+{% set recordslist = collections.record %}
+{% include "components/recordslist.njk" %}
