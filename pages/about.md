@@ -7,7 +7,7 @@ date: 2021-03-02T00:27:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
   key: Who we are
-  order: 1
+  order: 0
 ---
 ### Connect
 
