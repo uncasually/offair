@@ -1,8 +1,6 @@
 ---
 title: We create deeper experiences with music
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: Connect with us. OFFAIR - We create deeper experiences with music
 date: 2021-03-02T00:27:00.000Z
 permalink: /about/index.html
 eleventyNavigation:

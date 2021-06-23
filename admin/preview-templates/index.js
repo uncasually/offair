@@ -1,8 +1,10 @@
 import Post from "/admin/preview-templates/post.js";
+import Record from "/admin/preview-templates/record.js";
 import Page from "/admin/preview-templates/page.js";
 
 // Register the Post component as the preview for entries in the blog collection
 CMS.registerPreviewTemplate("blog", Post);
+CMS.registerPreviewTemplate("records", Record);
 CMS.registerPreviewTemplate("pages", Page);
 
 CMS.registerPreviewStyle("/_includes/assets/css/inline.css");
