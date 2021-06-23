@@ -1,7 +1,7 @@
 ---
 title: Madison McFerrin
 date: 2020-03-04T17:53:47.250Z
-author: John Doe
+author: Anonymous
 summary: Public Records, Brooklyn, NY
 tags:
   - events
