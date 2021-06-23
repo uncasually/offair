@@ -1,6 +1,6 @@
 ---
-title: This is the fourth example post
-date: 2020-02-03
+title: This is the example post
+date: 2021-06-23T16:53:47.250Z
 author: John Doe
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:
