@@ -21,6 +21,8 @@ renderData:
 
 {% set postslist = collections[tag] %}
 {% include "components/postslist.njk" %}
+{% set recordslist = collections[tag] %}
+{% include "components/recordslist.njk" %}
 
 <nav>
   <a href="{{ '/blog/' | url }}">← Blog index</a>
