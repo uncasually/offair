@@ -1,3 +1,5 @@
+@import "node_modules/select2/src/scss/core";
+
 :root {
   --primary: #1d1c1d;
   --secondary: #3e3c3d;
@@ -348,12 +350,10 @@ header nav li a[href]:not(:hover) {
 
 .pl-select {
   font-size: 4rem;
-  height: 5rem;
-  margin: 10px 0;
-  padding: 0 1rem;
+  height: 3.75rem;
+  margin-top: 15px;
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid;
   appearance: none;
 }
 
@@ -361,6 +361,90 @@ header nav li a[href]:not(:hover) {
   font-size: 2.5rem;
 }
 
+.pl-selects {
+  font-size: 4rem;
+  background-color: #73959c;
+  color: var(--primary);
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  margin: auto 2rem;
+  position: relative;
+  align-self: center;
+  text-transform: uppercase;
+  border: 2px white solid;
+  border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
+  border-image-slice: 1 0 0 1;
+  z-index: 1;
+  box-shadow: 0.25em 0.25em rgba(255, 255, 255, 0);
+  transform-origin: left bottom;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.pl-selects:before,
+.pl-selects:after {
+  background-color: var(--background);
+  border: 2px var(--primary) solid;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.pl-selects:before {
+  border-image: linear-gradient(45deg, var(--primary), var(--primary) 100%);
+  border-image-slice: 1 1 0 1;
+  right: -0.16em;
+  top: 0.04em;
+  width: 0.15em;
+  height: 105%;
+  transform: skewY(45deg);
+}
+.pl-selects:after {
+  border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
+  border-image-slice: 1 1 1;
+  bottom: -.16em;
+	left: .16rem;
+  width: 102%;
+  height: 0.15em;
+  transform: skewX(45deg);
+}
+.pl-selects:hover {
+  background-size: 90%;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.25em 0.25em 0.5em rgba(0, 0, 0, 0.2);
+}
+.pl-selects:hover:before {
+  background-color: var(--primary);
+  right: -0.16em;
+	top: .04em;
+	width: .14em;
+	height: 102%;
+}
+.pl-selects:hover:after {
+  background-color: var(--primary);
+  bottom: -.15em;
+	left: .14rem;
+	width: 103%;
+	height: .13em;
+}
+.select2-container--default .select2-selection--single {
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+}
+.select2-container .select2-selection--single {
+	height: 4rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 4.5rem;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+	padding-right: 0;
+}
 #link {
   font-family: "BG Light", Avenir, "Avenir Next", sans-serif;
   font-size: 4rem;
@@ -414,8 +498,8 @@ header nav li a[href]:not(:hover) {
   border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
   border-image-slice: 1 1 1;
   bottom: -.16em;
-	left: .15rem;
-  width: 102%;
+	left: .17rem;
+  width: 101%;
   height: 0.15em;
   transform: skewX(45deg);
 }

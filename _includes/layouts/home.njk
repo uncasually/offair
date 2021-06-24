@@ -18,6 +18,7 @@ section: home
 
 <form action="#" method="post" id="plForm" class="pl-form">
   <fieldset>
+  <button class="pl-selects">
     <select name="category" id="category" class="pl-select categories">
       <option value="hold" selected>❓</option>
       <option value="morning">☕</option>
@@ -28,10 +29,13 @@ section: home
       <option value="cooking">👩‍🍳</option>
       <option value="meditation">☮️</option>
     </select>
+    </button>
     <p>+</p>
+  <button class="pl-selects">
     <select name="choices" id="choices" class="pl-select choices">
       <!-- js populates -->
     </select>
+     </button>
     <p>=</p>
     <button type="button" id="link" class="link-btn">Link <span id="result"></span></button>
   </fieldset>

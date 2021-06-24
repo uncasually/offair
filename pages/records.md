@@ -1,5 +1,5 @@
 ---
-layout: layouts/record.njk
+layout: layouts/records.njk
 title: Listen with intention
 metaDescription: OFFAIR - Listen with intention
 date: 2021-01-01

@@ -16,7 +16,7 @@ section: record
   {% if tags %}
     <p>
     {% for tag in tags %}
-      {%- if tag != "record" -%}
+      {%- if tag != "records" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
         <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
       {%- endif -%}
@@ -27,5 +27,5 @@ section: record
 </article>
 
 <nav>
-  <a href="{{ '/record/' | url }}">← Index</a>
+  <a href="{{ '/records/' | url }}">← Index</a>
 </nav>
