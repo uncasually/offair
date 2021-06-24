@@ -1,6 +1,6 @@
 ---
 title: Example post
-date: 2020-10-15T12:23:39.598Z
+date: 2020-02-01T13:23:39.598Z
 author: Jane Doe
 summary: Why contemplating our mortality can be a powerful catalyst for change
 tags:
