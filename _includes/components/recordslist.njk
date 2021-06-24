@@ -1,6 +1,13 @@
 <section>
 	{% for record in recordslist | reverse %}
 		<article{% if record.url == url %} data-current="current item"{% endif %}>
+			<a href="{{ record.url | url }}">
+					{% if record.data.image %}
+						<img class="record-thumb" src="{{ record.data.image }}" alt="record thumbnail"/>
+					{% else %}
+						Untitled
+					{% endif %}
+			</a>
 			<h3>
 				<a href="{{ record.url | url }}">
 					{% if record.data.title %}
