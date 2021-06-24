@@ -2,39 +2,55 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-# Uncomment below to enable drafts
-# publish_mode: editorial_workflow
+# Please run "npx netlify-cms-proxy-server" for local backend
+  local_backend: true 
+# when using a custom proxy server port
+  url: http://localhost:8082/api/v1
+  # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+  # allowed_hosts: ['192.168.0.1'], ['192.168.86.225']
+  allowed_hosts: ['192.168.86.225']
 
+publish_mode: editorial_workflow
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
 collections:
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Event" # Used in the UI
+    label: "Events" # Used in the UI
+    label_singular: "Event" # Used in the UI, ie: "New Post"
+    description: >
+      This is the events page.
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY" }
+      - { label: "Featured Image", name: "image", widget: "image", multiple: false }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
-    label: "Record" # Used in the UI
+    label: "Records" # Used in the UI
+    label_singular: "Record" # Used in the UI, ie: "New Post"
+    description: >
+      This is the Records page.
     folder: "records" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Featured Image", name: "image", widget: "image", multiple: false }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["records"] }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
-    label: "Page"
+    label: "Pages"
+    label_singular: "Page" # Used in the UI, ie: "New Page"
     folder: "pages"
     create: true # Change to true to allow editors to create new pages
     slug: "{{slug}}"
@@ -46,6 +62,6 @@ collections:
         name: "eleventyNavigation"
         widget: "object"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Navigation Name", name: "key", widget: "string" }
+          - { label: "Navigation Position", name: "order", widget: "number", default: 0 }
           - { label: "Body", name: "body", widget: "markdown" }
