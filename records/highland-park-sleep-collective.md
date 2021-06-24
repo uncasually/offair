@@ -6,9 +6,7 @@ summary: Excited to announce OFFAIR’s very first release with Highland Park
 tags:
   - record
 ---
-![Music for Water](/static/img/album artwork.jpg "Music for Water")
-
-
+![Music for Water](/static/img/album artwork.jpg)
 
 Listen to their new singles “Night Sky” and “Sheldon’s Weight” here: LINK
 
