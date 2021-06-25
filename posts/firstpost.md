@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 summary: Public Records, Brooklyn, NY
 author: Anonymous
 date: 2020-03-09T23:00:00.000Z
