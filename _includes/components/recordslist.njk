@@ -1,6 +1,6 @@
-<section>
+<section class="records-container">
 	{% for record in recordslist | reverse %}
-		<article{% if record.url == url %} data-current="current item"{% endif %}>
+		<article class="records-item" {% if record.url == url %} data-current="current item"{% endif %}>
 			<a href="{{ record.url | url }}">
 					{% if record.data.image %}
 						<img class="record-thumb" src="{{ record.data.image }}" alt="record thumbnail"/>
@@ -9,7 +9,7 @@
 					{% endif %}
 			</a>
 			<h3>
-				<a href="{{ record.url | url }}">
+				<a class="records-link" href="{{ record.url | url }}">
 					{% if record.data.title %}
 						{{ record.data.title }}
 					{% else %}
@@ -21,7 +21,7 @@
 				<p>
 					{{ record.data.summary }}
 				</p>
-			{% endif %} #}
+			{% endif %}
 			<p>
 				<time datetime="{{ record.date | machineDate }}">
 					<small>{{ record.date | readableDate }}</small>
@@ -36,7 +36,7 @@
 		  			{%- endif -%}
 					{% endfor %}
 				</p>
-			{% endif %}
+			{% endif %} #}
 		</article>
 	{% endfor %}
 </section>

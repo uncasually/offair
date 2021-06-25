@@ -1,15 +1,15 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %}data-current="{{ section }}"{% endif %} lang="en">
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body {% if section %}class="{{ section }}"{% endif %}>
 
 	<div id="quote-wave"></div>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+		<header class="header">
+			<em class="logo">
+				<a class="logo-link" href="{{ '/' | url }}">{{ metadata.title }}</a>
 			</em>
 			{% include "components/nav.njk" %}
 		</header>
