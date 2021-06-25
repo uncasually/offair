@@ -865,3 +865,13 @@ xslide
 .record-img {
   width: 100%;
 }
+.events-container {
+	display: flex;
+	justify-content: flex-start;
+  flex-flow: wrap;
+  margin-top: 2rem;
+}
+.events-item {
+	width: 45%;
+  margin-right: 2rem;
+}
