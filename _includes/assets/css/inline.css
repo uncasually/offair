@@ -91,7 +91,6 @@ body {
 body {
   display: grid;
   width: 100vw;
-	height: 100vh;
 	overflow-x: hidden;
   grid-template-rows: auto 1fr auto;
   background-color: var(--background);
@@ -606,6 +605,7 @@ button {
 
 #quote-wave {
   position: absolute;
+  right: 0;
   font-size: 14px;
   white-space: pre;
   cursor: default;
