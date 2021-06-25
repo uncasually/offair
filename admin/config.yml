@@ -42,9 +42,9 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "date" }
       - { label: "Featured Image", name: "image", widget: "image", multiple: false }
-      - { label: "Summary", name: "summary", widget: "text" }
+      # - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Release Date", name: "date", widget: "date" }
       - { label: "Tags", name: "tags", widget: "list", default: ["records"] }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
