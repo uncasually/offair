@@ -1,13 +1,13 @@
 ---
 title: Madison McFerrin
+draft: false
 date: 2020-03-04T17:53:47.250Z
 author: Anonymous
+image: /static/img/offair004_square.jpg
 summary: Public Records, Brooklyn, NY
 tags:
   - events
 ---
-![](/static/img/offair004_square.jpg)
-
 Madison McFerrin commands a crowd with both her charisma and her talent. While at Public Records, we felt like we were also welcome guests in her world. 
 
 Madison took the crowd through the nuances of her singing, through layers of vocal acapella. We all found comfort in her voice as her natural instrument. 
