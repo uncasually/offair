@@ -221,8 +221,7 @@ jQuery(document).ready(function($){
 
 //////////////////////////////
 /* - MOOD PLAYLIST SELECT - */
-$(document).ready(function() { 
-  if( $('body').hasClass('home') ){
+
 var Select_List_Data = {
   'choices': { // name of associated select list
     // names match option values in controlling select list
@@ -730,8 +729,7 @@ $( "#choices" ).change(function() {
     });
 })
 .trigger( "change" );
-  }
-});
+
 
 //////////////////////////
 /* - HEADER ANIMATION - */
