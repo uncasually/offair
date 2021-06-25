@@ -17,11 +17,11 @@
 					{% endif %}
 				</a>
 			</h3>
-			{% if record.data.summary %}
+			{# {% if record.data.summary %}
 				<p>
 					{{ record.data.summary }}
 				</p>
-			{% endif %}
+			{% endif %} #}
 			<p>
 				<time datetime="{{ record.date | machineDate }}">
 					<small>{{ record.date | readableDate }}</small>
