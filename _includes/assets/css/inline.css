@@ -213,7 +213,9 @@ pre {
   background-color: var(--primary);
   width: calc(100% - 0.16em);
 }
-
+.content {
+  z-index: 5;
+}
 header {
   position: fixed;
   width: 100vw;
@@ -853,4 +855,13 @@ xslide
 }
 .records-link {
   text-transform: uppercase;
+}
+.record-container {
+	display: grid; 
+  grid-template-columns: 1fr 1.5fr; 
+  grid-template-rows: 1fr 0.5fr; 
+  gap: 2em 2em; 
+}
+.record-img {
+  width: 100%;
 }

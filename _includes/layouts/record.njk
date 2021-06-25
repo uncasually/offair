@@ -4,16 +4,18 @@ section: record
 ---
 
 <article>
-  <h1>{{ title }}</h1>
+  <figure class="record-container">
   <img class="record-img" src="{{ image }}" alt="record image" />
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> 
-    </small>
-  </p>
+  <figcaption>
+  <h1>{{ title }}</h1>
 
   {{ layoutContent | safe }}
-
+  <p>
+    <small>
+      Release Date <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> 
+    </small>
+  </p>
+  </figcaption>
   {% if tags %}
     <p>
     {% for tag in tags %}
@@ -24,7 +26,7 @@ section: record
     {% endfor %}
     </p>
   {% endif %}
-
+  </figure>
 </article>
 
 <nav>
