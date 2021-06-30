@@ -56,10 +56,10 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+      - {label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
         fields:
           - { label: "Navigation Name", name: "key", widget: "string" }
-          - { label: "Navigation Position", name: "order", widget: "number", default: 0 }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Navigation Position", name: "order", widget: "number", default: 0 }}
+      - { label: "Body", name: "body", widget: "markdown" }
