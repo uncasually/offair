@@ -231,10 +231,11 @@ gsap.defaults({
 var header = document.querySelector(".header");
 var logo = document.querySelector(".logo");
 var logoLink = document.querySelector(".logo-link");
-var deltaHeight = header.offsetHeight - logo.offsetHeight;
+//var deltaHeight = logo.offsetHeight - header.offsetHeight;
+var deltaHeight = logo.offsetHeight - header.offsetHeight;
 
-var fsize1 = 45;
-var fsize2 = 60;
+var fsize1 = 115;
+var fsize2 = 160;
 
 var rect1 = logoLink.getBoundingClientRect();
 var rect2 = logo.getBoundingClientRect();
@@ -243,13 +244,15 @@ var scale = fsize1 / fsize2;
 var x = -50;
 //var y = 214 - 285;
 //var y = rect1 - rect2;
-var y = deltaHeight - rect2.bottom;
+//var y = deltaHeight - rect2.bottom;
+var y = -50;
 
 var headerAnimation = gsap.timeline({ paused: true })
 //headerAnimation.from(header,  1, { y: 0 }, 0)
 //headerAnimation.to(header,  1, { y: -deltaHeight + 20 }, 0)
 headerAnimation.from(logo, { scale: 1, x: 0, y: 0 }, 0)
-headerAnimation.to(logo, 1, { scale: scale, x: x, y: deltaHeight + y }, 0)
+//headerAnimation.to(logo, 1, { scale: scale, x: x, y: deltaHeight + y }, 0)
+headerAnimation.to(logo, 1, { scale: scale, x: x, y: y }, 0)
 
 var progress  = 0;
 var requestId = null;
