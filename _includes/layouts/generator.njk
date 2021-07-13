@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+section: generator
+---
+
+{{ layoutContent | safe }}
+
+<h1 class="listen-title slide">
+			<span>Choose a soundtrack for your</span>
+			<span class="listen-words-wrapper colourful">
+				<b class="is-visible">Mind.</b>
+				<b>Mood.</b>
+				<b>Moment.</b>
+        <b>activity.</b>
+        <b>experience.</b>
+			</span>
+</h1>
+
+<form action="#" method="post" id="plForm" class="pl-form">
+  <fieldset>
+  <button class="pl-selects">
+    <select name="category" id="category" class="pl-select categories">
+      <option value="hold" selected>❓</option>
+      <option value="morning">☕</option>
+      <option value="evening">🌆</option>
+      <option value="sleep">💤</option>
+      <option value="focus">⚙️</option>
+      <option value="relax">🕯️</option>
+      <option value="cooking">👩‍🍳</option>
+      <option value="meditation">☮️</option>
+    </select>
+    </button>
+    <p>+</p>
+  <button class="pl-selects">
+    <select name="choices" id="choices" class="pl-select choices">
+      <!-- js populates -->
+    </select>
+     </button>
+    <p>=</p>
+    <button type="button" id="link" class="link-btn">Link <span id="result"></span></button>
+  </fieldset>
+</form>
