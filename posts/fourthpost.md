@@ -5,8 +5,7 @@ date: 2020-03-04T17:53:47.250Z
 author: Anonymous
 image: /static/img/offair004_square.jpg
 summary: Public Records, Brooklyn, NY
-tags:
-  - events
+tags: []
 ---
 Madison McFerrin commands a crowd with both her charisma and her talent. While at Public Records, we felt like we were also welcome guests in her world. 
 
@@ -21,3 +20,7 @@ Madison talked about the double meanings behind the songs on her album. Before p
 Madison shared Radiohead’s OK Computer as a “great album to stretch to.” 
 
 ![](/static/img/madisonmcferrin9_-jacobblick.jpg)
+
+[Instagram](https://www.instagram.com/madmcferrin/)
+
+[Spotify](https://open.spotify.com/album/1NIo4gSPB94n4QUDK7uJEL?si=alfMwH_2T_GThf_kgouxVA&dl_branch=1)
