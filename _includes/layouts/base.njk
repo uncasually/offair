@@ -3,7 +3,7 @@
 
 	{% include "components/head.njk" %}
 
-	<body {% if section %}class="{{ section }}"{% endif %}>
+	<body {% if section %}class="{{ section }} body-content"{% endif %}>
 
 	<div id="quote-wave"></div>
 	<img class="shape shape1" src="https://offair.netlify.app/static/img/shape-01.png" data-parallaxify-range-x="80" data-parallaxify-range-y="100">
@@ -32,6 +32,15 @@
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+	<script>
+    //window.addEventListener('DOMContentLoaded', () => {
+      window.onload = function() {
+      var mainL = document.querySelectorAll('.body-content');
+      for (var i = 0; i < mainL.length; i++) {
+        mainL[i].classList.add('loaded');
+      }
+    }
+  </script>
 	</body>
 
 </html>

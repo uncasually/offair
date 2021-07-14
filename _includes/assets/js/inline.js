@@ -301,7 +301,7 @@ window.addEventListener("resize", refresh);
 /* - MOOD PLAYLIST SELECT - */
 //////////////////////////////
 
-if( $('body').hasClass('home') ){
+if( $('body').hasClass('generator') ){
   var Select_List_Data = {
     'choices': { // name of associated select list
       // names match option values in controlling select list
@@ -822,35 +822,36 @@ if( $('body').hasClass('home') ){
 var darkgrey = "#0e4033";
 //var divWidth = parseInt(d3.select("#quote-wave").style("width"));
 var divWidth = document.getElementById('quote-wave').offsetWidth;
+var divHeight = document.getElementById('quote-wave').clientHeight;
 var margin = {
-  top: 0,
+  top: 200,
   right: 0,
   bottom: 0,
-  left: 0
+  left: -100
 };
 var width = divWidth - margin.left - margin.right;
-var height = width;
+var height = divHeight;
 //console.log(divWidth, width, height);
 //SVG container
 var svg = d3
   .select("#quote-wave")
   // Container class to make it responsive.
-  .classed("svg-container", true) 
+  //.classed("svg-container", true) 
   .append("svg")
-  .attr("preserveAspectRatio", "xMinYMin meet")
-  //.attr("width", width + margin.left + margin.right)
-  //.attr("height", height + margin.top + margin.bottom)
-  .attr("viewBox", "0 0 600 400")
+  //.attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  //.attr("viewBox", "0 0 600 400")
   // Class to make it responsive.
-  .classed("svg-content-responsive", true)
+  //.classed("svg-content-responsive", true)
   .append("g")
-  .attr("width", 600)
-  .attr("height", 400)
-  //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  //.attr("width", 600)
+  //.attr("height", 400)
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var parseTime = d3.timeParse("%Y-%m-%d"); // timeParse is added in version v4
 var angle = (50 * Math.PI) / 180;
-var radius = 255;
+var radius = 455;
 var newXmargin = margin.left;
 var n;
 //Round number to 2 behind the decimal
@@ -875,7 +876,7 @@ function calculateGrid() {
   //New width & divide margins so it will sit in the center
   width = xLocArc[numCircle];
   newXmargin = round2((divWidth - width) / 2);
-  svg.attr("transform", "translate(" + newXmargin + "," + margin.top + ")");
+  //svg.attr("transform", "translate(" + newXmargin + "," + margin.top + ")");
 
   return { xLocArc: xLocArc, numCircle: numCircle };
 } //function calculateGrid
@@ -921,7 +922,7 @@ function drawQuoteWave(error, quotes) {
     .style("text-anchor", "middle")
     .style("fill", darkgrey)
     .attr("xlink:href", "#circle-word-path")
-    .attr("startOffset", "50%")
+    .attr("startOffset", "0%")
     .text(wordString + "\u00A0\u00A0" + wordString);
 
   repeat();
@@ -988,7 +989,7 @@ function repeat() {
     .transition("move")
     .duration(180000)
     .ease(d3.easeLinear)
-    .attr("startOffset", "-50%")
+    .attr("startOffset", "100%")
     .transition("move")
     .duration(180000)
     .ease(d3.easeLinear)

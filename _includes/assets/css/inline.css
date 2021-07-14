@@ -146,6 +146,12 @@ main > article :first-child {
   /*margin-top: 0;*/
   /*text-transform: uppercase;*/
 }
+@media (max-width: 767.98px) {
+  main {
+    max-width: 98vw;
+    margin: 150px auto 0;
+  }
+}
 
 pre {
   font-size: 14px;
@@ -556,6 +562,32 @@ header nav li a[href]:not(:hover) {
 	height: .13em;
 }
 
+@media (max-width: 767.98px) {
+  .pl-form fieldset {
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+  .pl-selects {
+    margin: 1rem 1rem;
+  }
+  .pl-form p {
+    font-size: 4rem;
+    padding: 0 1rem;
+  }
+  #link {	margin: 20px; }
+  .link-btn:before {
+    right: -.14em;
+    top: .03em;
+    width: .15em;
+    height: 106%;
+  }
+  .link-btn:after {
+    bottom: -.16em;
+    left: .17rem;
+    width: 102%;
+    height: .15em;
+  }
+}
 /* Posts List */
 article {
   margin-bottom: 1em;
@@ -636,11 +668,12 @@ button {
 
 #quote-wave {
   position: absolute;
-  right: 0;
+  left: 0;
   font-size: 14px;
   white-space: pre;
   cursor: default;
-  width: 1500px;
+  width: 100vw;
+  height:100vh;
   margin: 0 auto;
   opacity: 0.2;
   pointer-events: none;
@@ -654,7 +687,7 @@ button {
 
 .circle-path-text {
   font-family: "Title Book";
-  font-size: .5rem;
+  font-size: 1.5rem;
   pointer-events: none;
 }
 
@@ -879,11 +912,19 @@ xslide
 	display: flex;
 	justify-content: flex-start;
   margin-top: 2rem;
+  margin-left: -2rem;
 }
 .records-item {
-	width: 25%;
-  margin-right: 2rem;
+	width: 30%;
+  margin-left: 2rem;
 }
+@media (max-width: 767.98px) {
+  .records-container { margin-left: -1rem;}
+  .records-item {
+    width: 50%;
+    margin-left: 1rem;}
+}
+
 .records-link {
   text-transform: uppercase;
 }
@@ -905,6 +946,12 @@ xslide
 .events-item {
 	width: 45%;
   margin-right: 2rem;
+}
+@media (max-width: 767.98px) {
+  .events-item {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .svg-container {
   display: inline-block;
