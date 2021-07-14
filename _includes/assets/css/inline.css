@@ -272,16 +272,13 @@ header nav ul {
   margin: 0 0 0 auto;
   padding: 0;
 }
-
 header nav ul :first-child {
   margin-left: 0;
 }
-
 header nav ul :last-child {
   margin-right: 0;
   border-right: 1px solid;
 }
-
 header nav li {
   margin: 0;
   width: 100%;
@@ -291,17 +288,14 @@ header nav li {
   text-align: center;
   text-transform: uppercase;
 }
-
 header nav li[data-current="current item"] {
   background-color: rgba(255, 255, 255, 0.25);
 }
-
 header nav li a {
   font-family: "Title Book", serif;
   width: 100%;
   border: 0 !important;
 }
-
 header nav li a[href]:not(:hover) {
   text-decoration: none;
 }
@@ -378,6 +372,12 @@ header nav li a[href]:not(:hover) {
     margin: .35em 0;
     font-size: 0.79rem;
     padding: 0 .2rem;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  header nav ul {
+    width: calc(100% - 300px);
   }
 }
 
