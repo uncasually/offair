@@ -231,28 +231,19 @@ gsap.defaults({
 var header = document.querySelector(".header");
 var logo = document.querySelector(".logo");
 var logoLink = document.querySelector(".logo-link");
+var deltaHeight = header.offsetHeight + logo.offsetHeight;
 //var deltaHeight = logo.offsetHeight - header.offsetHeight;
-var deltaHeight = logo.offsetHeight - header.offsetHeight;
 
 var fsize1 = 115;
 var fsize2 = 160;
 
-var rect1 = logoLink.getBoundingClientRect();
-var rect2 = logo.getBoundingClientRect();
-
 var scale = fsize1 / fsize2;
-var x = -50;
-//var y = 214 - 285;
-//var y = rect1 - rect2;
-//var y = deltaHeight - rect2.bottom;
-var y = -50;
+var x = -20 + "%";
+var y = -20 + "%";
 
 var headerAnimation = gsap.timeline({ paused: true })
-//headerAnimation.from(header,  1, { y: 0 }, 0)
-//headerAnimation.to(header,  1, { y: -deltaHeight + 20 }, 0)
 headerAnimation.from(logo, { scale: 1, x: 0, y: 0 }, 0)
-//headerAnimation.to(logo, 1, { scale: scale, x: x, y: deltaHeight + y }, 0)
-headerAnimation.to(logo, 1, { scale: scale, x: x, y: y }, 0)
+headerAnimation.to(logo, { scale: scale, x: x, y: y }, 0)
 
 var progress  = 0;
 var requestId = null;
@@ -843,11 +834,19 @@ var height = width;
 //SVG container
 var svg = d3
   .select("#quote-wave")
+  // Container class to make it responsive.
+  .classed("svg-container", true) 
   .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  //.attr("width", width + margin.left + margin.right)
+  //.attr("height", height + margin.top + margin.bottom)
+  .attr("viewBox", "0 0 600 400")
+  // Class to make it responsive.
+  .classed("svg-content-responsive", true)
   .append("g")
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  .attr("width", 600)
+  .attr("height", 400)
+  //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var parseTime = d3.timeParse("%Y-%m-%d"); // timeParse is added in version v4
 var angle = (50 * Math.PI) / 180;
@@ -922,7 +921,7 @@ function drawQuoteWave(error, quotes) {
     .style("text-anchor", "middle")
     .style("fill", darkgrey)
     .attr("xlink:href", "#circle-word-path")
-    .attr("startOffset", "0%")
+    .attr("startOffset", "50%")
     .text(wordString + "\u00A0\u00A0" + wordString);
 
   repeat();
@@ -987,11 +986,11 @@ function calculateSnakePath(grid, n) {
 function repeat() {
   var animateQuoteWave = d3.select("#top-word-string")
     .transition("move")
-    .duration(140000)
+    .duration(180000)
     .ease(d3.easeLinear)
-    .attr("startOffset", "100%")
+    .attr("startOffset", "-50%")
     .transition("move")
-    .duration(140000)
+    .duration(180000)
     .ease(d3.easeLinear)
     .attr("startOffset", "0%")
     .on("end", repeat);
