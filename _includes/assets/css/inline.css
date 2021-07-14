@@ -592,6 +592,11 @@ header nav li a[href]:not(:hover) {
     height: .15em;
   }
 }
+
+.social-link {
+  padding-right: 1rem;
+}
+
 /* Posts List */
 article {
   margin-bottom: 1em;
