@@ -45,7 +45,6 @@
 
 @font-face {
   font-family: "Title Book";
-
   src: url("/static/fonts/conglomeratebook.woff2");
   src: local("Conglomerate Book"), local("Conglomerate-Book"),
     url("/static/fonts/conglomeratebook.woff2") format("woff2"),
@@ -108,10 +107,15 @@ p, pre, code {
 a[href],
 a[href]:visited {
   color: var(--primary);
+  transition: all .2s linear;
 }
 
 a[href]:hover,
 a[href]:not(:hover) {
+  text-decoration: none;
+}
+a[href]:hover {
+  color: rgba(32, 77, 98, 1.00);
   text-decoration: none;
 }
 
@@ -597,6 +601,19 @@ article {
 main > section > article > * {
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+article .article-title {
+  font-family: "Title Bold";
+  font-size: 2.5rem;
+	margin: .25rem 0;
+}
+article .article-date {
+  text-transform: uppercase;
+  opacity: .5;
+}
+article a {
+  font-family: "BG medium", sans-serif;
+  text-transform: uppercase;
 }
 
 /* Post Tags */

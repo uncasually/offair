@@ -4,8 +4,8 @@ section: post
 ---
 
 <article>
-  <h1>{{ title }}</h1>
-  <p>
+  <h1 class="article-title">{{ title }}</h1>
+  <p class="article-date">
     <small>
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> 
     </small>
@@ -13,7 +13,7 @@ section: post
 
   {{ layoutContent | safe }}
 
-  {% if tags %}
+  {#{% if tags %}
     <p>
     {% for tag in tags %}
       {%- if tag != "post" -%}
@@ -22,7 +22,7 @@ section: post
       {%- endif -%}
     {% endfor %}
     </p>
-  {% endif %}
+  {% endif %}#}
 
 </article>
 
