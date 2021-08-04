@@ -93,6 +93,7 @@ body {
 	overflow-x: hidden;
   grid-template-rows: auto 1fr auto;
   background-color: var(--background);
+  background-image: url(https://offair.netlify.app/static/img/background.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
