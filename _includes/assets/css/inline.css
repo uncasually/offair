@@ -94,6 +94,8 @@ body {
   grid-template-rows: auto 1fr auto;
   background-color: var(--background);
   background-image: url(https://offair.netlify.app/static/img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -240,9 +242,9 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 2;
-  background: -moz-linear-gradient(180deg, rgba(218,217,212,1) 0%, rgba(218,217,212,1) 48%, rgba(218,217,212,0) 100%);
+  /*background: -moz-linear-gradient(180deg, rgba(218,217,212,1) 0%, rgba(218,217,212,1) 48%, rgba(218,217,212,0) 100%);
   background: -webkit-linear-gradient(180deg, rgba(218,217,212,1) 0%, rgba(218,217,212,1) 48%, rgba(218,217,212,0) 100%);
-  background: linear-gradient(180deg, rgba(218,217,212,1) 0%, rgba(218,217,212,1) 48%, rgba(218,217,212,0) 100%);
+  background: linear-gradient(180deg, rgba(218,217,212,1) 0%, rgba(218,217,212,1) 48%, rgba(218,217,212,0) 100%);*/
 }
 /* Header Logo (style as h2) */
 .logo{
