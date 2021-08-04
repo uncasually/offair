@@ -306,34 +306,34 @@ if( $('body').hasClass('generator') ){
     'choices': { // name of associated select list
       // names match option values in controlling select list
       hold: {
-        text: '❓'
+        text: '?'
       },
       morning: {
-        text: ['❓', '🎹', '🎛️', '🎼', '🎵', '🎷','🎚️','🍃'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
         value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
           },
       evening: {
-        text: ['❓', '🎹', '🎛️', '🎼', '🎵', '🎷','🎚️','🍃'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
         value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
           },
       sleep: {
-        text: ['❓', '🎹', '⬜', '🎼', '🎵', '🎷','🎚️','🍃'],
+        text: ['?', 'Piano', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
         value: ['0', 'piano', 'noise', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
           },
       focus: {
-        text: ['❓', '🎹', '🎛️', '⬜', '🎼', '🎵', '🎷','🎚️'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic'],
         value: ['0', 'piano', 'lofi', 'noise', 'classical', 'acoustic', 'jazz', 'electronic']
           },
       relax: {
-        text: ['❓', '🎹', '🎛️', '🎼', '🎵', '🎷','🎚️','🍃'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
         value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
           },
       cooking: {
-        text: ['❓', '🎹', '🎛️', '🎼', '🎵', '🎷','🎚️'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic'],
         value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic']
           },
       meditation: {
-        text: ['❓', '🎹', '🎛️', '⬜', '🎼', '🎵', '🎷','🎚️','🍃'],
+        text: ['?', 'Piano', 'Lo-Fi', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
         value: ['0', 'piano', 'lofi', 'noise', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
           }
       }

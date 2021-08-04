@@ -5,8 +5,10 @@ metaDescription: Connect with us. OFFAIR - We create deeper experiences with mus
 date: 2021-03-02T00:27:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
-  key: Who we are
+  key: about
+  order: 4
 ---
+
 ### Listen with Intention
 
 
