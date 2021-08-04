@@ -770,6 +770,7 @@ button {
 }
 
 .listen-title {
+  font-family: "BG light";
   width: 70vw;
   font-size: 2rem;
   line-height: 1.2;
