@@ -993,6 +993,10 @@ xslide
 }
 .event-title a {
   font-family: "Title Bold", serif;
+  text-transform: capitalize;
+}
+.event-location{
+  text-transform: uppercase;
 }
 .svg-container {
   display: inline-block;
