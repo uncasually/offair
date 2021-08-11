@@ -1,17 +1,23 @@
 ---
 draft: false
+title: Moses Sumney
 image: /static/img/square_offair005.jpg
-summary: Public Records, Brooklyn, NY
+summary: Moses Sumney awed a packed house at Public Records with a full-on
+  2-hour set—a musical journey layered in instrumentation, harmonies, audience
+  participation and those moments when you’re overcome by goosebumps. Moses
+  proved that his combination musicianship+showmanship+vocal prowess is
+  unmatched. And the band brought it to a new level. 
 author: Anonymous
 date: 2020-03-09T23:00:00.000Z
+location: Public Records, Brooklyn, NY
+tags: []
+instagram: moses
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-title: Moses Sumney
-tags:
-  - events
+spotify: https://open.spotify.com/album/54Vy7sym9RaY5aeCfTWn9L?si=7RnKHMu7RwafPSt-oungLg&dl_branch=1
 ---
-Moses Sumney awed a packed house at Public Records with a full-on 2-hour set—a musical journey layered in instrumentation, harmonies, audience participation and those moments when you’re overcome by goosebumps. Moses proved that his combination musicianship+showmanship+vocal prowess is unmatched. And the band brought it to a new level. 
+
 
 The crowd was INTO it. Not just dancing, but singing, screaming, cheering and mesmerized to a level twice their size. 
 
@@ -24,9 +30,5 @@ Moses is an artist who cannot be contained or categorized. There’s no genre, n
 ![](/static/img/dsc07094.jpg)
 
 This was a dream OFFAIR, the kind we hope stays in our memories. We’d like to thank @moses and his band for bringing the house down, elevating our spirits and wowing our minds, @publicrecordsnyc for being gracious hosts, and the many people who came out on such a glorious spring Monday! Until the next one. 
-
-[Instagram](https://www.instagram.com/moses/)
-
-[Spotify](https://open.spotify.com/album/54Vy7sym9RaY5aeCfTWn9L?si=7RnKHMu7RwafPSt-oungLg&dl_branch=1)
 
 POST-SHOW UPDATE: For everyone who attended, this was likely our very last show before COVID, a perfect etching of live music in our memory that we all carried throughout hibernation. “Until the next one…” this one is the last one we have to look back upon.
