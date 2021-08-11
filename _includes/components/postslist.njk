@@ -8,7 +8,7 @@
 						Untitled
 					{% endif %}
 			</a>
-			<h3>
+			<h3 class="event-title">
 				<a class="events-link" href="{{ post.url | url }}">
 					{% if post.data.title %}
 						{{ post.data.title }}
@@ -17,9 +17,9 @@
 					{% endif %}
 				</a>
 			</h3>
-			{% if post.data.summary %}
+			{% if post.data.location %}
 				<p>
-					{{ post.data.summary }} - <time datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
+					{{ post.data.location }} 
 				</p>
 			{% endif %}
 			{#% if post.data.tags %}

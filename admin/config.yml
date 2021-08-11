@@ -27,6 +27,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Featured Image", name: "image", widget: "image", multiple: false }
       - { label: "Event Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY" }
+      - { label: "Location", name: "location", widget: "text" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
       - { label: "Body", name: "body", widget: "markdown" }

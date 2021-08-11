@@ -991,6 +991,9 @@ xslide
     margin-right: 0;
   }
 }
+.event-title a {
+  font-family: "Title Bold", serif;
+}
 .svg-container {
   display: inline-block;
   position: relative;
