@@ -12,7 +12,17 @@ section: post
   </p>
 
   {{ layoutContent | safe }}
-
+  
+  {% if instagram %}
+    <p>
+      <a href="https://www.instagram.com/{{ instagram }}" rel="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    </p>
+  {% endif %}
+  {% if twitter%}
+    <p>
+      <a href="https://www.twitter.com/{{ twitter }}" rel="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+    </p>
+  {% endif %}
   {#{% if tags %}
     <p>
     {% for tag in tags %}

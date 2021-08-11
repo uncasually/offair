@@ -30,6 +30,8 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Instagram", name: "instagram", widget: "text" }
+      - { label: "Twitter", name: "twitter", widget: "text" }
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
     label: "Records" # Used in the UI
