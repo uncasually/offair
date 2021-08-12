@@ -222,13 +222,14 @@ jQuery(document).ready(function($){
 //////////////////////////
 /* - HEADER ANIMATION - */
 //////////////////////////
-
+if( $('body').hasClass('home') ){
 gsap.defaults({
   ease: "none"
   //duration: 1
 });
 
 var header = document.querySelector(".header");
+var shapes = document.querySelector(".logo-shape");
 var logo = document.querySelector(".logo");
 var logoLink = document.querySelector(".logo-link");
 var deltaHeight = header.offsetHeight + logo.offsetHeight;
@@ -242,8 +243,10 @@ var x = -20 + "%";
 var y = -20 + "%";
 
 var headerAnimation = gsap.timeline({ paused: true })
-headerAnimation.from(logo, { scale: 1, x: 0, y: 0 }, 0)
+headerAnimation.from(logo, { scale: 1, x: 0, y: 200 + "%" }, 0)
 headerAnimation.to(logo, { scale: scale, x: x, y: y }, 0)
+headerAnimation.from(shapes, { scale: 1.25, x: 0, y: 125 + "%" }, 1)
+headerAnimation.to(shapes, { scale: scale, x: x, y: y }, 1)
 
 var progress  = 0;
 var requestId = null;
@@ -296,7 +299,7 @@ function refresh() {
 }
 
 window.addEventListener("resize", refresh);
-
+}
 //////////////////////////////
 /* - MOOD PLAYLIST SELECT - */
 //////////////////////////////
