@@ -949,6 +949,14 @@ xslide
   100% {color: #4b483b;}
 }
 
+.list-title a {
+  font-family: "Title Bold", serif;
+  text-transform: capitalize;
+}
+.list-p {
+  margin: 0;
+  text-transform: uppercase;
+}
 .records-container {
 	display: flex;
 	justify-content: flex-start;
@@ -993,10 +1001,6 @@ xslide
     width: 100%;
     margin-right: 0;
   }
-}
-.list-title a {
-  font-family: "Title Bold", serif;
-  text-transform: capitalize;
 }
 .event-location{
   text-transform: uppercase;

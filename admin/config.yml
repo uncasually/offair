@@ -46,7 +46,7 @@ collections:
       - { label: "Artist", name: "title", widget: "string" }
       - { label: "Featured Image", name: "image", widget: "image", multiple: false }
       - { label: "Album Title", name: "summary", widget: "text" }
-      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Year", name: "year", widget: "text" }
       - { label: "Release Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
