@@ -23,9 +23,7 @@
 				</p>
 			{% endif %}
 			<p>
-				<time datetime="{{ record.date | machineDate }}">
-					<small>{{ record.date | readableDate }}</small>
-				</time>
+				<small>{{ record.date }}</small>
 			</p>
 			{#{% if record.data.tags %}
 				<p>
