@@ -246,7 +246,7 @@ var headerAnimation = gsap.timeline({ paused: true })
 headerAnimation.from(logo, { scale: 1, x: 0, y: 220 + "%" }, 0)
 headerAnimation.to(logo, { scale: 0.75, x: x, y: y }, 0)
 headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
-headerAnimation.to(shapes, { scale: 0.75, x: x, y: y }, 1)
+headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
 
 var progress  = 0;
 var requestId = null;
@@ -1021,8 +1021,8 @@ const blob1 = createBlob({
 const blob2 = createBlob({
   element: document.querySelector('#blob2'),
   numPoints: 3,
-  centerX: 650,
-  centerY: 500,
+  centerX: 600,
+  centerY: 550,
   minRadius: 260,
   maxRadius: 425,
   minDuration: 2,

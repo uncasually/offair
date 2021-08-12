@@ -17,20 +17,21 @@ section: generator
 </h1>
 
 <form action="#" method="post" id="plForm" class="pl-form">
-  <fieldset>
-  <button class="pl-selects">
-    <select name="category" id="category" class="pl-select categories">
-      <option value="hold" selected>?</option>
-      <option value="morning">☕</option>
-      <option value="evening">🌆</option>
-      <option value="sleep">💤</option>
-      <option value="focus">⚙️</option>
-      <option value="relax">🕯️</option>
-      <option value="cooking">👩‍🍳</option>
-      <option value="meditation">☮️</option>
-    </select>
-    </button>
-    <p>+</p>
+  <button class="pl-selects btn-select"></button>
+  <div class="b">
+    <ul id="a"></ul>
+  </div>
+  <select name="category" id="category" class="pl-select categories">
+    <option value="hold" selected>?</option>
+    <option value="morning" data-thumbnail="https://offair.netlify.app/static/img/morning.png"></option>
+    <option value="evening" data-thumbnail="https://offair.netlify.app/static/img/evening.png"></option>
+    <option value="sleep" data-thumbnail="https://offair.netlify.app/static/img/sleep.png"></option>
+    <option value="focus" data-thumbnail="https://offair.netlify.app/static/img/focus.png"></option>
+    <option value="relax" data-thumbnail="https://offair.netlify.app/static/img/relaxation.png"></option>
+    <option value="cooking" data-thumbnail="https://offair.netlify.app/static/img/cooking.png"></option>
+    <option value="meditation" data-thumbnail="https://offair.netlify.app/static/img/meditation.png"></option>
+  </select>
+  <p>+</p>
   <button class="pl-selects">
     <select name="choices" id="choices" class="pl-select choices">
       <!-- js populates -->
