@@ -17,14 +17,10 @@
 					{% endif %}
 				</a>
 			</h3>
-			 {% if record.data.summary %}
-				<p>
-					{{ record.data.summary }}
-				</p>
+			{% if record.data.summary %}
+				<p>{{ record.data.summary }}</p>
 			{% endif %}
-			<p>
-				<small>{{ record.data.year }}</small>
-			</p>
+			<p>{{ record.data.year }}</p>
 		</article>
 	{% endfor %}
 </section>
