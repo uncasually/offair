@@ -1045,7 +1045,7 @@ xslide
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   justify-content: space-between; 
   justify-items: center; 
   align-items: center; 

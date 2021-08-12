@@ -239,14 +239,14 @@ var fsize1 = 115;
 var fsize2 = 160;
 
 var scale = fsize1 / fsize2;
-var x = -20 + "%";
-var y = -20 + "%";
+var x = 0;
+var y = 20 + "%";
 
 var headerAnimation = gsap.timeline({ paused: true })
-headerAnimation.from(logo, { scale: 1, x: 0, y: 200 + "%" }, 0)
-headerAnimation.to(logo, { scale: scale, x: x, y: y }, 0)
-headerAnimation.from(shapes, { scale: 1.25, x: 0, y: 125 + "%" }, 1)
-headerAnimation.to(shapes, { scale: scale, x: x, y: y }, 1)
+headerAnimation.from(logo, { scale: 1, x: 0, y: 220 + "%" }, 0)
+headerAnimation.to(logo, { scale: 0.75, x: x, y: y }, 0)
+headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
+headerAnimation.to(shapes, { scale: 0.75, x: x, y: y }, 1)
 
 var progress  = 0;
 var requestId = null;
@@ -1012,10 +1012,43 @@ const blob1 = createBlob({
     numPoints: 8,
     centerX: 500,
     centerY: 500,
-    minRadius: 400,
+    minRadius: 300,
     maxRadius: 455,
     minDuration: 1,
     maxDuration: 2
+})
+
+const blob2 = createBlob({
+  element: document.querySelector('#blob2'),
+  numPoints: 3,
+  centerX: 650,
+  centerY: 500,
+  minRadius: 260,
+  maxRadius: 425,
+  minDuration: 2,
+  maxDuration: 3
+})
+
+const blob3 = createBlob({
+  element: document.querySelector('#blob3'),
+  numPoints: 4,
+  centerX: 400,
+  centerY: 500,
+  minRadius: 320,
+  maxRadius: 435,
+  minDuration: .75,
+  maxDuration: 1.5
+})
+
+const blob4 = createBlob({
+  element: document.querySelector('#blob4'),
+  numPoints: 6,
+  centerX: 500,
+  centerY: 400,
+  minRadius: 320,
+  maxRadius: 380,
+  minDuration: 1.75,
+  maxDuration: 2.5
 })
 
 var color = {h:0, s:20, l:35};
@@ -1035,6 +1068,25 @@ TweenMax.to(blob1.tl, 0.3, {
   timeScale: 1,
   onStart() {
     blob1.tl.play()
+  }
+});
+TweenMax.to(blob2.tl, 0.2, { 
+  timeScale: 1,
+  onStart() {
+    blob2.tl.play()
+  }
+});
+TweenMax.to(blob3.tl, 0.52, { 
+  timeScale: 1,
+  onStart() {
+    blob3.tl.play()
+  }
+});
+
+TweenMax.to(blob4.tl, 0.32, { 
+  timeScale: 1,
+  onStart() {
+    blob4.tl.play()
   }
 });
 
