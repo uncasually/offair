@@ -630,6 +630,9 @@ article .article-date {
   text-transform: uppercase;
   opacity: .5;
 }
+article .article-social {
+  padding: 0 5px;
+}
 article a {
   font-family: "BG medium", sans-serif;
   text-transform: uppercase;
@@ -991,7 +994,7 @@ xslide
     margin-right: 0;
   }
 }
-.event-title a {
+.list-title a {
   font-family: "Title Bold", serif;
   text-transform: capitalize;
 }
