@@ -23,18 +23,8 @@
 				</p>
 			{% endif %}
 			<p>
-				<small>{{ record.date }}</small>
+				<small>{{ record.data.year }}</small>
 			</p>
-			{#{% if record.data.tags %}
-				<p>
-					{% for tag in record.data.tags %}
-		  			{%- if tag != "record" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  			{%- endif -%}
-					{% endfor %}
-				</p>
-			{% endif %} #}
 		</article>
 	{% endfor %}
 </section>

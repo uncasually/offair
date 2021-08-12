@@ -12,20 +12,10 @@ section: record
   {{ layoutContent | safe }}
   <p>
     <small>
-      Released {{ date }}
+      Released {{ year }}
     </small>
   </p>
   </figcaption>
-  {#{% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "records" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}#}
   </figure>
 </article>
 
