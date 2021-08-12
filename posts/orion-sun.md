@@ -2,7 +2,7 @@
 title: Orion Sun
 image: /static/img/square_offair006.jpg
 date: 2020-03-27T15:55:31.169Z
-location: ONLINE
+location: OFFAIR Online
 summary: " "
 tags: []
 instagram: "https://www.instagram.com/cloudgem/ "
