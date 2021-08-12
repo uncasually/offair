@@ -17,27 +17,28 @@ section: generator
 </h1>
 
 <form action="#" method="post" id="plForm" class="pl-form">
-  <button class="pl-selects btn-select"></button>
-  <div class="b">
-    <ul id="a"></ul>
-  </div>
+<fieldset>
+  <button class="pl-selects btn-select">
   <select name="category" id="category" class="pl-select categories">
-    <option value="hold" selected>?</option>
-    <option value="morning" data-thumbnail="https://offair.netlify.app/static/img/morning.png"></option>
-    <option value="evening" data-thumbnail="https://offair.netlify.app/static/img/evening.png"></option>
-    <option value="sleep" data-thumbnail="https://offair.netlify.app/static/img/sleep.png"></option>
-    <option value="focus" data-thumbnail="https://offair.netlify.app/static/img/focus.png"></option>
-    <option value="relax" data-thumbnail="https://offair.netlify.app/static/img/relaxation.png"></option>
-    <option value="cooking" data-thumbnail="https://offair.netlify.app/static/img/cooking.png"></option>
-    <option value="meditation" data-thumbnail="https://offair.netlify.app/static/img/meditation.png"></option>
+    <option class="pl-option" value="hold" selected>?</option>
+    <option class="pl-option" value="morning">Morning</option>
+    <option class="pl-option" value="evening">Evening</option>
+    <option class="pl-option" value="sleep">Sleep</option>
+    <option class="pl-option" value="focus">Focus</option>
+    <option class="pl-option" value="relax">Relax</option>
+    <option class="pl-option" value="cooking">Cooking</option>
+    <option class="pl-option" value="meditation">Meditation</option>
   </select>
+  </button>
   <p>+</p>
   <button class="pl-selects">
     <select name="choices" id="choices" class="pl-select choices">
       <!-- js populates -->
     </select>
-     </button>
+  </button>
     <p>=</p>
     <button type="button" id="link" class="link-btn">Link <span id="result"></span></button>
   </fieldset>
 </form>
+<script>
+    </script>

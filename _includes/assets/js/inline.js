@@ -300,11 +300,233 @@ function refresh() {
 
 window.addEventListener("resize", refresh);
 }
+
+////////////////////////////////
+/* - SHAPE EFFECTS - */
+////////////////////////////////
+//const hoverItem = document.querySelector('p')
+var ct = 0;
+
+const blob1 = createBlob({
+    element: document.querySelector('#blob'),
+    numPoints: 8,
+    centerX: 500,
+    centerY: 500,
+    minRadius: 300,
+    maxRadius: 455,
+    minDuration: 1,
+    maxDuration: 2
+})
+
+const blob2 = createBlob({
+  element: document.querySelector('#blob2'),
+  numPoints: 3,
+  centerX: 600,
+  centerY: 550,
+  minRadius: 260,
+  maxRadius: 425,
+  minDuration: 2,
+  maxDuration: 3
+})
+
+const blob3 = createBlob({
+  element: document.querySelector('#blob3'),
+  numPoints: 4,
+  centerX: 400,
+  centerY: 500,
+  minRadius: 320,
+  maxRadius: 435,
+  minDuration: .75,
+  maxDuration: 1.5
+})
+
+const blob4 = createBlob({
+  element: document.querySelector('#blob4'),
+  numPoints: 6,
+  centerX: 500,
+  centerY: 400,
+  minRadius: 320,
+  maxRadius: 380,
+  minDuration: 1.75,
+  maxDuration: 2.5
+})
+
+var color = {h:60, s:20, l:35};
+const root = document.documentElement;
+
+TweenMax.to(color, 20, {h:160, onUpdate:applyColor, ease:Linear.easeNone, repeat:-1});
+
+function applyColor() {
+  
+  root.style.setProperty("--stopColor", "hsl(" + color.h + "," + color.s + "%," + color.l + "%)");
+  //element.style.backgroundColor = "hsl(" + color.h + "," + color.s + "%," + color.l + "%)";
+  
+
+}
+
+TweenMax.to(blob1.tl, 0.3, { 
+  timeScale: 1,
+  onStart() {
+    blob1.tl.play()
+  }
+});
+TweenMax.to(blob2.tl, 0.2, { 
+  timeScale: 1,
+  onStart() {
+    blob2.tl.play()
+  }
+});
+TweenMax.to(blob3.tl, 0.52, { 
+  timeScale: 1,
+  onStart() {
+    blob3.tl.play()
+  }
+});
+
+TweenMax.to(blob4.tl, 0.32, { 
+  timeScale: 1,
+  onStart() {
+    blob4.tl.play()
+  }
+});
+
+
+function createBlob(options) {
+    const points = []
+    const path = options.element
+    const slice = (Math.PI * 2) / options.numPoints
+    const startAngle = random(Math.PI * 2)
+
+    const tl = new TimelineMax({
+        onUpdate: update,
+      paused: true
+    })
+
+    for (let i = 0; i < options.numPoints; i++) {
+        const angle = startAngle + i * slice
+        const duration = random(options.minDuration, options.maxDuration)
+
+        const point = {
+            x: options.centerX + Math.cos(angle) * options.minRadius,
+            y: options.centerY + Math.sin(angle) * options.minRadius
+        }
+
+        const tween = TweenMax.to(point, duration, {
+            x: options.centerX + Math.cos(angle) * options.maxRadius,
+            y: options.centerY + Math.sin(angle) * options.maxRadius,
+            repeat: -1,
+            yoyo: true,
+            ease: Sine.easeInOut
+        })
+
+        tl.add(tween, -random(duration))
+        points.push(point)
+    }
+
+    options.tl = tl
+    options.points = points
+  
+  tl.progress(1).progress(0).timeScale(0)
+    update()
+
+    function update() {
+      //console.log("UPDATE", ct++)
+        path.setAttribute('d', cardinal(points, true, 1))
+    }
+
+    return options
+}
+
+// Cardinal spline - a uniform Catmull-Rom spline with a tension option
+function cardinal(data, closed, tension) {
+    if (data.length < 1) return 'M0 0'
+    if (tension == null) tension = 1
+
+    let size = data.length - (closed ? 0 : 1)
+    let path = 'M' + data[0].x + ' ' + data[0].y + ' C'
+
+    for (let i = 0; i < size; i++) {
+        let p0, p1, p2, p3
+
+        if (closed) {
+            p0 = data[(i - 1 + size) % size]
+            p1 = data[i]
+            p2 = data[(i + 1) % size]
+            p3 = data[(i + 2) % size]
+        } else {
+            p0 = i == 0 ? data[0] : data[i - 1]
+            p1 = data[i]
+            p2 = data[i + 1]
+            p3 = i == size - 1 ? p2 : data[i + 2]
+        }
+
+        let x1 = p1.x + ((p2.x - p0.x) / 6) * tension
+        let y1 = p1.y + ((p2.y - p0.y) / 6) * tension
+
+        let x2 = p2.x - ((p3.x - p1.x) / 6) * tension
+        let y2 = p2.y - ((p3.y - p1.y) / 6) * tension
+
+        path += ' ' + x1 + ' ' + y1 + ' ' + x2 + ' ' + y2 + ' ' + p2.x + ' ' + p2.y
+    }
+
+    return closed ? path + 'z' : path
+}
+
+function random(min, max) {
+    if (max == null) {
+        max = min
+        min = 0
+    }
+    if (min > max) {
+        var tmp = min
+        min = max
+        max = tmp
+    }
+    return min + (max - min) * Math.random()
+}
+
 //////////////////////////////
 /* - MOOD PLAYLIST SELECT - */
 //////////////////////////////
 
 if( $('body').hasClass('generator') ){
+  /*
+  var plOption = document.querySelector(".pl-option");
+    var iconArray = [];
+    $(".pl-option").each(function () {
+      var img = $(this).attr("data-thumbnail");
+      var text = this.innerText;
+      var value = $(this).val();
+      //var item = '<li><img src="'+ img +'" alt="" value="'+value+'"/><span>'+ text +'</span></li>';
+      var item = '<li><img src="'+ img +'" alt="" value="'+ value +'"/></li>';
+      iconArray.push(item);
+    });
+
+    $("#btn-item").html(iconArray);
+
+    //Set the button value to the first el of the array
+    $(".btn-select").html(iconArray[0]);
+    $(".btn-select").attr("value", "hold");
+
+    //change button stuff on click
+    $("#btn-item li").click(function () {
+      var img = $(this).find("img").attr("src");
+      var value = $(this).find("img").attr("value");
+      var text = this.innerText;
+      var item = '<li><img src="' + img + '" alt="" /></li>';
+      $(".btn-select").html(item);
+      $(".btn-select").attr("value", value);
+      $(".btn-inner").toggle();
+      //console.log(value);
+    });
+
+    $(".btn-select").click(function () {
+      $(".btn-inner").toggle();
+    });
+  */
+  /////////////////////////////////
+  // ADD NEW OPTIONS UPON SELECT //
+  /////////////////////////////////
   var Select_List_Data = {
     'choices': { // name of associated select list
       // names match option values in controlling select list
@@ -818,369 +1040,5 @@ if( $('body').hasClass('generator') ){
 
 }
 
-//////////////////////////////
-/* - QUOTE WAVE ANIMATION - */
-//////////////////////////////
-/*
-var darkgrey = "#0e4033";
-//var divWidth = parseInt(d3.select("#quote-wave").style("width"));
-var divWidth = document.getElementById('quote-wave').offsetWidth;
-var divHeight = document.getElementById('quote-wave').clientHeight;
-var margin = {
-  top: 200,
-  right: 0,
-  bottom: 0,
-  left: -100
-};
-var width = divWidth - margin.left - margin.right;
-var height = divHeight;
-//console.log(divWidth, width, height);
-//SVG container
-var svg = d3
-  .select("#quote-wave")
-  // Container class to make it responsive.
-  //.classed("svg-container", true) 
-  .append("svg")
-  //.attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  //.attr("viewBox", "0 0 600 400")
-  // Class to make it responsive.
-  //.classed("svg-content-responsive", true)
-  .append("g")
-  //.attr("width", 600)
-  //.attr("height", 400)
-  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var parseTime = d3.timeParse("%Y-%m-%d"); // timeParse is added in version v4
-var angle = (50 * Math.PI) / 180;
-var radius = 455;
-var newXmargin = margin.left;
-var n;
-//Round number to 2 behind the decimal
-function round2(num) {
-  return Math.round((num + 0.00001) * 100) / 100;
-} //round2
-function calculateGrid() {
-  //How many circles fit in one "row"
-  var s = width / Math.cos(angle);
-  var numCircle = Math.min(4, Math.floor(s / (2 * radius)));
-  //I don't want 1 circle
-  if (numCircle === 1) numCircle = 2;
-  //If it's not an exact fit, make it so
-  radius = Math.min(radius, round2(s / numCircle / 2));
-
-  //Locations for the textPath
-  var xLocArc = new Array(numCircle + 1);
-  for (var i = 0; i <= numCircle; i++) {
-    xLocArc[i] = round2(2 * i * radius * Math.cos(angle));
-  } //for i
-
-  //New width & divide margins so it will sit in the center
-  width = xLocArc[numCircle];
-  newXmargin = round2((divWidth - width) / 2);
-  //svg.attr("transform", "translate(" + newXmargin + "," + margin.top + ")");
-
-  return { xLocArc: xLocArc, numCircle: numCircle };
-} //function calculateGrid
-
-var grid = calculateGrid();
-var quotes = [
-  { quote: "We create deeper experiences with music" },
-  { quote: "OFFAIR" },
-  { quote: "Listen with intention" },
-  { quote: "OFFAIR" },
-  { quote: "Your favorite artist’s side project" },
-  { quote: "OFFAIR" },
-  { quote: "Music to experience" },
-  { quote: "OFFAIR" }
-];
-drawQuoteWave("", quotes);
-function drawQuoteWave(error, quotes) {
-  n = 4;
-
-  //Create the outer circular path
-  svg
-    .append("path")
-    .attr("class", "circle-path")
-    .attr("id", "circle-word-path")
-    //.style("stroke", "#9d9d9d")
-    .attr("d", calculateSnakePath(grid, n));
-
-  //Create the text itself
-  var wordString = " ";
-  quotes.forEach(function (d, i) {
-    wordString = wordString + d.quote + "\u00A0\u00A0";
-  });
-  //console.log(wordString);
-
-  //Create text on path
-  var quoteWave = svg
-    .append("text")
-    .attr("class", "circle-path-text noselect")
-    .style("fill", "none")
-    .attr("dy", "0.17em")
-    .append("textPath")
-    .attr("id", "top-word-string")
-    .style("text-anchor", "middle")
-    .style("fill", darkgrey)
-    .attr("xlink:href", "#circle-word-path")
-    .attr("startOffset", "0%")
-    .text(wordString + "\u00A0\u00A0" + wordString);
-
-  repeat();
-  //animateQuoteWave();
-} //function drawQuoteWave
-
-function calculateSnakePath(grid, n) {
-  var pos = 0,
-    add = 1;
-  function newPos() {
-    if (pos === grid.numCircle) {
-      add = -1;
-    } else if (pos === 0) {
-      add = 1;
-    }
-    pos = pos + add;
-  } //newPos
-
-  var xOld = 0,
-    yOld = 0,
-    sweep = 0,
-    switchSide = 1;
-
-  var path = "M0,0 ";
-
-  //Construct the custom SVG paths out of arcs
-  for (var i = 1; i <= n; i++) {
-    //For the inbetween circles
-    //console.log(i, "inbetween");
-    newPos();
-    x = grid.xLocArc[pos];
-    y = yOld + round2(1.5 * radius * Math.sin(angle));
-    path =
-      path +
-      " A" +
-      radius +
-      "," +
-      radius +
-      " 0 0," +
-      sweep +
-      " " +
-      x +
-      "," +
-      y +
-      " ";
-    xOld = x;
-    yOld = y;
-    sweep = sweep ? 0 : 1;
-  } //for i
-
-  //Adjust the height of the SVG
-  height = yOld;
-  d3.select("#quote-wave svg").attr(
-    "height",
-    height + margin.top + margin.bottom
-  );
-
-  return path;
-} //function calculateSnakePath
-
-//function animateQuoteWave() {
-function repeat() {
-  var animateQuoteWave = d3.select("#top-word-string")
-    .transition("move")
-    .duration(180000)
-    .ease(d3.easeLinear)
-    .attr("startOffset", "100%")
-    .transition("move")
-    .duration(180000)
-    .ease(d3.easeLinear)
-    .attr("startOffset", "0%")
-    .on("end", repeat);
-  } ;//function animateQuoteWave
-*/
-
-////////////////////////////////
-/* - SHAPE EFFECTS - */
-////////////////////////////////
-//const hoverItem = document.querySelector('p')
-var ct = 0;
-
-const blob1 = createBlob({
-    element: document.querySelector('#blob'),
-    numPoints: 8,
-    centerX: 500,
-    centerY: 500,
-    minRadius: 300,
-    maxRadius: 455,
-    minDuration: 1,
-    maxDuration: 2
-})
-
-const blob2 = createBlob({
-  element: document.querySelector('#blob2'),
-  numPoints: 3,
-  centerX: 600,
-  centerY: 550,
-  minRadius: 260,
-  maxRadius: 425,
-  minDuration: 2,
-  maxDuration: 3
-})
-
-const blob3 = createBlob({
-  element: document.querySelector('#blob3'),
-  numPoints: 4,
-  centerX: 400,
-  centerY: 500,
-  minRadius: 320,
-  maxRadius: 435,
-  minDuration: .75,
-  maxDuration: 1.5
-})
-
-const blob4 = createBlob({
-  element: document.querySelector('#blob4'),
-  numPoints: 6,
-  centerX: 500,
-  centerY: 400,
-  minRadius: 320,
-  maxRadius: 380,
-  minDuration: 1.75,
-  maxDuration: 2.5
-})
-
-var color = {h:0, s:20, l:35};
-const root = document.documentElement;
-
-TweenMax.to(color, 20, {h:360, onUpdate:applyColor, ease:Linear.easeNone, repeat:-1});
-
-function applyColor() {
-  
-  root.style.setProperty("--stopColor", "hsl(" + color.h + "," + color.s + "%," + color.l + "%)");
-  //element.style.backgroundColor = "hsl(" + color.h + "," + color.s + "%," + color.l + "%)";
-  
-
-}
-
-TweenMax.to(blob1.tl, 0.3, { 
-  timeScale: 1,
-  onStart() {
-    blob1.tl.play()
-  }
-});
-TweenMax.to(blob2.tl, 0.2, { 
-  timeScale: 1,
-  onStart() {
-    blob2.tl.play()
-  }
-});
-TweenMax.to(blob3.tl, 0.52, { 
-  timeScale: 1,
-  onStart() {
-    blob3.tl.play()
-  }
-});
-
-TweenMax.to(blob4.tl, 0.32, { 
-  timeScale: 1,
-  onStart() {
-    blob4.tl.play()
-  }
-});
 
 
-function createBlob(options) {
-    const points = []
-    const path = options.element
-    const slice = (Math.PI * 2) / options.numPoints
-    const startAngle = random(Math.PI * 2)
-
-    const tl = new TimelineMax({
-        onUpdate: update,
-      paused: true
-    })
-
-    for (let i = 0; i < options.numPoints; i++) {
-        const angle = startAngle + i * slice
-        const duration = random(options.minDuration, options.maxDuration)
-
-        const point = {
-            x: options.centerX + Math.cos(angle) * options.minRadius,
-            y: options.centerY + Math.sin(angle) * options.minRadius
-        }
-
-        const tween = TweenMax.to(point, duration, {
-            x: options.centerX + Math.cos(angle) * options.maxRadius,
-            y: options.centerY + Math.sin(angle) * options.maxRadius,
-            repeat: -1,
-            yoyo: true,
-            ease: Sine.easeInOut
-        })
-
-        tl.add(tween, -random(duration))
-        points.push(point)
-    }
-
-    options.tl = tl
-    options.points = points
-  
-  tl.progress(1).progress(0).timeScale(0)
-    update()
-
-    function update() {
-      //console.log("UPDATE", ct++)
-        path.setAttribute('d', cardinal(points, true, 1))
-    }
-
-    return options
-}
-
-// Cardinal spline - a uniform Catmull-Rom spline with a tension option
-function cardinal(data, closed, tension) {
-    if (data.length < 1) return 'M0 0'
-    if (tension == null) tension = 1
-
-    let size = data.length - (closed ? 0 : 1)
-    let path = 'M' + data[0].x + ' ' + data[0].y + ' C'
-
-    for (let i = 0; i < size; i++) {
-        let p0, p1, p2, p3
-
-        if (closed) {
-            p0 = data[(i - 1 + size) % size]
-            p1 = data[i]
-            p2 = data[(i + 1) % size]
-            p3 = data[(i + 2) % size]
-        } else {
-            p0 = i == 0 ? data[0] : data[i - 1]
-            p1 = data[i]
-            p2 = data[i + 1]
-            p3 = i == size - 1 ? p2 : data[i + 2]
-        }
-
-        let x1 = p1.x + ((p2.x - p0.x) / 6) * tension
-        let y1 = p1.y + ((p2.y - p0.y) / 6) * tension
-
-        let x2 = p2.x - ((p3.x - p1.x) / 6) * tension
-        let y2 = p2.y - ((p3.y - p1.y) / 6) * tension
-
-        path += ' ' + x1 + ' ' + y1 + ' ' + x2 + ' ' + y2 + ' ' + p2.x + ' ' + p2.y
-    }
-
-    return closed ? path + 'z' : path
-}
-
-function random(min, max) {
-    if (max == null) {
-        max = min
-        min = 0
-    }
-    if (min > max) {
-        var tmp = min
-        min = max
-        max = tmp
-    }
-    return min + (max - min) * Math.random()
-}
