@@ -242,63 +242,93 @@ var scale = fsize1 / fsize2;
 var x = 0;
 var y = 20 + "%";
 
-var headerAnimation = gsap.timeline({ paused: true })
-headerAnimation.from(logo, { scale: 1, x: 0, y: 220 + "%" }, 0)
-headerAnimation.to(logo, { scale: 0.75, x: x, y: y }, 0)
-headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
-headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
 
-var progress  = 0;
-var requestId = null;
-var reversed  = true;
+var mql = window.matchMedia('(max-width: 600px)');
 
-update();
-window.addEventListener("scroll", requestUpdate);
+function createTimeline(e) {
+  if (e.matches) {
+    var headerAnimation = gsap.timeline({ paused: false })
+    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 60 + "%" })
+    headerAnimation.to(logo, { duration: 3.25, scale: 1, x: x, y: y })
+    headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" })
+    headerAnimation.to(shapes, { duration: 3, scale: 0.95, x: x, y: 0 })
 
-function requestUpdate() {
-  if (!requestId) {
-    requestId = requestAnimationFrame(update);
+
+  } else {  
+    var headerAnimation = gsap.timeline({ paused: true })
+    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 260 + "%" }, 0)
+    headerAnimation.to(logo, { scale: 1, x: x, y: y }, 0)
+    headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
+    headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
+
+    var progress  = 0;
+    var requestId = null;
+    var reversed  = true;
+
+    update();
+    window.addEventListener("scroll", requestUpdate);
+
+    function requestUpdate() {
+      if (!requestId) {
+        requestId = requestAnimationFrame(update);
+      }
+    }
+
+    function update() {
+
+      var scroll = window.pageYOffset;
+
+      if (scroll < deltaHeight) {
+        progress = scroll < 0 ? 0 : scroll / deltaHeight;
+        reversed = true;
+      } else {
+        progress = 1;
+        reversed = false;
+      }
+
+      headerAnimation.progress(progress);
+      requestId = null;
+    }
+
+    let body = document.body;
+
+    gsap.to("body", {
+      scrollTrigger: {
+        trigger: "body",
+        start: "top 25%",
+        end: "75% 100%",
+        scrub: 0,
+        onUpdate: (self) => {
+          body.style.setProperty("--progress", self.progress);
+        },
+        //markers: true
+      }
+    });
+
+    function refresh() {
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 2500);
+    }
   }
 }
 
-function update() {
+mql.addListener(createTimeline);
 
-  var scroll = window.pageYOffset;
+// First run
+createTimeline(mql);
 
-  if (scroll < deltaHeight) {
-    progress = scroll < 0 ? 0 : scroll / deltaHeight;
-    reversed = true;
-  } else {
-    progress = 1;
-    reversed = false;
-  }
+//window.addEventListener("resize", refresh);
+} else {
+  var header = document.querySelector(".header");
+  var shapes = document.querySelector(".logo-shape");
+  var logo = document.querySelector(".logo");
 
-  headerAnimation.progress(progress);
-  requestId = null;
-}
-
-let body = document.body;
-
-gsap.to("body", {
-  scrollTrigger: {
-    trigger: "body",
-    start: "top 25%",
-    end: "75% 100%",
-    scrub: 0,
-    onUpdate: (self) => {
-      body.style.setProperty("--progress", self.progress);
-    },
-    //markers: true
-  }
-});
-
-function refresh() {
-  setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 2500);
-}
-
-window.addEventListener("resize", refresh);
+  gsap.from(logo, { scale: 1.35, x: 0, y: 90 + "%" });
+  gsap.to(logo, { duration: 3.25, scale: 1, x: 0, y: 20 + "%"});
+  //gsap.to(logo, { duration: 3.25, yoyo: true, scale: 1.1, x: 0, y: 25 + "%", repeat: -1 });
+  gsap.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" });
+  gsap.to(shapes, { duration: 3,scale: 0.95, x: 0, y: 0 });
 }
 
 ////////////////////////////////
