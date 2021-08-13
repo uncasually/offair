@@ -49,6 +49,8 @@ collections:
       - { label: "Year", name: "year", widget: "text" }
       - { label: "Release Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Instagram", name: "instagram", widget: "text" }
+      - { label: "Spotify Link", name: "spotify", widget: "text" }
   # Our pages e.g. About
   - name: "pages"
     label: "Pages"
