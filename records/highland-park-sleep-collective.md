@@ -2,9 +2,11 @@
 title: HIGHLAND PARK SLEEP COLLECTIVE
 image: /static/img/album-artwork.jpg
 summary: Music for Water
-date: 2021-08-12T01:20:22.085Z
-tags: []
 year: 2021
+date: 2021-08-12T01:20:22.085Z
+instagram: highlandparksleepcollective
+tags: []
+spotify: https://open.spotify.com/artist/52tBivESnfK4iqF7gYhn7T?si=zLsvUeAlTCaBqfu8E8zy8A&nd=1
 ---
 Excited to announce OFFAIR’s very first release with Highland Park Sleep Collective’s Music for Water, set to release on August 27, 2021.
 
