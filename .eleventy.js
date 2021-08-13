@@ -3,6 +3,8 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
+const glob = require("glob-promise");
 
 module.exports = function(eleventyConfig) {
 
@@ -82,6 +84,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
+  /* IMAGE GALLERY */
+  eleventyConfig.addCollection('images', async collectionApi => {
+
+		let files = await glob('./static/img/*.jpeg');
+		//Now filter to non thumb-
+		let images = files.filter(f => {
+			return f.indexOf('./static/img/thumb-') !== 0;
+		});
+
+		let collection = images.map(i => {
+			return {
+				path: i,
+				thumbpath: i.replace('./static/img/', './img/thumb-')
+			}
+		});
+
+		return collection;
+
+	});
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");

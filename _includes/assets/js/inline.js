@@ -15,6 +15,7 @@ if (window.netlifyIdentity) {
     }
   });
 }
+/*
 $.parallaxify({
   // enable parallax effect for horizontal, vertical or both directions
   horizontalParallax: true,
@@ -60,7 +61,303 @@ inputPriority: 'mouse',
   // alpha for Low Pass Filter used to adjust average position
   alphaPosition: 0.05,
 });
+*/
 
+////////////////////////////////
+/* - SHAPE EFFECTS - */
+////////////////////////////////
+//const hoverItem = document.querySelector('p')
+var ct = 0;
+
+const blob1 = createBlob({
+    element: document.querySelector('#blob'),
+    numPoints: 8,
+    centerX: 500,
+    centerY: 500,
+    minRadius: 300,
+    maxRadius: 455,
+    minDuration: 1,
+    maxDuration: 2
+})
+
+const blob2 = createBlob({
+  element: document.querySelector('#blob2'),
+  numPoints: 3,
+  centerX: 600,
+  centerY: 550,
+  minRadius: 260,
+  maxRadius: 425,
+  minDuration: 2,
+  maxDuration: 3
+})
+
+const blob3 = createBlob({
+  element: document.querySelector('#blob3'),
+  numPoints: 4,
+  centerX: 400,
+  centerY: 500,
+  minRadius: 320,
+  maxRadius: 435,
+  minDuration: .75,
+  maxDuration: 1.5
+})
+
+const blob4 = createBlob({
+  element: document.querySelector('#blob4'),
+  numPoints: 6,
+  centerX: 500,
+  centerY: 400,
+  minRadius: 320,
+  maxRadius: 380,
+  minDuration: 1.75,
+  maxDuration: 2.5
+})
+
+var color = {h:60, s:20, l:35};
+const root = document.documentElement;
+
+TweenMax.to(color, 20, {h:160, onUpdate:applyColor, ease:Linear.easeNone, repeat:-1});
+
+function applyColor() {
+  
+  //root.style.setProperty("--stopColor", "hsl(" + color.h + "," + color.s + "%," + color.l + "%)");
+  //element.style.backgroundColor = "hsl(" + color.h + "," + color.s + "%," + color.l + "%)";
+  
+
+}
+
+TweenMax.to(blob1.tl, 0.3, { 
+  timeScale: 1,
+  onStart() {
+    blob1.tl.play()
+  }
+});
+TweenMax.to(blob2.tl, 0.2, { 
+  timeScale: 1,
+  onStart() {
+    blob2.tl.play()
+  }
+});
+TweenMax.to(blob3.tl, 0.52, { 
+  timeScale: 1,
+  onStart() {
+    blob3.tl.play()
+  }
+});
+
+TweenMax.to(blob4.tl, 0.32, { 
+  timeScale: 1,
+  onStart() {
+    blob4.tl.play()
+  }
+});
+
+
+function createBlob(options) {
+    const points = []
+    const path = options.element
+    const slice = (Math.PI * 2) / options.numPoints
+    const startAngle = random(Math.PI * 2)
+
+    const tl = new TimelineMax({
+        onUpdate: update,
+      paused: true
+    })
+
+    for (let i = 0; i < options.numPoints; i++) {
+        const angle = startAngle + i * slice
+        const duration = random(options.minDuration, options.maxDuration)
+
+        const point = {
+            x: options.centerX + Math.cos(angle) * options.minRadius,
+            y: options.centerY + Math.sin(angle) * options.minRadius
+        }
+
+        const tween = TweenMax.to(point, duration, {
+            x: options.centerX + Math.cos(angle) * options.maxRadius,
+            y: options.centerY + Math.sin(angle) * options.maxRadius,
+            repeat: -1,
+            yoyo: true,
+            ease: Sine.easeInOut
+        })
+
+        tl.add(tween, -random(duration))
+        points.push(point)
+    }
+
+    options.tl = tl
+    options.points = points
+  
+  tl.progress(1).progress(0).timeScale(0)
+    update()
+
+    function update() {
+      //console.log("UPDATE", ct++)
+        path.setAttribute('d', cardinal(points, true, 1))
+    }
+
+    return options
+}
+
+// Cardinal spline - a uniform Catmull-Rom spline with a tension option
+function cardinal(data, closed, tension) {
+    if (data.length < 1) return 'M0 0'
+    if (tension == null) tension = 1
+
+    let size = data.length - (closed ? 0 : 1)
+    let path = 'M' + data[0].x + ' ' + data[0].y + ' C'
+
+    for (let i = 0; i < size; i++) {
+        let p0, p1, p2, p3
+
+        if (closed) {
+            p0 = data[(i - 1 + size) % size]
+            p1 = data[i]
+            p2 = data[(i + 1) % size]
+            p3 = data[(i + 2) % size]
+        } else {
+            p0 = i == 0 ? data[0] : data[i - 1]
+            p1 = data[i]
+            p2 = data[i + 1]
+            p3 = i == size - 1 ? p2 : data[i + 2]
+        }
+
+        let x1 = p1.x + ((p2.x - p0.x) / 6) * tension
+        let y1 = p1.y + ((p2.y - p0.y) / 6) * tension
+
+        let x2 = p2.x - ((p3.x - p1.x) / 6) * tension
+        let y2 = p2.y - ((p3.y - p1.y) / 6) * tension
+
+        path += ' ' + x1 + ' ' + y1 + ' ' + x2 + ' ' + y2 + ' ' + p2.x + ' ' + p2.y
+    }
+
+    return closed ? path + 'z' : path
+}
+
+function random(min, max) {
+    if (max == null) {
+        max = min
+        min = 0
+    }
+    if (min > max) {
+        var tmp = min
+        min = max
+        max = tmp
+    }
+    return min + (max - min) * Math.random()
+}
+
+//////////////////////////
+/* - HEADER ANIMATION - */
+//////////////////////////
+if( $('body').hasClass('home') ){
+  gsap.defaults({
+    ease: "none"
+    //duration: 1
+  });
+  
+  var header = document.querySelector(".header");
+  var shapes = document.querySelector(".logo-shape");
+  var logo = document.querySelector(".logo");
+  var logoLink = document.querySelector(".logo-link");
+  var deltaHeight = header.offsetHeight + logo.offsetHeight;
+  //var deltaHeight = logo.offsetHeight - header.offsetHeight;
+  
+  var fsize1 = 115;
+  var fsize2 = 160;
+  
+  var scale = fsize1 / fsize2;
+  var x = 0;
+  var y = 20 + "%";
+  
+  
+  var mql = window.matchMedia('(max-width: 767px)');
+  
+  function createTimeline(e) {
+    if (e.matches) {
+      var headerAnimation = gsap.timeline({ paused: false })
+      headerAnimation.from(logo, { scale: 1.35, x: 0, y: 190 + "%" })
+      headerAnimation.to(logo, { duration: 3, scale: 1, x: x, y: 0 })
+      headerAnimation.from(shapes, { scale: 1.15, x: 0, y: 15 + "%" })
+      headerAnimation.to(shapes, { duration: .5, scale: 1, x: x, y: 0 })
+  
+    } else {  
+      var headerAnimation = gsap.timeline({ paused: true })
+      headerAnimation.from(logo, { scale: 1.35, x: 0, y: 260 + "%" }, 0)
+      headerAnimation.to(logo, { scale: 1, x: x, y: y }, 0)
+      headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
+      headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
+  
+      var progress  = 0;
+      var requestId = null;
+      var reversed  = true;
+  
+      update();
+      window.addEventListener("scroll", requestUpdate);
+  
+      function requestUpdate() {
+        if (!requestId) {
+          requestId = requestAnimationFrame(update);
+        }
+      }
+  
+      function update() {
+  
+        var scroll = window.pageYOffset;
+  
+        if (scroll < deltaHeight) {
+          progress = scroll < 0 ? 0 : scroll / deltaHeight;
+          reversed = true;
+        } else {
+          progress = 1;
+          reversed = false;
+        }
+  
+        headerAnimation.progress(progress);
+        requestId = null;
+      }
+  
+      let body = document.body;
+  
+      gsap.to("body", {
+        scrollTrigger: {
+          trigger: "body",
+          start: "top 25%",
+          end: "75% 100%",
+          scrub: 0,
+          onUpdate: (self) => {
+            body.style.setProperty("--progress", self.progress);
+          },
+          //markers: true
+        }
+      });
+  
+      function refresh() {
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 2500);
+      }
+    }
+  }
+  
+  mql.addListener(createTimeline);
+  
+  // First run
+  createTimeline(mql);
+  
+  //window.addEventListener("resize", refresh);
+  } else {
+    var header = document.querySelector(".header");
+    var shapes = document.querySelector(".logo-shape");
+    var logo = document.querySelector(".logo");
+  
+    gsap.from(logo, { scale: 1.35, x: 0, y: 90 + "%" });
+    gsap.to(logo, { duration: 3.25, scale: 1, x: 0, y: 20 + "%"});
+    //gsap.to(logo, { duration: 3.25, yoyo: true, scale: 1.1, x: 0, y: 25 + "%", repeat: -1 });
+    gsap.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" });
+    gsap.to(shapes, { duration: 3,scale: 0.95, x: 0, y: 0 });
+  }
+  
 /////////////////////////////
 /* - WORD SWAP ANIMATION - */
 /////////////////////////////
@@ -218,301 +515,6 @@ jQuery(document).ready(function($){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
 });
-
-//////////////////////////
-/* - HEADER ANIMATION - */
-//////////////////////////
-if( $('body').hasClass('home') ){
-gsap.defaults({
-  ease: "none"
-  //duration: 1
-});
-
-var header = document.querySelector(".header");
-var shapes = document.querySelector(".logo-shape");
-var logo = document.querySelector(".logo");
-var logoLink = document.querySelector(".logo-link");
-var deltaHeight = header.offsetHeight + logo.offsetHeight;
-//var deltaHeight = logo.offsetHeight - header.offsetHeight;
-
-var fsize1 = 115;
-var fsize2 = 160;
-
-var scale = fsize1 / fsize2;
-var x = 0;
-var y = 20 + "%";
-
-
-var mql = window.matchMedia('(max-width: 767px)');
-
-function createTimeline(e) {
-  if (e.matches) {
-    var headerAnimation = gsap.timeline({ paused: false })
-    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 190 + "%" })
-    headerAnimation.to(logo, { duration: 3, scale: 1, x: x, y: 0 })
-    headerAnimation.from(shapes, { scale: 1.15, x: 0, y: 15 + "%" })
-    headerAnimation.to(shapes, { duration: .5, scale: 1, x: x, y: 0 })
-
-  } else {  
-    var headerAnimation = gsap.timeline({ paused: true })
-    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 260 + "%" }, 0)
-    headerAnimation.to(logo, { scale: 1, x: x, y: y }, 0)
-    headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
-    headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
-
-    var progress  = 0;
-    var requestId = null;
-    var reversed  = true;
-
-    update();
-    window.addEventListener("scroll", requestUpdate);
-
-    function requestUpdate() {
-      if (!requestId) {
-        requestId = requestAnimationFrame(update);
-      }
-    }
-
-    function update() {
-
-      var scroll = window.pageYOffset;
-
-      if (scroll < deltaHeight) {
-        progress = scroll < 0 ? 0 : scroll / deltaHeight;
-        reversed = true;
-      } else {
-        progress = 1;
-        reversed = false;
-      }
-
-      headerAnimation.progress(progress);
-      requestId = null;
-    }
-
-    let body = document.body;
-
-    gsap.to("body", {
-      scrollTrigger: {
-        trigger: "body",
-        start: "top 25%",
-        end: "75% 100%",
-        scrub: 0,
-        onUpdate: (self) => {
-          body.style.setProperty("--progress", self.progress);
-        },
-        //markers: true
-      }
-    });
-
-    function refresh() {
-      setTimeout(() => {
-        ScrollTrigger.refresh();
-      }, 2500);
-    }
-  }
-}
-
-mql.addListener(createTimeline);
-
-// First run
-createTimeline(mql);
-
-//window.addEventListener("resize", refresh);
-} else {
-  var header = document.querySelector(".header");
-  var shapes = document.querySelector(".logo-shape");
-  var logo = document.querySelector(".logo");
-
-  gsap.from(logo, { scale: 1.35, x: 0, y: 90 + "%" });
-  gsap.to(logo, { duration: 3.25, scale: 1, x: 0, y: 20 + "%"});
-  //gsap.to(logo, { duration: 3.25, yoyo: true, scale: 1.1, x: 0, y: 25 + "%", repeat: -1 });
-  gsap.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" });
-  gsap.to(shapes, { duration: 3,scale: 0.95, x: 0, y: 0 });
-}
-
-////////////////////////////////
-/* - SHAPE EFFECTS - */
-////////////////////////////////
-//const hoverItem = document.querySelector('p')
-var ct = 0;
-
-const blob1 = createBlob({
-    element: document.querySelector('#blob'),
-    numPoints: 8,
-    centerX: 500,
-    centerY: 500,
-    minRadius: 300,
-    maxRadius: 455,
-    minDuration: 1,
-    maxDuration: 2
-})
-
-const blob2 = createBlob({
-  element: document.querySelector('#blob2'),
-  numPoints: 3,
-  centerX: 600,
-  centerY: 550,
-  minRadius: 260,
-  maxRadius: 425,
-  minDuration: 2,
-  maxDuration: 3
-})
-
-const blob3 = createBlob({
-  element: document.querySelector('#blob3'),
-  numPoints: 4,
-  centerX: 400,
-  centerY: 500,
-  minRadius: 320,
-  maxRadius: 435,
-  minDuration: .75,
-  maxDuration: 1.5
-})
-
-const blob4 = createBlob({
-  element: document.querySelector('#blob4'),
-  numPoints: 6,
-  centerX: 500,
-  centerY: 400,
-  minRadius: 320,
-  maxRadius: 380,
-  minDuration: 1.75,
-  maxDuration: 2.5
-})
-
-var color = {h:60, s:20, l:35};
-const root = document.documentElement;
-
-TweenMax.to(color, 20, {h:160, onUpdate:applyColor, ease:Linear.easeNone, repeat:-1});
-
-function applyColor() {
-  
-  root.style.setProperty("--stopColor", "hsl(" + color.h + "," + color.s + "%," + color.l + "%)");
-  //element.style.backgroundColor = "hsl(" + color.h + "," + color.s + "%," + color.l + "%)";
-  
-
-}
-
-TweenMax.to(blob1.tl, 0.3, { 
-  timeScale: 1,
-  onStart() {
-    blob1.tl.play()
-  }
-});
-TweenMax.to(blob2.tl, 0.2, { 
-  timeScale: 1,
-  onStart() {
-    blob2.tl.play()
-  }
-});
-TweenMax.to(blob3.tl, 0.52, { 
-  timeScale: 1,
-  onStart() {
-    blob3.tl.play()
-  }
-});
-
-TweenMax.to(blob4.tl, 0.32, { 
-  timeScale: 1,
-  onStart() {
-    blob4.tl.play()
-  }
-});
-
-
-function createBlob(options) {
-    const points = []
-    const path = options.element
-    const slice = (Math.PI * 2) / options.numPoints
-    const startAngle = random(Math.PI * 2)
-
-    const tl = new TimelineMax({
-        onUpdate: update,
-      paused: true
-    })
-
-    for (let i = 0; i < options.numPoints; i++) {
-        const angle = startAngle + i * slice
-        const duration = random(options.minDuration, options.maxDuration)
-
-        const point = {
-            x: options.centerX + Math.cos(angle) * options.minRadius,
-            y: options.centerY + Math.sin(angle) * options.minRadius
-        }
-
-        const tween = TweenMax.to(point, duration, {
-            x: options.centerX + Math.cos(angle) * options.maxRadius,
-            y: options.centerY + Math.sin(angle) * options.maxRadius,
-            repeat: -1,
-            yoyo: true,
-            ease: Sine.easeInOut
-        })
-
-        tl.add(tween, -random(duration))
-        points.push(point)
-    }
-
-    options.tl = tl
-    options.points = points
-  
-  tl.progress(1).progress(0).timeScale(0)
-    update()
-
-    function update() {
-      //console.log("UPDATE", ct++)
-        path.setAttribute('d', cardinal(points, true, 1))
-    }
-
-    return options
-}
-
-// Cardinal spline - a uniform Catmull-Rom spline with a tension option
-function cardinal(data, closed, tension) {
-    if (data.length < 1) return 'M0 0'
-    if (tension == null) tension = 1
-
-    let size = data.length - (closed ? 0 : 1)
-    let path = 'M' + data[0].x + ' ' + data[0].y + ' C'
-
-    for (let i = 0; i < size; i++) {
-        let p0, p1, p2, p3
-
-        if (closed) {
-            p0 = data[(i - 1 + size) % size]
-            p1 = data[i]
-            p2 = data[(i + 1) % size]
-            p3 = data[(i + 2) % size]
-        } else {
-            p0 = i == 0 ? data[0] : data[i - 1]
-            p1 = data[i]
-            p2 = data[i + 1]
-            p3 = i == size - 1 ? p2 : data[i + 2]
-        }
-
-        let x1 = p1.x + ((p2.x - p0.x) / 6) * tension
-        let y1 = p1.y + ((p2.y - p0.y) / 6) * tension
-
-        let x2 = p2.x - ((p3.x - p1.x) / 6) * tension
-        let y2 = p2.y - ((p3.y - p1.y) / 6) * tension
-
-        path += ' ' + x1 + ' ' + y1 + ' ' + x2 + ' ' + y2 + ' ' + p2.x + ' ' + p2.y
-    }
-
-    return closed ? path + 'z' : path
-}
-
-function random(min, max) {
-    if (max == null) {
-        max = min
-        min = 0
-    }
-    if (min > max) {
-        var tmp = min
-        min = max
-        max = tmp
-    }
-    return min + (max - min) * Math.random()
-}
 
 //////////////////////////////
 /* - MOOD PLAYLIST SELECT - */
@@ -684,9 +686,9 @@ if( $('body').hasClass('generator') ){
       $( "select option:selected" ).each(function() {
         str += $( this ).text() + " ";
       });
-      $( "div" ).text( str );
+      //$( "div" ).text( str );
     var fields = $( "form" ).serializeArray();
-      $( "div" ).empty();
+      //$( "div" ).empty();
       var morning = 0
       var evening = 0
       var sleep = 0

@@ -132,10 +132,19 @@ img {
 header, main, footer {
   padding: 1em;
 }
+
+footer {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 1em 1em;
+  flex-flow: column;
+}
 @media only screen and (min-width: 768px) {
-  header, main, footer {
+  header, main {
     padding: 2em 2em 3em;
   }
+  footer { flex-flow: row;}
 }
 @media only screen and (min-width: 1170px) {
   header, main, footer {
@@ -153,7 +162,7 @@ main {
 main :first-child,
 main > article :first-child {
   /*margin-top: 0;*/
-  /*text-transform: uppercase;*/
+  text-transform: capitalize;
 }
 @media (max-width: 767.98px) {
   main {
@@ -703,15 +712,15 @@ input,
 textarea,
 button {
   width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
+  padding: 8px .5em;
+	margin-bottom: 1em;
+	font-size: .8rem;
   font-family: "BG Light", "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
 textarea {
-  border: 1px solid black;
+  border: 1px solid var(--primary);
 }
 
 button {
@@ -1053,6 +1062,12 @@ xslide
   width: 100%;
   height: 100%;
 }
+#static-shape svg {
+  position: absolute;
+	top: 25%;
+	left: 30%;
+	width: 40%;
+}
 @media (max-width: 767.98px) {
   #shape-blob {
     left: 0;
@@ -1102,4 +1117,107 @@ xslide
     height: 200px;
   }
 }
+#mc_embed_signup p {
+  margin: 10px 0;
+	font-size: .9rem;
+}
+#mc-embedded-subscribe-form {
+  padding: 0;
+}
+#mc_embed_signup_scroll {
+  display: flex;
+}
+#mce-EMAIL {
+  min-width: 250px;
+}
+.mc-field-group {
+  margin-right: .25em;
+}
+#mc-embedded-subscribe {
+  padding: 8px 40px;
+	font-size: .75em;
+	text-transform: uppercase;
+}
 
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-ShareAlike 4.0 license and is available on
+   https://github.com/TheLastProject/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+   div.cssbox {
+    display: inline-block;
+  }
+  
+  span.cssbox_full {
+    z-index: 999999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    transition: opacity 0.5s linear;
+  }
+  
+  span.cssbox_full img {
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    max-height: 90%;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px black;
+  }
+  
+  a.cssbox_close,
+  a.cssbox_prev,
+  a.cssbox_next {
+    z-index: 999999;
+    position: fixed;
+    text-decoration: none;
+    visibility: hidden;
+    color: white;
+    font-size: 36px;
+  }
+  
+  a.cssbox_close {
+    top: 1%;
+    right: 1%
+  }
+  
+  a.cssbox_close::after {
+    content: '\00d7';
+  }
+  
+  a.cssbox_prev,
+  a.cssbox_next {
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  
+  a.cssbox_prev {
+    left: 5%;
+  }
+  
+  a.cssbox_next {
+    right: 5%;
+  }
+  
+  a:target ~ a.cssbox_close,
+  a:target ~ a.cssbox_prev,
+  a:target ~ a.cssbox_next {
+    visibility: visible;
+  }
+  
+  a:target > img.cssbox_thumb + span.cssbox_full {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
+  }
+  /* This is the end of CSSBox */
