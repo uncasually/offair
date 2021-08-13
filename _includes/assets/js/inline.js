@@ -243,16 +243,15 @@ var x = 0;
 var y = 20 + "%";
 
 
-var mql = window.matchMedia('(max-width: 600px)');
+var mql = window.matchMedia('(max-width: 767px)');
 
 function createTimeline(e) {
   if (e.matches) {
     var headerAnimation = gsap.timeline({ paused: false })
-    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 60 + "%" })
-    headerAnimation.to(logo, { duration: 3.25, scale: 1, x: x, y: y })
-    headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" })
-    headerAnimation.to(shapes, { duration: 3, scale: 0.95, x: x, y: 0 })
-
+    headerAnimation.from(logo, { scale: 1.35, x: 0, y: 190 + "%" })
+    headerAnimation.to(logo, { duration: 3, scale: 1, x: x, y: 0 })
+    headerAnimation.from(shapes, { scale: 1.15, x: 0, y: 15 + "%" })
+    headerAnimation.to(shapes, { duration: .5, scale: 1, x: x, y: 0 })
 
   } else {  
     var headerAnimation = gsap.timeline({ paused: true })
