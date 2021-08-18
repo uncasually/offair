@@ -1,7 +1,7 @@
 ---
 title: "Andy Shauf "
 image: /static/img/square_offair_andyshauf.jpg
-date: 2021-07-13T17:07:40.648Z
+date: 2020-01-14T18:07:40.648Z
 location: Public Records, Brooklyn, NY
 summary: "Fans lined up around the corner for a chance to see singer/songwriter
   Andy Shauf kick off the 2020 OFFAIR season with an intimate performance of
