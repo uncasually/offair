@@ -1,7 +1,7 @@
 ---
 title: Angel Olsen
 image: /static/img/offair02_square.jpg
-date: 2021-07-13T17:51:29.016Z
+date: 2019-10-01T17:51:29.016Z
 location: Public Records, Brooklyn, NY
 summary: "Angel Olsen’s critically acclaimed album, All Mirrors, was rich in
   sound and influence. To invite fans into the experience of the album, her
