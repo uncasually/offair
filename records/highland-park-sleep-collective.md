@@ -8,7 +8,7 @@ instagram: highlandparksleepcollective
 tags: []
 spotify: https://open.spotify.com/artist/52tBivESnfK4iqF7gYhn7T?si=zLsvUeAlTCaBqfu8E8zy8A&nd=1
 ---
-Excited to announce OFFAIR’s very first release with Highland Park Sleep Collective’s Music for Water, set to release on August 27, 2021.
+Excited to announce the very first release in the OFFAIR series, with *Music for Water* by Highland Park Sleep Collective, set to release on August 27, 2021.
 
 Their new singles “Night Sky” and “Sheldon’s Weight” are available to listen to now.
 
