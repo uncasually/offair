@@ -1,7 +1,7 @@
 ---
 title: HIGHLAND PARK SLEEP COLLECTIVE
 image: /static/img/album-artwork.jpg
-summary: Music for Water
+summary: "OFFAIR : Music for Water"
 year: 2021
 date: 2021-08-12T01:20:22.085Z
 instagram: highlandparksleepcollective
