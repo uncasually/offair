@@ -11,7 +11,7 @@ author: Anonymous
 date: 2020-03-09T23:00:00.000Z
 location: Public Records, Brooklyn, NY
 tags: []
-instagram: https://www.instagram.com/moses/
+instagram: moses
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
