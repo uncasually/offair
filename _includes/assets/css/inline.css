@@ -1033,9 +1033,21 @@ xslide
     margin-right: 0;
   }
 }
+.events-featured {
+  margin: 0 auto;
+  text-align: center;
+}
 .event-location{
   text-transform: uppercase;
 }
+.event-ticket {
+  background-color: #708772;
+  width: 200px;
+	font-size: 1.1em;
+  font-family: "BG medium";
+  text-transform: uppercase !important;
+}
+
 .svg-container {
   display: inline-block;
   position: relative;
