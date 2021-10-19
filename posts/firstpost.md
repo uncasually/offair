@@ -1,21 +1,28 @@
 ---
 draft: false
-title: Moses Sumney
-image: /static/img/square_offair005.jpg
 summary: Moses Sumney awed a packed house at Public Records with a full-on
   2-hour set—a musical journey layered in instrumentation, harmonies, audience
   participation and those moments when you’re overcome by goosebumps. Moses
   proved that his combination musicianship+showmanship+vocal prowess is
   unmatched. And the band brought it to a new level. 
 author: Anonymous
+title: Moses Sumney
+image: /static/img/square_offair005.jpg
 date: 2020-03-09T23:00:00.000Z
 location: Public Records, Brooklyn, NY
 tags: []
 instagram: moses
+spotify: https://open.spotify.com/album/54Vy7sym9RaY5aeCfTWn9L?si=7RnKHMu7RwafPSt-oungLg&dl_branch=1
+gallery:
+  - imgTitle: Image Title
+    imgSrc: /static/img/dsc07094.jpg
+    imgDesc: Img Desc
+  - imgTitle: Image 2 Title
+    imgSrc: /static/img/dsc07094.jpg
+    imgDesc: Image 2 desc
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-spotify: https://open.spotify.com/album/54Vy7sym9RaY5aeCfTWn9L?si=7RnKHMu7RwafPSt-oungLg&dl_branch=1
 ---
 It couldn’t have been a more perfect day. Public records opened its garden bar for the first time. It was 70° for the first time. And the first Monday after daylight savings. 
 
