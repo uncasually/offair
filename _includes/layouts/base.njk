@@ -41,6 +41,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js" integrity="sha512-FdlwXGnnYq1bxxo+wionfAo3XIGB+6u0CI7V2qrq3/U1CQmY83qwqORVG0Tznbq6V8DCWModf/WhMn5zVLb/fA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
@@ -52,6 +53,10 @@
       for (var i = 0; i < mainL.length; i++) {
         mainL[i].classList.add('loaded');
       }
+			$('.flexslider').flexslider({
+			animation: "slide",
+			controlNav: false
+			});
     }
   </script>
 	</body>
