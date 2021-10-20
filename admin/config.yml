@@ -37,10 +37,14 @@ collections:
          label: "Gallery" 
          widget: "list"
          optional: true
-         fields:
-          - {label: "Title", name: "imgTitle", widget: "string"}
-          - {label: "Gallery Image", name: "imgSrc", widget: "image"}
-          - {label: "Description", name: "imgDesc", widget: "string"}
+         types:
+          - label: "Gallery Image"
+            name: "galleryImg"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "imgTitle", widget: "string"}
+              - {label: "Image", name: "imgSrc", widget: "image"}
+              - {label: "Description", name: "imgDesc", widget: "string"}
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
     label: "Records" # Used in the UI
