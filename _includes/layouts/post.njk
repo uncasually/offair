@@ -29,6 +29,18 @@ section: post
     {% endfor %}
     </p>
   {% endif %}#}
+  <div class="flexslider left">
+    <ul class="slides">
+    {% for imgTitle in gallery %}
+      <li>
+        <img src="{{ imgSrc }}" alt="{{ imgTitle }}">
+        <div class="meta">
+          <h2>{{ imgDesc }}</h2>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
 </article>
 
