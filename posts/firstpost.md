@@ -17,9 +17,7 @@ gallery:
   - imgTitle: Image Title
     imgSrc: /static/img/dsc07094.jpg
     imgDesc: Img Desc
-  - imgTitle: Image 2 Title
-    imgSrc: /static/img/dsc07094.jpg
-    imgDesc: Image 2 desc
+  - /static/img/dsc06570.jpg
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
