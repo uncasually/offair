@@ -14,6 +14,4 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
   target="_blank"><button class="event-ticket nav-btn
   nav-experiences">Tickets</button></a> </article>
 ---
-<article class="events-featured events-item">
-
 </article>
