@@ -72,5 +72,5 @@ collections:
         name: "eleventyNavigation"
         widget: "object"
         fields:
-          - { label: "Navigation Name", name: "key", widget: "string" }
-          - { label: "Navigation Position", name: "order", widget: "number", default: 0 }
+          - { label: "Navigation Name", name: "key", widget: "string", optional: true }
+          - { label: "Navigation Position", name: "order", widget: "number", default: 0, optional: true }
