@@ -16,6 +16,9 @@ spotify: https://open.spotify.com/album/54Vy7sym9RaY5aeCfTWn9L?si=7RnKHMu7RwafPS
 gallery:
   - /static/img/dsc07094.jpg
   - /static/img/dsc06570.jpg
+  - /static/img/dsc06872.jpg
+  - /static/img/dsc06404.jpg
+  - /static/img/dsc06786.jpg
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
