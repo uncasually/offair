@@ -36,7 +36,6 @@ collections:
       - { label: "Image Gallery", name: "images", widget: "image" }
       -  name: "gallery"
          label: "Gallery" 
-         label_singular: "Gallery"
          widget: "list"
          optional: true
          field: {label: "Gallery Image", name: "imgSrc", widget: "image"}
