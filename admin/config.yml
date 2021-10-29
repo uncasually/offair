@@ -27,13 +27,13 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Featured Image", name: "image", widget: "image", multiple: false }
       - { label: "Event Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY" }
-      - { label: "Location", name: "location", widget: "text" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
+      - { label: "Location", name: "location", widget: "text", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: ["events"], required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Instagram", name: "instagram", widget: "text" }
       - { label: "Spotify Link", name: "spotify", widget: "text" }
-      - { label: "Image Gallery", name: "images", widget: "image" }r
+      - { label: "Image Gallery", name: "images", widget: "image", required: false }
       -  name: "gallery"
          label: "Gallery" 
          label_singular: "Gallery Image"
