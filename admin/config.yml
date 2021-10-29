@@ -45,6 +45,7 @@ collections:
       - { label: "Spotify Link", name: "spotify", widget: "text" }
       - name: "gallery"
         label: "Image Gallery"
+        label_singular: "Images"
         widget: "list"
         optional: true
         field: { label: "Gallery Image", name: "images", widget: "image" }
