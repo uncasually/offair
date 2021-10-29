@@ -33,7 +33,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Instagram", name: "instagram", widget: "text" }
       - { label: "Spotify Link", name: "spotify", widget: "text" }
-      - { label: "Images", name: "images", widget: "image", multiple: true }
+      - { label: "Image Gallery", name: "images", widget: "image", multiple: true }
       -  name: "gallery"
          label: "Gallery" 
          widget: "list"
