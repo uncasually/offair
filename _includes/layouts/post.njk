@@ -32,13 +32,11 @@ section: post
     <ul class="slides">
     {% for field in gallery %}
       <li>
-        <img src="{{ field.imgSrc | urlize }}">
+        <img src="{{ field.imgSrc }}">
       </li>
       {% endfor %}
     </ul>
   </div>
-
- 
 
 </article>
 
