@@ -30,7 +30,7 @@ section: post
   {% endif %}#}
   <div class="flexslider left">
     <ul class="slides">
-    {% for fields in gallery %}
+    {% for field in gallery %}
       <li>
         <img src="{{ field.imgSrc | urlize }}">
       </li>
