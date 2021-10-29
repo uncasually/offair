@@ -33,9 +33,10 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Instagram", name: "instagram", widget: "text" }
       - { label: "Spotify Link", name: "spotify", widget: "text" }
-      - { label: "Image Gallery", name: "images", widget: "image" }
+      - { label: "Image Gallery", name: "images", widget: "image" }r
       -  name: "gallery"
          label: "Gallery" 
+         label_singular: "Gallery Image"
          widget: "list"
          optional: true
          field: {label: "Gallery Image", name: "imgSrc", widget: "image"}
