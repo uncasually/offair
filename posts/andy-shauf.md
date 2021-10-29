@@ -10,6 +10,7 @@ gallery:
   - /static/img/offair_andyshauff_1.14_©laurajunekirsch-6048.jpg
   - /static/img/offair_andyshauff_1.14_©laurajunekirsch-5937.jpg
   - /static/img/offair_andyshauff_1.14_©laurajunekirsch-5972.jpg
+  - /static/img/offair_andyshauff_1.14_©laurajunekirsch-5969.jpg
 twitter: andyshauf
 images: /static/img/offair_andyshauff_1.14_©laurajunekirsch-6048.jpg
 spotify: https://open.spotify.com/album/41M6R2mWLgqU9aKFUvZv8S
