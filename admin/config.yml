@@ -25,11 +25,11 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "image", widget: "image", multiple: false }
+      - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Event Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY" }
-      - { label: "Location", name: "location", widget: "text", required: false }
-      - { label: "Summary", name: "summary", widget: "text", required: false }
-      - { label: "Tags", name: "tags", widget: "list", default: ["events"], required: false }
+      - { label: "Location", name: "location", widget: "text" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Instagram", name: "instagram", widget: "text" }
       - { label: "Spotify Link", name: "spotify", widget: "text" }
