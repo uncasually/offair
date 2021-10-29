@@ -47,7 +47,8 @@ collections:
         label: "Gallery"
         widget: "list"
         optional: true
-        field: { label: "Gallery Image", name: "imgSrc", widget: "image" }
+        summary: "{{field.images}}"
+        field: { label: "Gallery Image", name: "images", widget: "image" }
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
     label: "Records" # Used in the UI
