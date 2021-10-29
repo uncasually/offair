@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-# Please run "npx netlify-cms-proxy-server" for local backend
-  local_backend: true 
-# when using a custom proxy server port
+  # Please run "npx netlify-cms-proxy-server" for local backend
+  local_backend: true
+  # when using a custom proxy server port
   url: http://localhost:8082/api/v1
   # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
   # allowed_hosts: ['192.168.0.1'], ['192.168.86.225']
-  allowed_hosts: ['192.168.86.225']
+  allowed_hosts: ["192.168.86.225"]
 
 publish_mode: editorial_workflow
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
@@ -25,8 +25,18 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "image", widget: "image", multiple: false }
-      - { label: "Event Date", name: "date", widget: "datetime", date_format: "MM DD, YYYY" }
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          multiple: false,
+        }
+      - {
+          label: "Event Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "MM DD, YYYY",
+        }
       - { label: "Location", name: "location", widget: "text" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["events"] }
@@ -37,7 +47,7 @@ collections:
         label: "Gallery"
         widget: "list"
         optional: true
-        field: {label: "Gallery Image", name: "imgSrc", widget: "image"}
+        field: { label: "Gallery Image", name: "imgSrc", widget: "image" }
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
     label: "Records" # Used in the UI
@@ -49,7 +59,12 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Artist", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "image", widget: "image", multiple: false }
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          multiple: false,
+        }
       - { label: "Album Title", name: "summary", widget: "text" }
       - { label: "Year", name: "year", widget: "text" }
       - { label: "Release Date", name: "date", widget: "datetime" }
@@ -72,5 +87,16 @@ collections:
         name: "eleventyNavigation"
         widget: "object"
         fields:
-          - { label: "Navigation Name", name: "key", widget: "string", optional: true }
-          - { label: "Navigation Position", name: "order", widget: "number", default: 0, optional: true }
+          - {
+              label: "Navigation Name",
+              name: "key",
+              widget: "string",
+              optional: true,
+            }
+          - {
+              label: "Navigation Position",
+              name: "order",
+              widget: "number",
+              default: 0,
+              optional: true,
+            }
