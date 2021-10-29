@@ -30,19 +30,13 @@ section: post
   {% endif %}#}
   <div class="flexslider left">
     <ul class="slides">
-    {% for field in gallery %}
+    {% for images in gallery %}
       <li>
-        <img src="{{ field.images }}">
+        <img src="{{ images }}">
       </li>
       {% endfor %}
     </ul>
   </div>
-  <ul class="slides">
-      <li>
-        <img src="{{ field.images }}">
-      </li>
-    </ul>
-
 </article>
 
 <nav>
