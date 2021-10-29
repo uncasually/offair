@@ -7,6 +7,7 @@ summary: "  "
 tags: []
 instagram: andyshauf
 spotify: https://open.spotify.com/album/41M6R2mWLgqU9aKFUvZv8S
+images: /static/img/offair_andyshauff_1.14_©laurajunekirsch-6048.jpg
 gallery:
   - /static/img/offair_andyshauff_1.14_©laurajunekirsch-6048.jpg
   - /static/img/offair_andyshauff_1.14_©laurajunekirsch-5937.jpg
