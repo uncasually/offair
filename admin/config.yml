@@ -33,12 +33,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Instagram", name: "instagram", widget: "text" }
       - { label: "Spotify Link", name: "spotify", widget: "text" }
-      - { label: "Image Gallery", name: "images", widget: "image" }
-      -  name: "gallery"
-         label: "Gallery" 
-         widget: "list"
-         optional: true
-         field: {label: "Gallery Image", name: "imgSrc", widget: "image"}
+      - name: "gallery"
+        label: "Gallery"
+        widget: "list"
+        optional: true
+        field: {label: "Gallery Image", name: "imgSrc", widget: "image"}
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
     label: "Records" # Used in the UI
