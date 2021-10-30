@@ -7,6 +7,15 @@ summary: " "
 tags: []
 instagram: raphael_saadiq
 spotify: https://open.spotify.com/album/42qt8FhWtmal27Gasz3r4v?si=hrAGmIkhSNuAb9FpDUvb2A&dl_branch=1
+gallery:
+  - /static/img/dsc02169.jpg
+  - /static/img/dsc02014.jpg
+  - /static/img/dsc01532.jpg
+  - /static/img/dsc01514.jpg
+  - /static/img/dsc01751.jpg
+  - /static/img/dsc02069.jpg
+  - /static/img/dsc02457.jpg
+  - /static/img/dsc01283.jpg
 ---
 For the first ever OFFAIR show, Raphael Saadiq created a raw environment through which an intimate crowd of his biggest fans could experience the very personal and humanizing, Jimmy Lee, released that same week in late 2019. 
 
