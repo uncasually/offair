@@ -1292,5 +1292,9 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 	text-shadow: none;
 }
 
+.flex-viewport {
+	max-height: 80vh;
+}
+
 /* End of FLEXSLIDER */
   
