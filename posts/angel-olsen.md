@@ -10,10 +10,17 @@ summary: "Angel Olsen’s critically acclaimed album, All Mirrors, was rich in
   truly unique concept. She synched a playback of the album to the 1929 French
   silent film, Aelita: Queen of Mars, a very obscure yet somewhat obvious
   influence to the sound, structure and themes of All Mirrors. "
-instagram: angelolsenmusic
-twitter: angelolsenmusic
 tags: []
+instagram: angelolsenmusic
 spotify: https://open.spotify.com/album/0RedX0LZkGUFoRwFntAaI0?si=yjXS5NPQS3CdUHrYfSJDrg&dl_branch=1
+gallery:
+  - /static/img/offair_angelolsen10.1_-6.jpg
+  - /static/img/offair_angelolsen10.1_-9356.jpg
+  - /static/img/offair_angelolsen10.1_-9397.jpg
+  - /static/img/offair_angelolsen10.1_-0.jpg
+  - /static/img/offair_angelolsen10.1_-3.jpg
+  - /static/img/offair_angelolsen10.1_-9425.jpg
+twitter: angelolsenmusic
 ---
 Angel Olsen’s critically acclaimed album, All Mirrors, was rich in sound and influence. To invite fans into the experience of the album, her two-piece string section took to the Public Records stage to deconstruct and highlight its sonic layers. After a stunning performance, Angel presented a truly unique concept. She synched a playback of the album to the 1929 French silent film, Aelita: Queen of Mars, a very obscure yet somewhat obvious influence to the sound, structure and themes of All Mirrors. 
 
