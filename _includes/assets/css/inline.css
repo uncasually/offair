@@ -1293,14 +1293,15 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 }
 
 .flex-viewport {
-	max-height: 80vh;
+	max-height: 90vh;
 }
 
 .flexslider .slides img {
 	width: 100%;
-	height: 80vh;
+	height: 90vh;
   object-fit: cover;
 	object-position: center;
+  object-position: 50% 30%;
 }
 
 /* End of FLEXSLIDER */
