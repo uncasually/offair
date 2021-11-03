@@ -2,7 +2,7 @@
 title: "OFFMENU: SAM EVIAN"
 image: /static/img/1080x1080-1-.jpg
 date: 2021-11-03T19:31:00.787Z
-location: Public Records, NY
+location: Public Records, Brooklyn, NY
 summary: "  \ \n\n"
 tags:
   - events
