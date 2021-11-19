@@ -4,7 +4,7 @@ image: /static/img/ias-farewell-cover-211021.jpg
 summary: FAREWELL / NODES OF YESOD
 year: "2021"
 date: 2021-11-17T20:17:42.695Z
-instagram: https://www.instagram.com/ifanythingsuspicious/
+instagram: ifanythingsuspicious
 spotify: https://offairrecords.lnk.tt/IAS
 ---
 Much like the real world, the universe of If Anything, Suspicious is as bleak as it is beautiful, as desolate as it is comforting. The brainchild of Anders Fridén, best known as the vocalist of influential Swedish heavy metallers In Flames, it’s a project that distills his feelings into soothing yet ominous soundscapes that are a simultaneous reflection of, and escape from, the harsh realities of day-to-existence.
