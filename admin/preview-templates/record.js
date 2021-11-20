@@ -26,15 +26,13 @@ const Record = createClass({
             <a href="${entry.getIn(["data", "spotify"], null)}" rel="spotify" class="article-social spotify-link"><i class="fab fa-spotify fa-2x"></i></a>
           </p>
           <p>
-            <small> Released 
-              <time
-                >${
+            <small> 
+            Released  <time>${
                   format(
                     entry.getIn(["data", "date"], new Date()),
                     "yyyy"
                   )
-                }</time
-              >
+                }</time>
             </small>
           </p>
           </figcaption>
