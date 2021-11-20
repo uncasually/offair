@@ -11,7 +11,9 @@ const Record = createClass({
     return html`
       <main>
         <article>
+        <figure class="record-container">
           <img class="record-img" src="${entry.getIn(["data", "image"], null)}" alt="record image" />
+          <figcaption>
           <h1>${entry.getIn(["data", "title"], null)}</h1>
           
           <p>${entry.getIn(["data", "summary"], "")}</p>
@@ -35,7 +37,8 @@ const Record = createClass({
               >
             </small>
           </p>
-
+          </figcaption>
+          </figure>
         </article>
       </main>
     `;
