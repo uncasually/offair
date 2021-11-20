@@ -11,6 +11,7 @@ const Record = createClass({
     return html`
       <main>
         <article>
+          <img class="record-img" src="${entry.getIn(["data", "image"], null)}" alt="record image" />
           <h1>${entry.getIn(["data", "title"], null)}</h1>
           
           <p>${entry.getIn(["data", "summary"], "")}</p>
@@ -23,7 +24,7 @@ const Record = createClass({
             <a href="${entry.getIn(["data", "spotify"], null)}" rel="spotify" class="article-social spotify-link"><i class="fab fa-spotify fa-2x"></i></a>
           </p>
           <p>
-            <small> Released
+            <small> Released 
               <time
                 >${
                   format(
