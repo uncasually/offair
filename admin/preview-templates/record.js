@@ -12,24 +12,29 @@ const Record = createClass({
       <main>
         <article>
           <h1>${entry.getIn(["data", "title"], null)}</h1>
+          
+          <p>${entry.getIn(["data", "summary"], "")}</p>
+
+          ${this.props.widgetFor("body")}
           <p>
-            <small>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/${entry.getIn(["data", "instagram"], null)}" rel="instagram" class="article-social ig-link"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="${entry.getIn(["data", "spotify"], null)}" rel="spotify" class="article-social spotify-link"><i class="fab fa-spotify fa-2x"></i></a>
+          </p>
+          <p>
+            <small> Released
               <time
                 >${
                   format(
                     entry.getIn(["data", "date"], new Date()),
-                    "dd MMM, yyyy"
+                    "yyyy"
                   )
                 }</time
               >
             </small>
           </p>
 
-          <p>${entry.getIn(["data", "summary"], "")}</p>
-
-          ${this.props.widgetFor("body")}
-          <p>
-          </p>
         </article>
       </main>
     `;
