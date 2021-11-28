@@ -6,7 +6,7 @@ location: Public Records, Brooklyn, NY
 summary: "  \ \n\n"
 tags:
   - events
-instagram: https://www.instagram.com/sam.evian/
+instagram: sam.evian
 spotify: https://open.spotify.com/album/7tbxSBCADgo0YnDBw4EzJW?si=abceZukaTLeg8zEbPq5Ykg
 gallery:
   - /static/img/2021_11_2_offair_publicrecords_samevian_©laurajunekirsch00077.jpg
