@@ -1,14 +1,16 @@
 ---
 title: IF ANYTHING, SUSPICIOUS
-image: /static/img/ias-farewell-cover-211021.jpg
+image: /static/img/ias-lullabies-for-the-damned-cover-211021-v3.jpg
 summary: FAREWELL / NODES OF YESOD
 year: "2021"
 date: 2021-11-17T20:17:42.695Z
 instagram: ifanythingsuspicious
 spotify: https://offairrecords.lnk.tt/IAS
 ---
-Much like the real world, the universe of If Anything, Suspicious is as bleak as it is beautiful, as desolate as it is comforting. The brainchild of Anders Fridén, best known as the vocalist of influential Swedish heavy metallers In Flames, it’s a project that distills his feelings into soothing yet ominous soundscapes that are a simultaneous reflection of, and escape from, the harsh realities of day-to-existence.
+Much like the real world, the universe of If Anything, Suspicious is as bleak as it is beautiful, as desolate as it is comforting. The brainchild of [Anders Fridén'](http://instagram.com/andersfridn)s, best known as the vocalist of influential Swedish heavy metallers [IN FLAMES](http://instagram.com/andersfridn), it’s a project that distills his feelings into soothing yet ominous soundscapes that are a simultaneous reflection of, and escape from, the harsh realities of day-to-existence.
 
-The focus tracks "Farewell" and "Nodes of Yesod" are available to listen to now. Anders descibes "Farewell" as essentially wishing someone a safe, joyful journey and it’s up to the recipient if it’s an end or beginning. "Nodes of Yesod" captures the feeling of being extremely small, a tiny fragment in an everlasting labyrinth. Balancing being both fascinated and scared at the same time, accepting both. 
+The full album 'OFFAIR: Lullabies for the Damned' is available to listen to now. The album is an expression of the pure joy of creation that explores Anders Friden's love of making electronic music and captures the sentiment of rebirth because this was like nothing he’d ever done before.
 
-Dive into the unknown and dare to challenge yourself by listening to the tracks below. Stay tuned for the full album to be released on December 3.
+The release follows two calming singles “Farewell” and “Nodes of Yesod” called “serene” by Blabbermouth and “ethereal” by MXDWN.
+
+Dive into the unknown and dare to challenge yourself by immersing yourself into the world of If Anything, Suspicious below.
