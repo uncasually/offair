@@ -16,7 +16,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 ---
 <article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/1080x1080.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
 
 <a href="https://bit.ly/OFFAIR009Tickets" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
