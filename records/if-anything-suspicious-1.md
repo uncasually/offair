@@ -1,7 +1,7 @@
 ---
 title: IF ANYTHING, SUSPICIOUS
 image: /static/img/ias-lullabies-for-the-damned-cover-211021-v3.jpg
-summary: FAREWELL / NODES OF YESOD
+summary: "OFFAIR: LULLABIES FOR THE DAMNED"
 year: "2021"
 date: 2021-11-17T20:17:42.695Z
 instagram: ifanythingsuspicious
