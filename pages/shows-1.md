@@ -14,6 +14,11 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
   target="_blank"><button class="event-ticket nav-btn
   nav-experiences">Tickets</button></a> </article>
 ---
+<section class"events-container">
+
+<!--  \* \* \* \* \* DO NOT EDIT ABOVE THIS LINE \* \* \* \* \*  -->
+
+<!-- COPY FROM BELOW HERE TO DUPLICATE -->\
 <article class="events-featured events-item">
 
 <img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
@@ -21,3 +26,16 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
 </article>
+
+<article class="events-featured events-item">
+
+<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
+
+<a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
+
+</article>\
+<!-- END COPY -->
+
+<!--  \* \* \* \* \* DO NOT EDIT BELOW THIS LINE \* \* \* \* \*  -->
+
+</section>
