@@ -18,7 +18,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/offair_paulithepsm_ns_1x1.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/envelop.jpg" alt="event thumbnail"/>
 
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
@@ -26,7 +26,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 2 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/offair_paulithepsm_ns_1x1.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/envelop.jpg" alt="event thumbnail"/>
 
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
@@ -34,7 +34,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 3 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/pauli-lp_oph-1-.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/offair_paulithepsm_ns_1x1.jpg" alt="event thumbnail"/>
 
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
