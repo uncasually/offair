@@ -1305,4 +1305,7 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 }
 
 /* End of FLEXSLIDER */
-  
+
+.bit-widget.bit-layout-desktop .bit-rsvp-container {
+  display: none !important;
+}
