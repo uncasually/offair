@@ -16,8 +16,6 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 ---
 <section class"events-container">
 
-<!--  - - - - -  DO NOT EDIT ABOVE THIS LINE - - - - -  -->
-
 <!-- COPY FROM BELOW HERE TO DUPLICATE -->
 
 <article class="events-featured events-item">
@@ -36,7 +34,5 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 </article>
 <!-- END COPY -->
-
-<!--  - - - - - DO NOT EDIT BELOW THIS LINE - - - - -  -->
 
 </section>
