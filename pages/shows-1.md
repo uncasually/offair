@@ -20,7 +20,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <img class="event-thumb" src="https://offair.co/static/img/image-from-ios.jpg" alt="event thumbnail"/>
 
-<a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">RSVP</button></a>
+<a href="<https://offair.co/static/img/image-from-ios.jpg>" target="_blank"><button class="event-ticket nav-btn nav-experiences">Text OFFAIR to 310-421-0869</button></a>
 
 </article>
 
