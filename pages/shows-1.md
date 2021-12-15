@@ -18,7 +18,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="static/img/esf20220105_1-1_pauli-the-psm_live_730.png" alt="event thumbnail"/>
 
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
