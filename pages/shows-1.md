@@ -14,10 +14,8 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
   target="_blank"><button class="event-ticket nav-btn
   nav-experiences">Tickets</button></a> </article>
 ---
-<section class="events-container">
-<!--  DO NOT COPY OR EDIT ABOVE THIS LINE -->
-
-<article class="events-featured events-item">
+<!--  START ROW --><section class="events-container"><!--  START ROW -->
+<!--  Event 1 --><article class="events-featured events-item">
 
 <img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
 
@@ -25,7 +23,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 </article>
 
-<article class="events-featured events-item">
+<!--  Event 2 --><article class="events-featured events-item">
 
 <img class="event-thumb" src="https://offair.co/static/img/pauli-lp_oph-1-.jpg" alt="event thumbnail"/>
 
@@ -33,6 +31,4 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 </article>
 
-<!--  DO NOT COPY OR EDIT BELOW THIS LINE -->
-
-</section>
+<!--  END ROW --></section><!--  END ROW -->
