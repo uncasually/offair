@@ -18,23 +18,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/image-from-ios.jpg" alt="event thumbnail"/>
-
-<a href="<https://offair.co/static/img/image-from-ios.jpg>" target="_blank"><button class="event-ticket nav-btn nav-experiences">Text OFFAIR to 310-421-0869</button></a>
-
-</article>
-
-<!--  Event 2 --><article class="events-featured events-item">
-
-<img class="event-thumb" src="https://offair.co/static/img/envelop.jpg" alt="event thumbnail"/>
-
-<a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">RSVP</button></a>
-
-</article>
-
-<!--  Event 3 --><article class="events-featured events-item">
-
-<img class="event-thumb" src="https://offair.co/static/img/offair_paulithepsm_ns_1x1.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
 
 <a href="https://bit.ly/17OFFAIRPAULI" target="_blank"><button class="event-ticket nav-btn nav-experiences">RSVP</button></a>
 
@@ -42,6 +26,10 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  END ROW --></section><!--  END ROW -->
 
+<!--  START ROW --><section class="events-container"><!--  START ROW -->
+
 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
 
-<a class="bit-widget-initializer" data-artist-name="id_15497151" data-font="" data-language="en" data-display-details="false" data-text-color="#000000" data-background-color="#ffffff" data-separator-color="#DDDDDD" data-popup-background-color="#ffffff" data-link-color="#A2A2A2" data-link-text-color="#FFFFFF"></a>
+<a class="bit-widget-initializer" data-artist-name="id_15497151" data-font="" data-language="en" data-display-details="false" data-text-color="#1d1c1d" data-background-color="rgba(0,0,0,0)" data-separator-color="#3e3c3d" data-popup-background-color="#ede2cd" data-link-color="rgba(115, 149, 156, 1)" data-link-text-color="#1d1c1d" data-display-play-my-city="false" data-auto-style="false"></a>
+
+<!--  END ROW --></section><!--  END ROW -->
