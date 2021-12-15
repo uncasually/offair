@@ -16,7 +16,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 ---
 <section class"events-container">
 
-{# COPY FROM BELOW HERE TO DUPLICATE #}
+
 
 <article class="events-featured events-item">
 
@@ -33,5 +33,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 <a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
 </article>
+
+
 
 </section>
