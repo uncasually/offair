@@ -20,16 +20,10 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1.jpg" alt="event thumbnail"/>
 
-<a href="https://bit.ly/17OFFAIRPAULI" target="_blank"><button class="event-ticket nav-btn nav-experiences">RSVP</button></a>
-
 </article>
-
-<!--  END ROW --></section><!--  END ROW -->
-
-<!--  START ROW --><section class="events-container"><!--  START ROW -->
 
 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
 
-<a class="bit-widget-initializer" data-artist-name="id_15497151" data-font="" data-language="en" data-display-details="false" data-text-color="#1d1c1d" data-background-color="rgba(0,0,0,0)" data-separator-color="#3e3c3d" data-popup-background-color="#ede2cd" data-link-color="rgba(115, 149, 156, 1)" data-link-text-color="#1d1c1d" data-display-play-my-city="false" data-auto-style="false"></a>
+<a class="bit-widget-initializer" data-artist-name="id_15497151" data-font="" data-language="en" data-display-details="false" data-text-color="#1d1c1d" data-background-color="rgba(0,0,0,0)" data-separator-color="#3e3c3d" data-popup-background-color="#ede2cd" data-link-color="rgba(115, 149, 156, 1)" data-link-text-color="#1d1c1d" data-display-play-my-city="false" data-auto-style="false" data-display-lineup="false" data-display-details="false"></a>
 
 <!--  END ROW --></section><!--  END ROW -->
