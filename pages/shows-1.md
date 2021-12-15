@@ -36,7 +36,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <img class="event-thumb" src="https://offair.co/static/img/offair_paulithepsm_ns_1x1.jpg" alt="event thumbnail"/>
 
-<a href="https://linktr.ee/offair" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
+<a href="https://bit.ly/17OFFAIRPAULI" target="_blank"><button class="event-ticket nav-btn nav-experiences">Tickets</button></a>
 
 </article>
 
