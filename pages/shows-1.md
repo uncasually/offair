@@ -14,7 +14,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
   target="_blank"><button class="event-ticket nav-btn
   nav-experiences">Tickets</button></a> </article>
 ---
-<section class="events-container">\
+<section class="events-container">
 <!--  DO NOT COPY OR EDIT ABOVE THIS LINE -->
 
 <article class="events-featured events-item">
@@ -33,6 +33,6 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 </article>
 
-\
-<!--  DO NOT COPY OR EDIT BELOW THIS LINE -->\
+<!--  DO NOT COPY OR EDIT BELOW THIS LINE -->
+
 </section>
