@@ -16,7 +16,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 ---
 <section class"events-container">
 
-<!-- COPY FROM BELOW HERE TO DUPLICATE -->
+{# COPY FROM BELOW HERE TO DUPLICATE #}
 
 <article class="events-featured events-item">
 
