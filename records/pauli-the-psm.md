@@ -7,7 +7,7 @@ date: 2021-12-15T04:49:47.292Z
 instagram: paulithepsm
 spotify: https://offairrecords.lnk.tt/PauliThePSM
 ---
-Pauli The PSM’s new track “SAGITTARIUS feat. Anne Chmeleswky”  is out now. 
+Pauli The PSM’s new tracks “OPHIUCHUS (feat. Tawiah)" and “SAGITTARIUS (feat. Anne Chmelewsky)" are available to listen to now.
 
 Stay tuned for the full album: *OFFAIR: The Power of your Subconscious Mind Vol 1: SPACE*, inspired by the unique characteristics of the (pre-Babylonian) zodiac signs, dropping on January 7. Listen & pre-save the album at the link below.
 
