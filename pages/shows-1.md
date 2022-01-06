@@ -18,7 +18,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_1x1-3-.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/offair_paulthepsm_poster_4x5_all-shows-postponed.jpg" alt="event thumbnail"/>
 
 </article>
 
