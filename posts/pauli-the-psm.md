@@ -12,4 +12,6 @@ tags:
 instagram: paulithepsm
 spotify: https://offairrecords.lnk.tt/PauliThePSM
 ---
-TBD
+Pauli The PSM's three date mini-tour celebrated his new album *'OFFAIR: The Power of your Subconscious Mind Vol 1. SPACE.'* The events were held in Yucca Valley, CA, San Francisco, and Brooklyn and took guests through an adventure into their subconsious, with floating instrumental weaving throughout the audience.
+
+A big thank you to Floating, Envelop SF and National Sawdust for helping create such incredible events!
