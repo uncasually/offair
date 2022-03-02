@@ -1,6 +1,6 @@
 ---
 title: Helado Negro
-image: /static/img/1080x1080.jpg
+image: /static/img/1080x1080-2.jpg
 date: 2021-10-20T23:30:17.583Z
 location: Public Records, Brooklyn, NY
 summary: Helado Negro at Public Records
