@@ -1,5 +1,5 @@
 ---
-title: Niia
+title: NIIA
 image: /static/img/oa-niia-mof-cover.jpg
 summary: "OFFAIR: Mouthful of Salt"
 year: "2022"
