@@ -8,5 +8,14 @@ tags:
   - events
 instagram: heladonegro
 spotify: https://open.spotify.com/artist/69qhRLDvsWJOhWGXXQ0lQQ?si=OpZCjimpQzSyefNY-Acx6A
+gallery:
+  - /static/img/dsc_1407-copy.jpg
+  - /static/img/dsc_1363.jpg
+  - /static/img/dsc_1332-copy.jpg
+  - /static/img/dsc_1314.jpg
+  - /static/img/dsc_1266.jpg
+  - /static/img/dsc_1136.jpg
+  - /static/img/dsc_1086.jpg
+  - /static/img/dsc_0932.jpg
 ---
 With the first OFFAIR back at Public Records since March 2020, Helado Negro and his six piece band captivated a crowded house with songs and stories from his new album, ‘Far In.’ It was great to be back. Much thanks and love to Helado Negro, Jace Clayton, Public Records and 4AD for making it happen.
