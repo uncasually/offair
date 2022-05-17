@@ -18,7 +18,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://static/img/offair_public-records-june-1_edit_4x5.jpg" alt="event thumbnail"/>
+<img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_edit_4x5.jpg" alt="event thumbnail"/>
 
 </article>
 
