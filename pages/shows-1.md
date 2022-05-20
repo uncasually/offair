@@ -18,13 +18,19 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  Event 1 --><article class="events-featured events-item">
 
-<img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg"/>
+<!--  \*\*EDIT THIS LINE FOR LINK TO TICKETS\*\* -- Link to tickets goes after 'href' between quotes -->
+
+<a href="https://dice.fm/event/bmbqk-sounds-of-saving-x-offair-present-nick-hakim-1st-jun-public-records-new-york-tickets?pid=530cb286"><!--  END LINK -->
+
+<!--  \*\*EDIT IMAGE\*\* --><img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg"/>
+
+\
+</a>
 
 </article>
 
 <!--  END ROW --></section><!--  END ROW -->
 
-<!--  DO NOT EDIT THIS SCRIPT -->\
-<script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><!--  DO NOT EDIT THIS SCRIPT -->
+<!--  DO NOT EDIT THIS SCRIPT --><script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><!--  DO NOT EDIT THIS SCRIPT -->
 
 <a class="bit-widget-initializer" data-artist-name="id_15497151" data-font="BG light" data-language="en" data-display-details="false" data-text-color="#1d1c1d" data-background-color="rgba(0,0,0,0)" data-separator-color="#3e3c3d" data-popup-background-color="#ede2cd" data-link-color="rgba(115, 149, 156, 1)" data-link-text-color="#1d1c1d" data-display-play-my-city="false" data-auto-style="true" data-display-lineup="false" data-display-details="false" data-display-logo="false" data-display-track-button="false"></a>
