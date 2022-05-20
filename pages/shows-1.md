@@ -33,7 +33,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <!--  END ROW --></section><!--  END ROW -->
 
-<!--  DO NOT EDIT THIS SCRIPT -->
+<!--  DO NOT EDIT THIS SCRIPT BELOW -->
 
 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
 
