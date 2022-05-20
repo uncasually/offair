@@ -92,7 +92,7 @@ Or in debug mode:
 DEBUG=* npx @11ty/eleventy
 ```
 
-#### Gotchas
+### Gotchas
 
 If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
 as the token generated using the deploy to Netlify button can only access public repositories. To
@@ -100,8 +100,6 @@ regenerate your token, head to "Settings" in your Netlify site dashboard, go to 
 section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
 see a text link to "Generate access token in GitHub".
 
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
-
-#### Etc
+### Etc
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
