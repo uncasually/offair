@@ -22,7 +22,7 @@ content: <h2>Upcoming</h2> <article class="events-featured events-item"{% if
 
 <a href="https://dice.fm/event/bmbqk-sounds-of-saving-x-offair-present-nick-hakim-1st-jun-public-records-new-york-tickets?pid=530cb286"><!--  END LINK -->
 
-<!--  \\\*\\\*EDIT IMAGE\\\*\\\* --><img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg"/>
+<!--  EDIT IMAGE --><img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg"/>
 
 \
 </a>
