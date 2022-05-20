@@ -1,21 +1,19 @@
-# OFFAIR RECORDS SITE
+# OFFAIR RECORDS
 
-## [Site](https://offair.co/)
-
-## About OFFAIR
+[https://offair.co/](https://offair.co/)
 
 OFFAIR Records cultivates a space for established artists to release music that explores beyond their familiar sonic territories. Be it instrumental or experimental, OFFAIR’s series of releases are intentional soundtracks to environments, mental spaces and share universal experiences.
 
-### Site
+## Site info
 
-#### Built using [Eleventy Netlify Boilerplate] (https://github.com/danurbanowicz/eleventy-netlify-boilerplate) - [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/) 
+Built using [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) - [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
 Pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. Deployed on [Netlify](https://www.netlify.com), using built-in [Netlify CMS](https://www.netlifycms.org/).
 
 Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
 
-##### Want to try it out now?
+### Want to try it out now?
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
 
 Clicking the button above will deploy a copy of the demo website to your Netlify
@@ -28,7 +26,7 @@ and everything needed for running the CMS:
 * Manage content with Netlify CMS
 * Process form data with Netlify Forms
 
-##### Setup authentication
+#### Setup authentication
 
 After deploying this project, Netlify Identity will add you as a CMS user and
 will email you an invite. It is not necessary to accept this invite if you wish
