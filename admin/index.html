@@ -4,8 +4,85 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OFFAIR CMS</title>
+    <style>
+      :root {
+        --primary: #1d1c1d;
+        --secondary: #3e3c3d;
+        --white: #f5f5f5;
+        --background: #ede2cd;
+        --startColor: rgba(115, 149, 156, 1);
+        --stopColor: rgba(99, 118, 104, 1);
+      }
+      @font-face {
+        font-family: "Title Bold";
+        src: url("https://offair.co/static/fonts/conglomeratebold.woff2");
+        src: local("Conglomerate Bold"), local("Conglomerate-Bold"),
+          url("https://offair.co/static/img/conglomeratebold.woff2") format("woff2"),
+          url("https://offair.co/static/fonts/conglomeratebold.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "BG light", "Avenir", -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        display: grid;
+        width: 100vw;
+        overflow-x: hidden;
+        grid-template-rows: auto 1fr auto;
+        background-color: var(--background);
+        background-image: url(https://offair.netlify.app/static/img/background.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      header {
+        position: fixed;
+        width: 100vw;
+        z-index: 2;
+      }
+      /* Header Logo (style as h2) */
+      .logo{
+        display: block;
+        font-size: 2.5em;
+        margin: 0;
+        padding: 0.5em 0.5em;
+        font-family: "Title Bold";
+        font-style: normal;
+        position: fixed;
+        top: 0;
+        left: calc(50% - 88px);
+        text-align: center;
+        line-height: .8em;
+        z-index: 5;
+      }
+      a[href].logo-link {
+        color: var(--secondary);
+        z-index: 5;
+      }
+      @media (max-width: 767.98px) {
+        .logo{
+          top: 20px;
+          left: 50px;
+        }
+      }
+      @media only screen and (min-width: 1070px) {
+        .logo{
+          font-size: 3em;
+        }
+      }
+    </style>
   </head>
   <body>
+    <header class="header">
+			<em class="logo">
+				<a class="logo-link" href="{{ '/' | url }}">OFF<br>AIR</a>
+			</em>
+		</header>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <!-- Include Netlify Identity for authentication -->
