@@ -1,6 +1,6 @@
 # OFFAIR RECORDS
 
-:musical_notes: [https://offair.co/](https://offair.co/)
+:notes: [https://offair.co/](https://offair.co/)
 
 OFFAIR Records cultivates a space for established artists to release music that explores beyond their familiar sonic territories. Be it instrumental or experimental, OFFAIR’s series of releases are intentional soundtracks to environments, mental spaces and share universal experiences.
 
