@@ -47,7 +47,8 @@ collections:
         label: "Image Gallery"
         label_singular: "Images"
         widget: "list"
-        optional: true
+        # optional: true
+        required: false
         field: { label: "Gallery Image", name: "images", widget: "image" }
   # Our records posts
   - name: "records" # Used in routes, e.g., /admin/collections/blog
@@ -83,7 +84,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Link for featured show tickets", name: "showlink", widget: "string", required: false }
+      - { label: "Link for featured show tickets", name: "showlink", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
@@ -93,12 +94,12 @@ collections:
               label: "Navigation Name",
               name: "key",
               widget: "string",
-              optional: true,
+              required: false,
             }
           - {
               label: "Navigation Position",
               name: "order",
               widget: "number",
               default: 0,
-              optional: true,
+              required: false,
             }
