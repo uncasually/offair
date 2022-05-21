@@ -6,6 +6,7 @@ permalink: /shows/index.html
 showlink: https://dice.fm/event/bmbqk-sounds-of-saving-x-offair-present-nick-hakim-1st-jun-public-records-new-york-tickets?pid=530cb286
 metaDescription: We create deeper experiences with music.
 content: null
+showimage: https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg
 eleventyNavigation:
   key: experiences
   order: 1
