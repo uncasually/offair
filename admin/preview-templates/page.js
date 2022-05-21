@@ -18,7 +18,7 @@ const Page = createClass({
     } else {
 
     return html`
-      <main>
+      <main class="preview">
         <h1>${entry.getIn(["data", "title"], null)}</h1>
 
         ${this.props.widgetFor("body")}
