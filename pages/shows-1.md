@@ -12,4 +12,3 @@ eleventyNavigation:
   order: 1
 ---
 <!-- EDIT IMAGE BELOW -->
-<img class="event-thumb" src="https://offair.co/static/img/offair_public-records-june-1_4x5_update.jpg"/>
