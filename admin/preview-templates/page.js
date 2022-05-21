@@ -9,14 +9,14 @@ const Page = createClass({
 
     if (entry.getIn(["data", "title"], null) == "shows") {
       return html`
-      <main>
+      <main class="preview">
         <h2>Upcoming</h2>
 
         ${this.props.widgetFor("body")}
       </main>
     `;
     } else {
-      
+
     return html`
       <main>
         <h1>${entry.getIn(["data", "title"], null)}</h1>
