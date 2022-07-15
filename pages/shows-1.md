@@ -11,4 +11,4 @@ eleventyNavigation:
   key: experiences
   order: 1
 ---
-To celebrate the album’s release, OFFAIR live experiences are presenting Parry and Ibarra live on October 25 at Public Records in Brooklyn, NY, where they will perform the album, incorporating the heartbeats of audience members into the live performance. Tickets go on sale Friday, July 22, at noon ET.
+In celebration of **Heart and Breath: Rhythm and Tone Fields (OFFAIR)**, Richard Reed Parry and Susie Ibarra will perform live to the heartbeats of audience members at Public Records in Brooklyn, NY, on October 23rd. Tickets go on sale for this one-of-a-kind experience on July 22nd at noon ET.
