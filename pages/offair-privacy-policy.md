@@ -1,7 +1,7 @@
 ---
 title: OFFAIR Privacy Policy
 date: 2022-07-19T21:28:27.632Z
-permalink: offair.co/privacy
+permalink: /privacy
 eleventyNavigation:
   order: ""
 ---
