@@ -8,7 +8,7 @@ eleventyNavigation:
   key: about
   order: 4
 ---
-Listen with Intention
+### Listen with Intention
 
 OFFAIR Records cultivates a space for established artists to release music that explores beyond their familiar sonic territories. Be it instrumental or experimental, OFFAIR’s series of releases are intentional soundtracks to environments, mental spaces and share universal experiences.
 
