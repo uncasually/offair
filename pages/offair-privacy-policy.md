@@ -5,6 +5,10 @@ permalink: /privacy/index.html
 eleventyNavigation:
   order: 0
 ---
+```html
+
+```
+
 ### **PRIVACY POLICY**
 
 OFFAIR Privacy Policy 
@@ -27,33 +31,27 @@ Your information may be stored when interacting with OFFAIR through our website,
 
 ### Use of Your Information & Why
 
-
 OFFAIR may collect and use your information for various purposes including general marketing, tailored communications about upcoming shows that may interest you and additional reasons as otherwise required by law.
 
 ### Sharing Your Information & Why
-
 
 Your information may be shared with the event providers, as well as other third-parties associated with OFFAIR services provided.
 
 ### Your Options & Rights
 
-
 You can choose whether or not to receive marketing related information from OFFAIR. You also have the right to access the information OFFAIR has about you.
 
 ### Caring for Your Information
 
-
 OFFAIR is taking steps to ensure that any information collected from you is protected and securely deleted when it is no longer needed.
 
 ### Contact Us
-
 
 If you have any questions or feedback about this notice, or how your information is handled, please contact us.
 
 ## Types of Information Collected & Source
 
 ### Information We Collect.
-
 
 **Information you post.** Any information posted in public areas of OFFAIR’s website, apps or thirdparty social media sites may be collected.
 
@@ -65,7 +63,6 @@ If you have any questions or feedback about this notice, or how your information
 
 ### How We Collect Information.
 
-
 **Information collected directly from you.** Registering for OFFAIR promotions, requests for communication, comments posted on OFFAIR websites and/or social media.
 
 **Passive collection of information.** OFFAIR uses tracking tools such as web browser cookies and beacons that collect information from site visitors.
@@ -74,9 +71,7 @@ If you have any questions or feedback about this notice, or how your information
 
 ## Use of Your Information & Why
 
-
 ### How OFFAIR uses your information collected
-
 
 **Information used to provide you with products and services.** OFFAIR will use your information to process your order and provide you with customer support. This includes sending you emails about your account or a ticket purchase. OFFAIR may also contact you about our privacy policy or our website terms and any updates thereto.
 
@@ -96,9 +91,7 @@ If you have any questions or feedback about this notice, or how your information
 
 ## Sharing Your Information & Why
 
-
 ### OFFAIR may share your information with third parties.
-
 
 **Information shared with third parties on behalf of OFFAIR.** OFFAIR shares information with vendors who help manage various aspects of OFFAIR including, but not limited to, IT infrastructure or purchases. Some of these vendors may be located outside of the United States.
 
@@ -114,9 +107,7 @@ If you have any questions or feedback about this notice, or how your information
 
 ## Your Options & Rights
 
-
 ### You have certain options about how OFFAIR uses your information.
-
 
 **Opting out of marketing emails.** To unsubscribe to our promotional/marketing emails, please follow the instructions in any promotion/marketing email you receive from us. Requests to be unsubscribed are processed within ten (10) days. You will continue to receive transactional messages from us about your orders, even though you have opted out of receiving promotional emails.
 
@@ -126,35 +117,28 @@ If you have any questions or feedback about this notice, or how your information
 
 ### Our sites and apps are not intended for children.
 
-
 **OFFAIR websites and apps are meant for adults.** We do not knowingly collect personal information from children under 13. If you are a parent or legal guardian and believe your child under 13 has given us information, you can contact us directly at offair@versuscreative.com. You can also write to us at the address listed at the end of this policy. Please mark your inquiries “COPPA Information Request.”
 
 ## Looking After Your Information
 
-
 ### OFFAIR standard security measures.
-
 
 **OFFAIR has security measures in place to protect your information.** The standard security measures used is based upon on the type of information collected. However, the internet is not 100% secure. OFFAIR cannot guarantee that your use of our sites will be completely safe. If you believe that an unauthorized account has been created using your information, contact us at offair@versuscreative.com.
 
 ### Information stored both in and outside of the United States.
 
-
 If you live outside of the United States, you understand and agree that OFFAIR may transfer your information to the United States. This site is subject to United States laws, which may not afford the same level of protection of those in your country.
 
 ### Link to third party sites or services OFFAIR does not control.
-
 
 By clicking on third party links, you acknowledge that you will be taken to websites OFFAIR does not control. The OFFAIR privacy policy does not apply to those of third party websites. Read the privacy policy of those websites to obtain an explanation of how your information is handled. OFFAIR does not take responsibility for those third-party sites. OFFAIR’s site may also serve third-party content that may contain their own cookies or tracking technologies.
 
 ### Contact Us
 
-
 Please contact us if you have any questions.
 If you have any questions about this Policy or other privacy concerns, email us at offair@versuscreative.com. Please do not include any credit card or other sensitive information in your email.
 
 ### Privacy Policy Updates
-
 
 Periodically, there may be changes to our Privacy Policy, and we will notify you of any changes as may be required by law. Updates to the Privacy Policy will also be posted on our website, and we invite you to visit us for the most up to date information regarding our policies.
 
