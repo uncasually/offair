@@ -7,7 +7,8 @@ eleventyNavigation:
   order: ""
   key: ""
 ---
-### **PRIVACY POLICY**
+<footer>\
+  <p>**PRIVACY POLICY**
 
 OFFAIR Privacy Policy 
 Your Privacy Rights Last Updated: July 18, 2022
@@ -141,3 +142,5 @@ If you have any questions about this Policy or other privacy concerns, email us 
 Periodically, there may be changes to our Privacy Policy, and we will notify you of any changes as may be required by law. Updates to the Privacy Policy will also be posted on our website, and we invite you to visit us for the most up to date information regarding our policies.
 
 **2022 © OFFAIR, LLC | All Rights Reserved | Privacy Policy**
+
+</footer>
