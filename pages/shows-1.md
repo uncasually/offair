@@ -21,8 +21,6 @@ In celebration of '**Heart and Breath: Rhythm and Tone Fields (OFFAIR)**,' Richa
 
 
 
-
-
 <footer><p>**PRIVACY POLICY**
 
 OFFAIR Privacy Policy 
