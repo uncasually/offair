@@ -18,7 +18,9 @@ OFFAIR Records cultivates a space for established artists to release music that 
 
 OFFAIR shows provide an environment for artists and their fans to escape the outside world and tune in to an intimate, memorable experience. Artists can feel confident in vulnerability or trying something new, without the distractions of phones in the air. Each show is unique to the artist’s purpose, with a content strategy catered to the occasion.
 
-**<br><small>**
+**<br>**
+
+<font size="-1">
 
 ### OFFAIR Privacy Policy
 
@@ -152,6 +154,6 @@ If you have any questions about this Policy or other privacy concerns, email us 
 
 Periodically, there may be changes to our Privacy Policy, and we will notify you of any changes as may be required by law. Updates to the Privacy Policy will also be posted on our website, and we invite you to visit us for the most up to date information regarding our policies.
 
-**2022 © OFFAIR, LLC | All Rights Reserved</small></p>**
+**2022 © OFFAIR, LLC | All Rights Reserved</font></p>**
 
 **</body>**
