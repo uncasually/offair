@@ -8,7 +8,7 @@ eleventyNavigation:
   key: about
   order: 4
 ---
-**<body>**
+
 
 ### Listen with Intention
 
@@ -159,5 +159,3 @@ Periodically, there may be changes to our Privacy Policy, and we will notify you
 **2022 © OFFAIR, LLC | All Rights Reserved**
 
 **</font>**
-
-**</body>**
