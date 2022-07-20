@@ -18,7 +18,7 @@ OFFAIR Records cultivates a space for established artists to release music that 
 
 OFFAIR shows provide an environment for artists and their fans to escape the outside world and tune in to an intimate, memorable experience. Artists can feel confident in vulnerability or trying something new, without the distractions of phones in the air. Each show is unique to the artist’s purpose, with a content strategy catered to the occasion.
 
-**<p><br>**
+**</p><br>**
 
 
 
