@@ -1,5 +1,5 @@
 ---
-title: OFFAIR Privacy Policy
+title: Privacy Policy
 date: 2022-07-20T00:07:19.112Z
 permalink: PrivacyPolicy
 eleventyNavigation:
