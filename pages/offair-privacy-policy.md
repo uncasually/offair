@@ -5,10 +5,6 @@ permalink: /privacy/index.html
 eleventyNavigation:
   order: 0
 ---
-```html
-
-```
-
 ### **PRIVACY POLICY**
 
 OFFAIR Privacy Policy 
