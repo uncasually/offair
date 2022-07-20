@@ -18,7 +18,7 @@ OFFAIR shows provide an environment for artists and their fans to escape the out
 
 **<br>**
 
-**<font size="-2">**
+**<body><font size="-2">**
 
 ### OFFAIR Privacy Policy
 
@@ -154,4 +154,4 @@ Periodically, there may be changes to our Privacy Policy, and we will notify you
 
 **2022 © OFFAIR, LLC | All Rights Reserved**
 
-**</font>**
+**</font></body>**
