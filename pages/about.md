@@ -156,7 +156,9 @@ If you have any questions about this Policy or other privacy concerns, email us 
 
 Periodically, there may be changes to our Privacy Policy, and we will notify you of any changes as may be required by law. Updates to the Privacy Policy will also be posted on our website, and we invite you to visit us for the most up to date information regarding our policies.
 
-**2022 © OFFAIR, LLC | All Rights Reserved</font>**
+**2022 © OFFAIR, LLC | All Rights Reserved**
+
+**</font>**
 
 **</p>**
 
