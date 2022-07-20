@@ -3,7 +3,7 @@ title: OFFAIR Privacy Policy
 date: 2022-07-19T21:28:27.632Z
 permalink: /privacy/index.html
 eleventyNavigation:
-  order: 10
+  order: ""
 ---
 ### **PRIVACY POLICY**
 
