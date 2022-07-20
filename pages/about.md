@@ -20,9 +20,9 @@ OFFAIR shows provide an environment for artists and their fans to escape the out
 
 **<br>**
 
-**<small>**
 
-### OFFAIR Privacy Policy
+
+### **<small>**OFFAIR Privacy Policy
 
 Your Privacy Rights Last Updated: July 18, 2022
 
