@@ -3,7 +3,7 @@ title: OFFAIR Privacy Policy
 date: 2022-07-20T00:07:19.112Z
 permalink: PrivacyPolicy
 eleventyNavigation:
-  order: 0
+  order: -1
 ---
 Your Privacy Rights Last Updated: July 18, 2022
 
