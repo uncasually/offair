@@ -20,7 +20,11 @@ OFFAIR shows provide an environment for artists and their fans to escape the out
 
 **</p></body><br>**
 
-### **<body>**<p><font size="-2">
+### **<body>**
+
+### <p>
+
+### <font size="-2">
 
 ### OFFAIR Privacy Policy
 
