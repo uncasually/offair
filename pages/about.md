@@ -160,4 +160,6 @@ Periodically, there may be changes to our Privacy Policy, and we will notify you
 
 **2022 © OFFAIR, LLC | All Rights Reserved**
 
-**</font></p></body>**
+**</font></p>**
+
+**</body>**
