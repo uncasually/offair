@@ -8,7 +8,7 @@ eleventyNavigation:
   key: about
   order: 4
 ---
-**<body><p>**
+**<body><p><medium>**
 
 ### Listen with Intention
 
