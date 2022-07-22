@@ -6,7 +6,7 @@ showlink: https://bandsintown.com/e/103622528?&came_from=210&_ga=2.247471239.143
 metaDescription: We create deeper experiences with music.
 title: shows
 content: null
-showimage: /static/img/001-offair-r-s-artwork-fulllp-3000x3000.jpg
+showimage: /static/img/puklh1yc.jpeg
 eleventyNavigation:
   key: experiences
   order: 1
