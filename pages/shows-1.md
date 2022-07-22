@@ -11,4 +11,4 @@ eleventyNavigation:
   key: experiences
   order: 1
 ---
-In celebration of '**Heart and Breath: Rhythm and Tone Fields (OFFAIR)**,' Richard Reed Parry and Susie Ibarra will perform live to the heartbeats of audience members at Public Records in Brooklyn, NY, on October 25th. Get your tickets to this unique experience at the link below.
+In celebration of '**Heart and Breath: Rhythm and Tone Fields (OFFAIR)**,' Richard Reed Parry and Susie Ibarra will perform live to the heartbeats of audience members at Public Records in Brooklyn, NY, on October 25th. Tickets are onsale now for this unique experience.
