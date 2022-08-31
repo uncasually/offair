@@ -29,7 +29,7 @@ const Post = createClass({
           ${this.props.widgetFor("body")}
           <p>
             <a href="https://www.instagram.com/${entry.getIn(["data", "instagram"], null)}" rel="instagram" class="article-social ig-link"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="${entry.getIn(["data", "spotify"], null)}" rel="spotify" class="article-social spotify-link"><i class="fab fa-spotify fa-2x"></i></a>
+            <a href="${entry.getIn(["data", "spotify"], null)}" rel="spotify" class="article-social spotify-link"><i class="fa-solid fa-music fa-2x"></i></a>
           </p>
           <p>
             ${
