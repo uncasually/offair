@@ -5,7 +5,8 @@
   <title>{{ renderData.title or title or metadata.title }}</title>
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  {#<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">#}
+  <script src="https://kit.fontawesome.com/580d724a13.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css" integrity="sha512-ZUWwHDCkhRcdPWTAZIGzneefBW7S6jIzhZwZiJrIh/1TSM/TtsL+oyifTfczhp7uBkp6Hqpwu+FKx8YBSkDY0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>body { opacity: 1; transition: 1s opacity; background-image: linear-gradient(160deg, rgba(218, 217, 211, .0), rgba(161, 143, 126, .05), rgba(99, 118, 104, .1)), linear-gradient(15deg, rgba(218, 217, 211, .0),rgba(115, 149, 156, .1), rgba(218, 217, 211, .0)); background-position: 0px 0px, 0px 0px; background-size: cover, cover; background-repeat: no-repeat, no-repeat; background-attachment: fixed,fixed; } .body-content { opacity: 0; transition: 2s opacity;} .body-content.loaded { opacity: 1; transition: 2s opacity;}</style>
   {% set css %}
