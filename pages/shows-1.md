@@ -15,6 +15,6 @@ eleventyNavigation:
   key: experiences
   order: 1
 ---
-OFFAIR is hosting an intimate performance and conversation celebrating the release of iLe's new album, **Nacarile** on October 21st at Public Records in Brooklyn, NY. Tickets are free with RSVP.
+OFFAIR is hosting an intimate performance and conversation celebrating the release of Grammy-winning Puerto Rican artist iLe's new album, **Nacarile** on October 21st at Public Records in Brooklyn, NY. Tickets are free with RSVP.
 
 In celebration of '**Heart and Breath: Rhythm and Tone Fields (OFFAIR)**,' Richard Reed Parry and Susie Ibarra will perform live to the heartbeats of audience members at Public Records in Brooklyn, NY, on October 25th. Tickets are onsale now for this unique experience.
