@@ -3,6 +3,9 @@ layout: layouts/shows.njk
 date: 2021-10-20T23:50:29.573Z
 permalink: /shows/index.html
 showlink: >-
+  https://www.bandsintown.com/a/15497151-offair
+
+
   https://bandsintown.com/e/103818594?&came_from=210&_ga=2.221447643.294732652.1664841110-1436411429.1664303688
 
 
