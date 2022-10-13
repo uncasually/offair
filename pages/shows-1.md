@@ -16,7 +16,7 @@ showlink: >-
 metaDescription: We create deeper experiences with music.
 title: shows
 content: null
-showimage: /static/img/img_4190-2.jpg
+showimage: /static/img/img_4406.jpg
 eleventyNavigation:
   key: experiences
   order: 1
