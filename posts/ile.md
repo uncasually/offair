@@ -1,6 +1,6 @@
 ---
 title: iLe
-image: /static/img/offair-shows-ile-1080x1350.jpg
+image: /static/img/offair-shows-ile-1080x1080.jpg
 date: 2022-10-23T21:26:07.605Z
 location: Public Records, Brooklyn
 summary: iLe at Public Records
