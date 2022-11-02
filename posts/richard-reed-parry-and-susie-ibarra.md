@@ -15,6 +15,8 @@ gallery:
   - /static/img/bw-l1006814.jpg
   - /static/img/dtldn3w.jpeg
   - /static/img/svwmttm4.jpeg
+  - /static/img/bw-l1006672.jpg
+  - /static/img/bw-l1007036.jpg
 ---
 The performances at Ludlow House, Modo Yoga and Public Records by Richard Reed Parry and Susie Ibarra mesmerized the crowd as they performed music to the rhythm of audience member's heartbeats. 
 
