@@ -8,6 +8,9 @@ tags:
   - events
 instagram: rrparry
 spotify: https://open.spotify.com/album/7pooJkk30lUyNZSFY0GXQG?si=6Z7IbLf4TVylfEvragFGkQ
+gallery:
+  - /static/img/bw-l1006647.jpg
+  - /static/img/bw-l1006751.jpg
 ---
 The performances at Ludlow House, Modo Yoga and Public Records by Richard Reed Parry and Susie Ibarra mesmerized the crowd as they performed music to the rhythm of audience member's heartbeats. 
 
