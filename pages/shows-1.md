@@ -6,7 +6,7 @@ showlink: https://paulithepsm-11-8.splashthat.com
 metaDescription: We create deeper experiences with music.
 title: shows
 content: null
-showimage: /static/img/1080x1350.jpg
+showimage: /static/img/1080x1350-2.jpg
 eleventyNavigation:
   key: experiences
   order: 1
