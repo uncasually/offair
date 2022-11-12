@@ -8,5 +8,7 @@ tags:
   - events
 instagram: paulithepsm
 spotify: https://open.spotify.com/album/1gUxFwmsNfsAmyrirHs3hG?si=_xeNBpz0SaW4Tx0tbZeMBw
+gallery:
+  - /static/img/dsc08065.jpg
 ---
 We celebrated Pauli The PSM’s OFFAIR album and their completion of another year around the sun with an otherworldly journey through outer space at the Dolby Screening Room. Thank you to those that joined us and to all who helped make it possible. Happy Birthday Pauli!
