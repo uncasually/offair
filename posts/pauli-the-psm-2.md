@@ -1,0 +1,12 @@
+---
+title: Pauli The PSM
+image: /static/img/1080x1080.jpg
+date: 2022-11-12T00:36:06.291Z
+location: Dolby Atmos Screening Room, Los Angeles
+summary: Pauli The PSM
+tags:
+  - events
+instagram: paulithepsm
+spotify: https://open.spotify.com/album/1gUxFwmsNfsAmyrirHs3hG?si=_xeNBpz0SaW4Tx0tbZeMBw
+---
+We celebrated Pauli The PSM’s OFFAIR album and their completion of another year around the sun with an otherworldly journey through outer space at the Dolby Screening Room. Thank you to those that joined us and to all who helped make it possible. Happy Birthday Pauli!
