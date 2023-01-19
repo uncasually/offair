@@ -1,6 +1,6 @@
 ---
 title: Niia
-image: /static/img/1080x1080.jpg
+image: /static/img/1080x1350.jpg
 date: 2022-05-05T00:28:36.498Z
 location: Public Records, Brooklyn
 summary: Niia at Public Records
