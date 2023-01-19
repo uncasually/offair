@@ -1,6 +1,6 @@
 ---
 title: Salt Cathedral & duendita
-image: /static/img/008_square.jpg
+image: /static/img/square_offair007.jpg
 date: 2020-04-14T16:09:47.970Z
 location: OFFAIR Online
 summary: "  "
