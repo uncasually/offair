@@ -1,6 +1,6 @@
 ---
 title: Richard Reed Parry and Susie Ibarra
-image: /static/img/offair-r-s-tour-1080x1350.jpg
+image: /static/img/1080x1350-5.jpg
 date: 2022-11-02T22:14:58.970Z
 location: Ludlow House, Modo Yoga Williamsburg, Public Records
 summary: Richard Reed Parry and Susie Ibarra
