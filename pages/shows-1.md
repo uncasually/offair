@@ -6,7 +6,7 @@ showlink: https://bandsintown.com/e/104083330?&came_from=210&_ga=2.67533265.1710
 metaDescription: We create deeper experiences with music.
 title: shows
 content: null
-showimage: /static/img/1080x1350-2.jpg
+showimage: /static/img/1080x1080.jpg
 eleventyNavigation:
   key: experiences
   order: 1
