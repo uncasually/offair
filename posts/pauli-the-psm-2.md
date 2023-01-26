@@ -12,5 +12,6 @@ gallery:
   - /static/img/dsc08065.jpg
   - /static/img/dsc08092.jpg
   - /static/img/dsc08095.jpg
+permalink: "posts/{{ title | slugify }}2/index.html"
 ---
 We celebrated Pauli The PSM’s OFFAIR album and their completion of another year around the sun with an otherworldly journey through outer space at the Dolby Screening Room. Thank you to those that joined us and to all who helped make it possible. Happy Birthday Pauli!
