@@ -1,6 +1,6 @@
 ---
 title: Meshell Ndegeocello and Nick Hakim
-image: /static/img/1080x1080.jpg
+image: /static/img/1080x1080-3.jpg
 date: 2023-03-03T21:53:20.630Z
 location: Public Records, Brooklyn, NY
 summary: Meshell Ndegeocello and Nick Hakim at Public Records
