@@ -8,6 +8,13 @@ tags:
   - events
 instagram: en_hakim
 spotify: https://open.spotify.com/artist/0uZRjholJ0fVC2J9EvnYnj?si=P124BI3cRxiHUlIMYOQ6Xg
+gallery:
+  - /static/img/2023_3_1_offair_©laurajunekirsch_250-laura-kirsch.jpg
+  - /static/img/2023_3_1_offair_©laurajunekirsch_343-laura-kirsch.jpg
+  - /static/img/2023_3_1_offair_©laurajunekirsch_374-laura-kirsch.jpg
+  - /static/img/2023_3_1_offair_©laurajunekirsch_530-laura-kirsch.jpg
+  - /static/img/2023_3_1_offair_©laurajunekirsch_609-laura-kirsch.jpg
+  - /static/img/2023_3_1_offair_©laurajunekirsch_690-laura-kirsch.jpg
 ---
 Public Records overflowed two times over as we came together to hear the beautiful performances of Meshell Ndegeocello and Nick Hakim in support of Sounds of Saving, a mental health organization that leverages the power of music to save lives.
 
