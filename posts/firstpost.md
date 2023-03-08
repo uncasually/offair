@@ -31,6 +31,8 @@ Moses mesmerized the room for 2 hours with music from the recently released Græ
 
 In the yet-to-be-released, “Bless Me,” which became notorious for its special guests in his recent LA residency, Moses invited the crowd to join. Our voices became part of the song, and the band brought the room closer together. 
 
+V﻿iew and download show photos [HERE](https://www.dropbox.com/sh/wuv3504qicfd9er/AADAatEt90PgaLrxNvVMWyiGa?dl=0)
+
 ![]()
 
 Moses is an artist who cannot be contained or categorized. There’s no genre, no note he can’t hit and no limit to what he can do. At one point, he gracefully floated onto the Sound Room floor and parted the crowd to bring us to the promised land. \[insert pic of him with audience member]
