@@ -21,3 +21,5 @@ gallery:
 The performances at Ludlow House, Modo Yoga and Public Records by Richard Reed Parry and Susie Ibarra mesmerized the crowd as they performed music to the rhythm of audience member's heartbeats. 
 
 A big thank you to Richard Reed Parry, Susie Ibarra, Parker Shper for your beautiful music, Sandeep Jauhar and Sing For Science for your insightful and transformative conversation, Ludlow House, Modo Yoga and Public Records for being our home and Sounds of Saving for supporting the event.
+
+V﻿iew and download show photos [HERE](https://www.dropbox.com/sh/mzcoo3wk064a63u/AABjPQYwXkF1V3upcXsiAA56a?dl=0)
