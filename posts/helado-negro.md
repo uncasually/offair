@@ -19,3 +19,5 @@ gallery:
   - /static/img/dsc_0932.jpg
 ---
 With the first OFFAIR back at Public Records since March 2020, Helado Negro and his six piece band captivated a crowded house with songs and stories from his new album, ‘Far In.’ It was great to be back. Much thanks and love to Helado Negro, Jace Clayton, Public Records and 4AD for making it happen.
+
+V﻿iew and download show photos [HERE](https://www.dropbox.com/sh/91endqhlrervy5d/AADxJ5yl41iy3r42WmA5HKCAa?dl=0)
