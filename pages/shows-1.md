@@ -2,7 +2,7 @@
 layout: layouts/shows.njk
 date: 2021-10-20T23:50:29.573Z
 permalink: /shows/index.html
-showlink: https://bandsintown.com/e/104311810?came_from=297&utm_medium=web&utm_source=copy_link&utm_campaign=event_social_share
+showlink: https://artists.bandsintown.com/artists/15497151/events/upcoming
 metaDescription: We create deeper experiences with music.
 title: shows
 content: null
