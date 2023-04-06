@@ -5,7 +5,7 @@ summary: sunrise mtn (feat. John Mark Nelson)
 year: "2023"
 date: 2023-04-06T18:07:25.382Z
 instagram: jennyowenyoungs
-spotify: https://spotify.link/JvgLO8iCMyb
+spotify: https://offair.co/records/jenny-owen-youngs/
 ---
 Renowned folk artist Jenny Owen Youngs is announcing a transportive, ambient album from the forest floor via OFFAIR Records, out May 5th, intended to be listened to while hiking amongst woodland greenery, or imagining oneself doing so. 
 
