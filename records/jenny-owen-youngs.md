@@ -1,7 +1,7 @@
 ---
 title: JENNY OWEN YOUNGS
 image: /static/img/joy-fromtheforestfloor-sunrisemtn.jpg
-summary: sunrise mtn
+summary: sunrise mtn (feat. John Mark Nelson)
 year: "2023"
 date: 2023-04-06T18:07:25.382Z
 instagram: jennyowenyoungs
