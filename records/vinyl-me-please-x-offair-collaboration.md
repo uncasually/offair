@@ -1,6 +1,6 @@
 ---
 title: VINYL ME PLEASE X OFFAIR COLLABORATION
-image: /static/img/untitled-design-4.jpg
+image: /static/img/untitled-design-5.jpg
 summary: " "
 year: "2023"
 date: 2023-04-11T19:33:49.718Z
