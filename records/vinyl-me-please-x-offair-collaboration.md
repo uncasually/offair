@@ -1,8 +1,7 @@
 ---
 title: VINYL ME PLEASE X OFFAIR COLLABORATION
 image: /static/img/untitled-design-4.jpg
-summary: Vinyl drop from four artists in the OFFAIR discography, Highland Park
-  Sleep Collective, If Anything, Suspicious, Niia and Pauli the PSM.
+summary: " "
 year: "2023"
 date: 2023-04-11T19:33:49.718Z
 instagram: vinylmeplease
