@@ -1,5 +1,5 @@
 ---
-title: Jenny Owens Young
+title: Jenny Owen Youngs
 image: /static/img/offair_joy_dolby-event-invite_1080x1350_edit.jpg
 date: 2023-06-22T21:22:33.001Z
 location: Dolby Screening Room
