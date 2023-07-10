@@ -2,3 +2,10 @@ _site/
 node_modules/
 package-lock.json
 .env
+.DS_Store
+_includes/.DS_Store
+_includes/assets/.DS_Store
+_includes/assets/fonts/.DS_Store
+_includes/assets/js/.DS_Store
+static/.DS_Store
+static/img/.DS_Store
