@@ -595,8 +595,8 @@ header nav li a[href]:not(:hover) {
 .link-btn:hover:after {
   background-color: var(--primary);
   bottom: -.15em;
-	left: .14rem;
-	width: 103%;
+	left: .12rem;
+	width: 101%;
 	height: .13em;
 }
 
