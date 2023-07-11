@@ -1302,6 +1302,13 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 }
 
 @media (min-width: 768px) {
-.contact-form {
-  width: 50vw;
+  .contact-form {
+    width: 50vw;
+  }
+}
+.gMx7ZQAGhBSydDebRjyI {
+  border-radius: 0!important;
+}
+.embed-widget-container.has-track-list .LKKneJCVRLbYQrEtNZ8g {
+  border-radius: 0!important;
 }
