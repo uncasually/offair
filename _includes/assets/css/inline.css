@@ -1076,12 +1076,12 @@ xslide
     left: 0;
   }
 }
-.pl-container {
+/* .pl-container {
   text-align: center;
-}
-.pl-container iframe {
+} */
+/* .pl-container iframe {
   border: 2px solid var(--primary);
-}
+} */
 .home-menu {
   display: grid;
   grid-template-columns: repeat(3, 12.5%) 25% repeat(3, 12.5%);
@@ -1112,12 +1112,12 @@ xslide
 
 .s-player {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
 }
 @media only screen and (min-width: 768px) {
   .s-player {
     width:60%;
-    height: 200px;
+    /* height: 200px; */
   }
 }
 #mc_embed_signup p {
