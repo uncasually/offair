@@ -428,11 +428,14 @@ header nav li a[href]:not(:hover) {
 .pl-select {
   font-family: "BG Light";
   font-size: 3rem;
-  height: 3.75rem;
+  width: 100%;
   margin-top: 0;
+  padding: 10px;
   background-color: transparent;
   border: 0;
   appearance: none;
+  text-align: center;
+  cursor: pointer;
 }
 
 .pl-select option {
@@ -443,10 +446,8 @@ header nav li a[href]:not(:hover) {
   font-size: 3.25rem;
   background-color: #73959c;
   color: var(--primary);
-  cursor: pointer;
   width: 100%;
-  height: 6rem;
-  padding: 0 10px;
+  padding: 0;
   margin: 0 1rem;
   position: relative;
   align-self: center;

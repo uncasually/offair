@@ -970,7 +970,10 @@ if( $('body').hasClass('generator') ){
         );
         return;
       } else {
-        $("#link").text("❔❔").show();
+        //$("#link").text("❔❔").show();
+        $("#link").html(
+          '<a href="#" >❔❔</a>'
+        );
       }
       //event.preventDefault();
     });
