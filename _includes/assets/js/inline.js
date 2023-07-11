@@ -15,58 +15,11 @@ if (window.netlifyIdentity) {
     }
   });
 }
-/*
-$.parallaxify({
-  // enable parallax effect for horizontal, vertical or both directions
-  horizontalParallax: true,
-  verticalParallax: true,
-
-  // enable or disable parallax effect for elements or backgrounds
-  parallaxBackgrounds: true,
-  parallaxElements: true,
-
-  // set which positioning property is to be used
-  // options include 'position' or 'transform' using css transformations
-  //positionProperty: 'position',
-  positionProperty: 'transform',
-
-  // enable for responsive layouts
-  // (upon orientation changes or window resizing element positions are reevaluated
-  responsive: true,
-
-  // enable or disable mouse or gyroscope data as input for the plugin
-  useMouseMove: true,
-  useGyroscope: true,
-
-  // use a Low Pass Filter to smooth sensor readings (1 = no filter)
-  alphaFilter: 0.9,
-
-  // set which motion type algorithm is to be used
-  // options include 'natural', 'linear', 'gaussian', or 'performance'
-  motionType: 'natural',
-  mouseMotionType: 'gaussian',
-
-// define which sensor input has priority over the other
-// options are either 'mouse' or 'gyroscope'
-inputPriority: 'mouse',
-
-  // define the delta angle (0 < motionAngle < 90)
-  // that is used to render max parallax in this direction
-  motionAngleX: 80,
-  motionAngleY: 80,
-
-  // enable of adjustment of base position (using a Low Pass Filter)
-  // (adapting to device usage while plugin is running)
-  adjustBasePosition: true,
-  // alpha for Low Pass Filter used to adjust average position
-  alphaPosition: 0.05,
-});
-*/
 
 ////////////////////////////////
 /* - SHAPE EFFECTS - */
 ////////////////////////////////
-//const hoverItem = document.querySelector('p')
+
 var ct = 0;
 
 const blob1 = createBlob({
@@ -119,33 +72,33 @@ const root = document.documentElement;
 TweenMax.to(color, 20, {h:160, onUpdate:applyColor, ease:Linear.easeNone, repeat:-1});
 
 function applyColor() {
-  
+
   //root.style.setProperty("--stopColor", "hsl(" + color.h + "," + color.s + "%," + color.l + "%)");
   //element.style.backgroundColor = "hsl(" + color.h + "," + color.s + "%," + color.l + "%)";
-  
+
 
 }
 
-TweenMax.to(blob1.tl, 0.3, { 
+TweenMax.to(blob1.tl, 0.3, {
   timeScale: 1,
   onStart() {
     blob1.tl.play()
   }
 });
-TweenMax.to(blob2.tl, 0.2, { 
+TweenMax.to(blob2.tl, 0.2, {
   timeScale: 1,
   onStart() {
     blob2.tl.play()
   }
 });
-TweenMax.to(blob3.tl, 0.52, { 
+TweenMax.to(blob3.tl, 0.52, {
   timeScale: 1,
   onStart() {
     blob3.tl.play()
   }
 });
 
-TweenMax.to(blob4.tl, 0.32, { 
+TweenMax.to(blob4.tl, 0.32, {
   timeScale: 1,
   onStart() {
     blob4.tl.play()
@@ -187,7 +140,7 @@ function createBlob(options) {
 
     options.tl = tl
     options.points = points
-  
+
   tl.progress(1).progress(0).timeScale(0)
     update()
 
@@ -255,24 +208,24 @@ if( $('body').hasClass('home') ){
     ease: "none"
     //duration: 1
   });
-  
+
   var header = document.querySelector(".header");
   var shapes = document.querySelector(".logo-shape");
   var logo = document.querySelector(".logo");
   var logoLink = document.querySelector(".logo-link");
   var deltaHeight = header.offsetHeight + logo.offsetHeight;
   //var deltaHeight = logo.offsetHeight - header.offsetHeight;
-  
+
   var fsize1 = 115;
   var fsize2 = 160;
-  
+
   var scale = fsize1 / fsize2;
   var x = 0;
   var y = 20 + "%";
-  
-  
+
+
   var mql = window.matchMedia('(max-width: 767px)');
-  
+
   function createTimeline(e) {
     if (e.matches) {
       var headerAnimation = gsap.timeline({ paused: false })
@@ -280,31 +233,31 @@ if( $('body').hasClass('home') ){
       headerAnimation.to(logo, { duration: 3, scale: 1, x: x, y: 0 })
       headerAnimation.from(shapes, { scale: 1.15, x: 0, y: 15 + "%" })
       headerAnimation.to(shapes, { duration: .5, scale: 1, x: x, y: 0 })
-  
-    } else {  
+
+    } else {
       var headerAnimation = gsap.timeline({ paused: true })
       headerAnimation.from(logo, { scale: 1.35, x: 0, y: 260 + "%" }, 0)
       headerAnimation.to(logo, { scale: 1, x: x, y: y }, 0)
       headerAnimation.from(shapes, { scale: 1.35, x: 0, y: 145 + "%" }, 0)
       headerAnimation.to(shapes, { scale: 0.95, x: x, y: 0 }, 1)
-  
+
       var progress  = 0;
       var requestId = null;
       var reversed  = true;
-  
+
       update();
       window.addEventListener("scroll", requestUpdate);
-  
+
       function requestUpdate() {
         if (!requestId) {
           requestId = requestAnimationFrame(update);
         }
       }
-  
+
       function update() {
-  
+
         var scroll = window.pageYOffset;
-  
+
         if (scroll < deltaHeight) {
           progress = scroll < 0 ? 0 : scroll / deltaHeight;
           reversed = true;
@@ -312,13 +265,13 @@ if( $('body').hasClass('home') ){
           progress = 1;
           reversed = false;
         }
-  
+
         headerAnimation.progress(progress);
         requestId = null;
       }
-  
+
       let body = document.body;
-  
+
       gsap.to("body", {
         scrollTrigger: {
           trigger: "body",
@@ -331,7 +284,7 @@ if( $('body').hasClass('home') ){
           //markers: true
         }
       });
-  
+
       function refresh() {
         setTimeout(() => {
           ScrollTrigger.refresh();
@@ -339,25 +292,25 @@ if( $('body').hasClass('home') ){
       }
     }
   }
-  
+
   mql.addListener(createTimeline);
-  
+
   // First run
   createTimeline(mql);
-  
+
   //window.addEventListener("resize", refresh);
   } else {
     var header = document.querySelector(".header");
     var shapes = document.querySelector(".logo-shape");
     var logo = document.querySelector(".logo");
-  
+
     gsap.from(logo, { scale: 1.35, x: 0, y: 90 + "%" });
     gsap.to(logo, { duration: 3.25, scale: 1, x: 0, y: 20 + "%"});
     //gsap.to(logo, { duration: 3.25, yoyo: true, scale: 1.1, x: 0, y: 25 + "%", repeat: -1 });
     gsap.from(shapes, { scale: 1.35, x: 0, y: 45 + "%" });
     gsap.to(shapes, { duration: 3,scale: 0.95, x: 0, y: 0 });
   }
-  
+
 /////////////////////////////
 /* - WORD SWAP ANIMATION - */
 /////////////////////////////
@@ -396,8 +349,8 @@ jQuery(document).ready(function($){
 				if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
 				letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
 			}
-		    var newLetters = letters.join('');
-		    word.html(newLetters).css('opacity', 1);
+      var newLetters = letters.join('');
+      word.html(newLetters).css('opacity', 1);
 		});
 	}
 
@@ -413,15 +366,6 @@ jQuery(document).ready(function($){
 				var spanWrapper = headline.find('.listen-words-wrapper'),
 					newWidth = spanWrapper.width() + 0
 				spanWrapper.css('width', newWidth);
-			/*} else if (!headline.hasClass('type') ) {
-				//assign to .listen-words-wrapper the width of its longest word
-				var words = headline.find('.listen-words-wrapper b'),
-					width = 0;
-				words.each(function(){
-					var wordWidth = $(this).width();
-				    if (wordWidth > width) width = wordWidth;
-				});
-				headline.find('.listen-words-wrapper').css('width', width);*/
 			};
 
 			//trigger animation
@@ -480,9 +424,9 @@ jQuery(document).ready(function($){
 		$letter.removeClass('in').addClass('out');
 
 		if(!$letter.is(':last-child')) {
-		 	setTimeout(function(){ hideLetter($letter.next(), $word, $bool, $duration); }, $duration);
+      setTimeout(function(){ hideLetter($letter.next(), $word, $bool, $duration); }, $duration);
 		} else if($bool) {
-		 	setTimeout(function(){ hideWord(takeNext($word)) }, animationDelay);
+      setTimeout(function(){ hideWord(takeNext($word)) }, animationDelay);
 		}
 
 		if($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
@@ -521,78 +465,44 @@ jQuery(document).ready(function($){
 //////////////////////////////
 
 if( $('body').hasClass('generator') ){
-  /*
-  var plOption = document.querySelector(".pl-option");
-    var iconArray = [];
-    $(".pl-option").each(function () {
-      var img = $(this).attr("data-thumbnail");
-      var text = this.innerText;
-      var value = $(this).val();
-      //var item = '<li><img src="'+ img +'" alt="" value="'+value+'"/><span>'+ text +'</span></li>';
-      var item = '<li><img src="'+ img +'" alt="" value="'+ value +'"/></li>';
-      iconArray.push(item);
-    });
-
-    $("#btn-item").html(iconArray);
-
-    //Set the button value to the first el of the array
-    $(".btn-select").html(iconArray[0]);
-    $(".btn-select").attr("value", "hold");
-
-    //change button stuff on click
-    $("#btn-item li").click(function () {
-      var img = $(this).find("img").attr("src");
-      var value = $(this).find("img").attr("value");
-      var text = this.innerText;
-      var item = '<li><img src="' + img + '" alt="" /></li>';
-      $(".btn-select").html(item);
-      $(".btn-select").attr("value", value);
-      $(".btn-inner").toggle();
-      //console.log(value);
-    });
-
-    $(".btn-select").click(function () {
-      $(".btn-inner").toggle();
-    });
-  */
   /////////////////////////////////
   // ADD NEW OPTIONS UPON SELECT //
   /////////////////////////////////
   var Select_List_Data = {
     'choices': { // name of associated select list
-      // names match option values in controlling select list
+    // names match option values in controlling select list
       hold: {
-        text: '?'
+        text: "❔",
       },
       morning: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
-        value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-          },
+        text: ["❔", "🎹", "🎛️", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic", "nature"]
+      },
       evening: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
-        value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-          },
+        text: ["❔", "🎹", "🎛️", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic", "nature"]
+      },
       sleep: {
-        text: ['?', 'Piano', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
-        value: ['0', 'piano', 'noise', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-          },
+        text: ["❔", "🎹", "⬜", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        value: [ "0", "piano", "noise", "classical", "acoustic", "jazz", "electronic", "nature"]
+      },
       focus: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic'],
-        value: ['0', 'piano', 'lofi', 'noise', 'classical', 'acoustic', 'jazz', 'electronic']
-          },
+        text: ["❔", "🎹", "🎛️", "⬜", "🎼", "🎵", "🎷", "🎚️"],
+        value: [ "0", "piano", "lofi", "noise", "classical", "acoustic", "jazz", "electronic"]
+      },
       relax: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
-        value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-          },
+        text: ["❔", "🎹", "🎛️", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic", "nature"]
+      },
       cooking: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Classical', 'Acoustic', 'Jazz','Electronic'],
-        value: ['0', 'piano', 'lofi', 'classical', 'acoustic', 'jazz', 'electronic']
-          },
+        text: ["❔", "🎹", "🎛️", "🎼", "🎵", "🎷", "🎚️"],
+        value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic"]
+      },
       meditation: {
-        text: ['?', 'Piano', 'Lo-Fi', 'Noise', 'Classical', 'Acoustic', 'Jazz','Electronic','Nature'],
-        value: ['0', 'piano', 'lofi', 'noise', 'classical', 'acoustic', 'jazz', 'electronic', 'nature']
-          }
+        text: ["❔", "🎹", "🎛️", "⬜", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        value: [ "0", "piano", "lofi", "noise", "classical", "acoustic", "jazz", "electronic", "nature"]
       }
+    }
   };
 
   function removeAllOptions(sel, removeGrp) {
@@ -680,394 +590,392 @@ if( $('body').hasClass('generator') ){
     event.preventDefault();
   });
 
-  $( "#choices" )
-    .change(function() {
-      var str = "";
-      $( "select option:selected" ).each(function() {
-        str += $( this ).text() + " ";
-      });
-      //$( "div" ).text( str );
+  $( "#choices" ).change(function() {
+    var str = "";
+    $( "select option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
     var fields = $( "form" ).serializeArray();
-      //$( "div" ).empty();
-      var morning = 0
-      var evening = 0
-      var sleep = 0
-      var focus = 0
-      var relax = 0
-      var cooking = 0
-      var meditate = 0
-      var piano = 0
-      var lofi = 0
-      var noise = 0
-      var classic = 0
-      var acoustic = 0
-      var jazz = 0
-      var electronic = 0
-      var nature = 0
-      jQuery.each( fields, function( i, field ) {
-        //$( "div" ).append( field.value + " " );
+    var morning = 0
+    var evening = 0
+    var sleep = 0
+    var focus = 0
+    var relax = 0
+    var cooking = 0
+    var meditate = 0
+    var piano = 0
+    var lofi = 0
+    var noise = 0
+    var classic = 0
+    var acoustic = 0
+    var jazz = 0
+    var electronic = 0
+    var nature = 0
+    jQuery.each( fields, function( i, field ) {
 
-        if (field.value == "morning") { morning = true }
-        if (field.value == "evening") { evening = true }
-        if (field.value == "sleep") { sleep = true }
-        if (field.value == "focus") { focus = true }
-        if (field.value == "relax") { relax = true }
-        if (field.value == "cooking") { cooking = true }
-        if (field.value == "meditation") { meditate = true }
-        if (field.value == "piano") { piano = true }
-        if (field.value == "lofi") { lofi = true }
-        if (field.value == "noise") { noise = true }
-        if (field.value == "classical") { classic = true }
-        if (field.value == "acoustic") { acoustic = true }
-        if (field.value == "jazz") { jazz = true }
-        if (field.value == "electronic") { electronic = true }
-        if (field.value == "nature") { nature = true }
+      if (field.value == "morning") { morning = true }
+      if (field.value == "evening") { evening = true }
+      if (field.value == "sleep") { sleep = true }
+      if (field.value == "focus") { focus = true }
+      if (field.value == "relax") { relax = true }
+      if (field.value == "cooking") { cooking = true }
+      if (field.value == "meditation") { meditate = true }
+      if (field.value == "piano") { piano = true }
+      if (field.value == "lofi") { lofi = true }
+      if (field.value == "noise") { noise = true }
+      if (field.value == "classical") { classic = true }
+      if (field.value == "acoustic") { acoustic = true }
+      if (field.value == "jazz") { jazz = true }
+      if (field.value == "electronic") { electronic = true }
+      if (field.value == "nature") { nature = true }
 
-              //Morning Piano
-        if ((morning == true) && (piano == true)) {
-          //$( "span" ).text( "Match Morning Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4uKuvvMIp02dkJySji7Add?si=LH6ZFLXXRLCr4mwT8ctfRQ" target="_blank">Morning Piano</a>');
-          return;
-        }
-
-        //Morning Lofi
-        if ((morning == true) && (lofi == true)) {
-          //$( "span" ).text( "Match Morning Lofi" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4vFrDonS8GZop4WenI9xf2?si=AVaAJ5VmSr2LKXFbUqwRJg" target="_blank">Morning Lo-Fi</a>');
-          return;
-        }
-
-        //Morning Classical
-        if ((morning == true) && (classic == true)) {
-          //$( "span" ).text( "Match Morning Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/5nJ0JPYiA6ArTbRd8QRqbW?si=RoxGcSb1QLeKA4UdJqAecg" target="_blank">Morning Classical</a>');
-          return;
-        }
-
-        //Morning Acoustic
-        if ((morning == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match Morning Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/24M61a0YyLiqnKPisC9XTa?si=zP36n7BpRn2f9T-Mz4_72g" target="_blank">Morning Acoustic</a>');
-          return;
-        }
-
-        //Morning Jazz
-        if ((morning == true) && (jazz == true)) {
-          //$( "span" ).text( "Match Morning Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/19kt9zTTngQyErMQ7mGb5O?si=LFSCfNI9TlqzN8PChcuu9g" target="_blank">Morning Jazz</a>');
-          return;
-        }
-
-        //Morning Electronic
-        if ((morning == true) && (electronic == true)) {
-          //$( "span" ).text( "Match Morning Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0MZcueIpEnbgl7CFQh04my?si=OhGJ57NxQU6hYb2RE2co1A" target="_blank">Morning Electronic</a>');
-          return;
-        }
-
-        //Morning Nature
-        if ((morning == true) && (nature == true)) {
-          //$( "span" ).text( "Match Morning Nature" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/7ljmzKm7siQSKF5xDhxrMQ?si=Zq59cp78SgGe9ZPmWwKb8Q" target="_blank">Morning Nature</a>');
-          return;
-        }
-        //evening Piano
-        if ((evening == true) && (piano == true)) {
-          //$( "span" ).text( "Match evening Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4sjMQVuhQBgDuv1ORKCQE0?si=kZ4p9POyQ-a_Mh9WdE8WDw" target="_blank">Evening Piano</a>');
-          return;
-        }
-
-        //evening Lofi
-        if ((evening == true) && (lofi == true)) {
-          //$( "span" ).text( "Match evening Lofi" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/2dPR6WDlNXGuGQSI8pz2Ro?si=bdDBgCjLRrCPfPkv9OKyyA" target="_blank">Evening Lo-Fi</a>');
-          return;
-        }
-
-        //evening Classical
-        if ((evening == true) && (classic == true)) {
-          //$( "span" ).text( "Match evening Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/75Wqs0JumMbH2LC3iC1RHJ?si=JrfesioHTWy9PP3NWtuHUQ" target="_blank">Evening Classical</a>');
-          return;
-        }
-
-        //evening Acoustic
-        if ((evening == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match evening Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6T5yjTG9miqPUUcSdSKdUW?si=S_1ZtQijSL62sL8YZ0Sj-g" target="_blank">Evening Acoustic</a>');
-          return;
-        }
-
-        //evening Jazz
-        if ((evening == true) && (jazz == true)) {
-          //$( "span" ).text( "Match evening Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/2aAYyH5Ry9AKDR1jdkxrwa?si=_CRyG5uASiqm1pc6QhasIg" target="_blank">Evening Jazz</a>');
-          return;
-        }
-
-        //evening Electronic
-        if ((evening == true) && (electronic == true)) {
-          //$( "span" ).text( "Match evening Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/3P7XRYHw9B7c4Fk88gtO0D?si=y9honWzJTAO8_ChLiN-ylg" target="_blank">Evening Electronic</a>');
-          return;
-        }
-
-        //evening Nature
-        if ((evening == true) && (nature == true)) {
-          //$( "span" ).text( "Match evening Nature" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/2gD7o0nDrIfg4ygFMRlFoL?si=BVht3_CLQnakQjDwaIW-OQ" target="_blank">Evening Nature</a>');
-          return;
-        }
-
-        //sleep Piano
-        if ((sleep == true) && (piano == true)) {
-          //$( "span" ).text( "Match sleep Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0qL8FFKv7EzKqJi9XeFROb?si=TNKiqL9lRBW-772tBfQCgA" target="_blank">Sleep Piano</a>');
-          return;
-        }
-
-        //sleep noise
-        if ((sleep == true) && (noise == true)) {
-          //$( "span" ).text( "Match sleep noise" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6PgjFCYoZPQZMpKMBZlyx5?si=N8Dv6ZQVQEGNnTMDkte_cQ" target="_blank">Sleep Noise</a>');
-          return;
-        }
-
-        //sleep Classical
-        if ((sleep == true) && (classic == true)) {
-          //$( "span" ).text( "Match sleep Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6SPT0xLAvGhPomqilJVvE9?si=9GgplFNwTd-a-SaiH0DL9w" target="_blank">Sleep Classical</a>');
-          return;
-        }
-
-        //sleep Acoustic
-        if ((sleep == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match sleep Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/22PGBkwN821RPJyWGEjf2D?si=NbuYojehRl27kcjnqSXS7A" target="_blank">Sleep Acoustic</a>');
-          return;
-        }
-
-        //sleep Jazz
-        if ((sleep == true) && (jazz == true)) {
-          //$( "span" ).text( "Match sleep Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0MYJYuXxmEXKijFK2KtME3?si=k7IZ0a48T6CJR-lwdAoXWQ" target="_blank">Sleep Jazz</a>');
-          return;
-        }
-
-        //sleep Electronic
-        if ((sleep == true) && (electronic == true)) {
-          //$( "span" ).text( "Match sleep Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/789DBgO0aJm2Fvrxv1QetN?si=kLq5HkNAT-C11uO8XvQ5vQ" target="_blank">Sleep Electronic</a>');
-          return;
-        }
-
-        //sleep Nature
-        if ((sleep == true) && (nature == true)) {
-          //$( "span" ).text( "Match sleep Nature" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/7g4a30e5k3TXpHCq8T1CXa?si=8YKi82jqTDiX5CR-gVxAXw" target="_blank">Sleep Nature</a>');
-          return;
-        }
-
-        //focus Piano
-        if ((focus == true) && (piano == true)) {
-          //$( "span" ).text( "Match focus Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6FGWDti2QLIZBrOe71Uhi5?si=E5DqezJwSJezfjIJjsEQxA" target="_blank">Focus Piano</a>');
-          return;
-        }
-
-        //focus Lofi
-        if ((focus == true) && (lofi == true)) {
-          //$( "span" ).text( "Match focus Lofi" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4qxwiQjhdc5sl5wlUJaAVO?si=WkE99M4LQ4W4Kou5Bur6aQ" target="_blank">Focus Lo-Fi</a>');
-          return;
-        }
-
-        //focus noise
-        if ((focus == true) && (noise == true)) {
-          //$( "span" ).text( "Match focus noise" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">Focus Noise</a>');
-          return;
-        }
-
-        //focus Classical
-        if ((focus == true) && (classic == true)) {
-          //$( "span" ).text( "Match focus Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/7j1OEbOgLc5t9JyKO44Drs?si=qd-S_K4CSril83ManfL2CQ" target="_blank">Focus Classical</a>');
-          return;
-        }
-
-        //focus Acoustic
-        if ((focus == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match focus Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6Vq29HxIYglzjzv7hrKLIk?si=5OtgqQp6TkuQC-_83I-SHQ" target="_blank">Focus Acoustic</a>');
-          return;
-        }
-
-        //focus Jazz
-        if ((focus == true) && (jazz == true)) {
-          //$( "span" ).text( "Match focus Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4zUQl020wtbJddIa9q1EOe?si=XAQXXFJhSe2mwkwF2JiVnA" target="_blank">Focus Jazz</a>');
-          return;
-        }
-
-        //focus Electronic
-        if ((focus == true) && (electronic == true)) {
-          //$( "span" ).text( "Match focus Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/3N01SL7HiBRk2yxgINK62z?si=3ct-JJQpRbyequ9fJ7FwJw" target="_blank">Focus Electronic</a>');
-          return;
-        }
-        //relax Piano
-        if ((relax == true) && (piano == true)) {
-          //$( "span" ).text( "Match relax Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/1uYHZcGvHRpQvmZgKVxJPv?si=w0TQam4DRqSc5zVtx-c9RA" target="_blank">Relax Piano</a>');
-          return;
-        }
-
-        //relax Lofi
-        if ((relax == true) && (lofi == true)) {
-          //$( "span" ).text( "Match relax Lofi" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0hjElzknFVtdwWmgciGgSt?si=YAtUJM8KSS2mnV76_a3m-A" target="_blank">Relax Lo-Fi</a>');
-          return;
-        }
-
-        //relax Classical
-        if ((relax == true) && (classic == true)) {
-          //$( "span" ).text( "Match relax Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0Qx1UAHKQBmzgqlbbSB043?si=xpYBZDqrTrSYRYUPLK6eSg" target="_blank">Relax Classical</a>');
-          return;
-        }
-
-        //relax Acoustic
-        if ((relax == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match relax Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/5mE3qfnuetseWf1dCj21PF?si=VRFqbv33RMGg2FzhXlw4EA" target="_blank">Relax Acoustic</a>');
-          return;
-        }
-
-        //relax Jazz
-        if ((relax == true) && (jazz == true)) {
-          //$( "span" ).text( "Match relax Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6MVnNmLrUBCoJ68R7AOj2N?si=gRzP5QNtT0ykQnGuqJCHOA" target="_blank">Relax Jazz</a>');
-          return;
-        }
-
-        //relax Electronic
-        if ((relax == true) && (electronic == true)) {
-          //$( "span" ).text( "Match relax Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0x4XvzgNNLiTZQ7W2lncBk?si=1Jpl5VTTQtiIrCVjtpcEqw" target="_blank">Relax Electronic</a>');
-          return;
-        }
-
-        //relax Nature
-        if ((relax == true) && (nature == true)) {
-          //$( "span" ).text( "Match relax Nature" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/1XgWwvsFOMy60UQP93c6RO?si=vN-rCOPGSsaT9jcCrH7fBQ" target="_blank">Relax Nature</a>');
-          return;
-        }
-
-        //cooking Piano
-        if ((cooking == true) && (piano == true)) {
-          //$( "span" ).text( "Match cooking Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/6fM8K7HaLr3c6wy4a4rzBX?si=DMo29ypRT--MMQ4K3F4WOQ" target="_blank">Cooking Piano</a>');
-          return;
-        }
-
-        //cooking Lofi
-        if ((cooking == true) && (lofi == true)) {
-          //$( "span" ).text( "Match cooking Lofi" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/5BMiqIJKwuMKnlItTphaaL?si=rtnNloCOS-2EuRmIS6wJQg" target="_blank">"Cooking Lo-Fi</a>');
-          return;
-        }
-
-        //cooking Classical
-        if ((cooking == true) && (classic == true)) {
-          //$( "span" ).text( "Match cooking Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/5qq7akiiqd6UAaFfxBXj4F?si=lHITDW-FS3qVq7avL-R5oQ" target="_blank">Cooking Classical</a>');
-          return;
-        }
-
-        //cooking Acoustic
-        if ((cooking == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match cooking Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0Ew4yuXL6ZLUzRnHGDX34B?si=UDc_-dFRRAmFcG4FDUdqKA" target="_blank">Cooking Acoustic</a>');
-          return;
-        }
-
-        //cooking Jazz
-        if ((cooking == true) && (jazz == true)) {
-          //$( "span" ).text( "Match cooking Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/0qeQG3PRn6A66cmPP8mRHi?si=EM2JAJn1SQOK_Ww9Ttsedg" target="_blank">Cooking Jazz</a>');
-          return;
-        }
-
-        //cooking Electronic
-        if ((cooking == true) && (electronic == true)) {
-          //$( "span" ).text( "Match cooking Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/3oDm3tPsWSkYYpx8VwYhF5?si=bNmTHYDjSai_EBWVf2xqiA" target="_blank">Cooking Electronic</a>');
-          return;
-        }
-        //meditate Piano
-        if ((meditate == true) && (piano == true)) {
-          //$( "span" ).text( "Match meditate Piano" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/7G1QDdawSJh7MGnzjYKoJv?si=84VV8skZRPWcJyhuv_MrVA" target="_blank">Meditate Piano</a>');
-          return;
-        }
-
-        //meditate Lofi
-        if ((meditate == true) && (lofi == true)) {
-          //$( "span" ).text( "Match meditate Lofi" ).show();
-          $('#link').html('<a href="" target="_blank">Meditate Lo-Fi</a>');
-          return;
-        }
-
-        //meditate noise
-        if ((meditate == true) && (noise == true)) {
-          //$( "span" ).text( "Match meditate noise" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">Meditate Noise</a>');
-          return;
-        }
-
-        //meditate Classical
-        if ((meditate == true) && (classic == true)) {
-          //$( "span" ).text( "Match meditate Classical" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/7dKgBG7Q0jwhVwDCIpqape?si=lNGChPNaQC2jlIQpvFrN9Q" target="_blank">Meditate Classical</a>');
-          return;
-        }
-
-        //meditate Acoustic
-        if ((meditate == true) && (acoustic == true)) {
-          //$( "span" ).text( "Match meditate Acoustic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/3oWLvrgBKmsoBJIehwNOJ7?si=a04YjBTVRG-L0BXWFMv_1g" target="_blank">Meditate</a>');
-          return;
-        }
-
-        //meditate Jazz
-        if ((meditate == true) && (jazz == true)) {
-          //$( "span" ).text( "Match meditate Jazz" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/4COa3cD7fi2z1ncPLkNXmz?si=2wgoRue0Sw2cVjnQgLKREg" target="_blank">Meditate Jazz</a>');
-          return;
-        }
-
-        //meditate Electronic
-        if ((meditate == true) && (electronic == true)) {
-          //$( "span" ).text( "Match meditate Electronic" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/1ZI70EGWfGYHol3ytKed1b?si=Vv1B-sKRRbWQTqK-chh64g" target="_blank">Meditate Electronic</a>');
-          return;
-        }
-
-        //meditate Nature
-        if ((meditate == true) && (nature == true)) {
-          //$( "span" ).text( "Match meditate Nature" ).show();
-          $('#link').html('<a href="https://open.spotify.com/playlist/2x9Qc9Ttt25xuoGpFpIMtq?si=c0gtJsu0TD2s_NVnCLwkNw" target="_blank">Meditate Nature</a>');
-          return;
-        }
-        else  { $('#link').text( "??" ).show(); }
-    //event.preventDefault();
-      });
+      //Morning Piano
+      if (morning == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4uKuvvMIp02dkJySji7Add?si=LH6ZFLXXRLCr4mwT8ctfRQ" target="_blank">☕🎹</a>'
+        );
+        return;
+      }
+      //Morning Lofi
+      if (morning == true && lofi == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4vFrDonS8GZop4WenI9xf2?si=AVaAJ5VmSr2LKXFbUqwRJg" target="_blank">☕🎛️</a>'
+        );
+        return;
+      }
+      //Morning Classical
+      if (morning == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/5nJ0JPYiA6ArTbRd8QRqbW?si=RoxGcSb1QLeKA4UdJqAecg" target="_blank">☕🎼</a>'
+        );
+        return;
+      }
+      //Morning Acoustic
+      if (morning == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/24M61a0YyLiqnKPisC9XTa?si=zP36n7BpRn2f9T-Mz4_72g" target="_blank">☕🎵</a>'
+        );
+        return;
+      }
+      //Morning Jazz
+      if (morning == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/19kt9zTTngQyErMQ7mGb5O?si=LFSCfNI9TlqzN8PChcuu9g" target="_blank">☕🎷</a>'
+        );
+        return;
+      }
+      //Morning Electronic
+      if (morning == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0MZcueIpEnbgl7CFQh04my?si=OhGJ57NxQU6hYb2RE2co1A" target="_blank">☕🎚️</a>'
+        );
+        return;
+      }
+      //Morning Nature
+      if (morning == true && nature == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/7ljmzKm7siQSKF5xDhxrMQ?si=Zq59cp78SgGe9ZPmWwKb8Q" target="_blank">☕🍃</a>'
+        );
+        return;
+      }
+      //evening Piano
+      if (evening == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4sjMQVuhQBgDuv1ORKCQE0?si=kZ4p9POyQ-a_Mh9WdE8WDw" target="_blank">🌆🎹</a>'
+        );
+        return;
+      }
+      //evening Lofi
+      if (evening == true && lofi == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/2dPR6WDlNXGuGQSI8pz2Ro?si=bdDBgCjLRrCPfPkv9OKyyA" target="_blank">🌆🎛️</a>'
+        );
+        return;
+      }
+      //evening Classical
+      if (evening == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/75Wqs0JumMbH2LC3iC1RHJ?si=JrfesioHTWy9PP3NWtuHUQ" target="_blank">🌆🎼</a>'
+        );
+        return;
+      }
+      //evening Acoustic
+      if (evening == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6T5yjTG9miqPUUcSdSKdUW?si=S_1ZtQijSL62sL8YZ0Sj-g" target="_blank">🌆🎵</a>'
+        );
+        return;
+      }
+      //evening Jazz
+      if (evening == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/2aAYyH5Ry9AKDR1jdkxrwa?si=_CRyG5uASiqm1pc6QhasIg" target="_blank">🌆🎷</a>'
+        );
+        return;
+      }
+      //evening Electronic
+      if (evening == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/3P7XRYHw9B7c4Fk88gtO0D?si=y9honWzJTAO8_ChLiN-ylg" target="_blank">🌆🎚️</a>'
+        );
+        return;
+      }
+      //evening Nature
+      if (evening == true && nature == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/2gD7o0nDrIfg4ygFMRlFoL?si=BVht3_CLQnakQjDwaIW-OQ" target="_blank">🌆🍃</a>'
+        );
+        return;
+      }
+      //sleep Piano
+      if (sleep == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0qL8FFKv7EzKqJi9XeFROb?si=TNKiqL9lRBW-772tBfQCgA" target="_blank">💤🎹</a>'
+        );
+        return;
+      }
+      //sleep noise
+      if (sleep == true && noise == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6PgjFCYoZPQZMpKMBZlyx5?si=N8Dv6ZQVQEGNnTMDkte_cQ" target="_blank">💤⬜</a>'
+        );
+        return;
+      }
+      //sleep Classical
+      if (sleep == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6SPT0xLAvGhPomqilJVvE9?si=9GgplFNwTd-a-SaiH0DL9w" target="_blank">💤🎼</a>'
+        );
+        return;
+      }
+      //sleep Acoustic
+      if (sleep == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/22PGBkwN821RPJyWGEjf2D?si=NbuYojehRl27kcjnqSXS7A" target="_blank">💤🎵</a>'
+        );
+        return;
+      }
+      //sleep Jazz
+      if (sleep == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0MYJYuXxmEXKijFK2KtME3?si=k7IZ0a48T6CJR-lwdAoXWQ" target="_blank">💤🎷</a>'
+        );
+        return;
+      }
+      //sleep Electronic
+      if (sleep == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/789DBgO0aJm2Fvrxv1QetN?si=kLq5HkNAT-C11uO8XvQ5vQ" target="_blank">💤🎚️</a>'
+        );
+        return;
+      }
+      //sleep Nature
+      if (sleep == true && nature == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/7g4a30e5k3TXpHCq8T1CXa?si=8YKi82jqTDiX5CR-gVxAXw" target="_blank">💤🍃</a>'
+        );
+        return;
+      }
+      //focus Piano
+      if (focus == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6FGWDti2QLIZBrOe71Uhi5?si=E5DqezJwSJezfjIJjsEQxA" target="_blank">⚙️🎹</a>'
+        );
+        return;
+      }
+      //focus Lofi
+      if (focus == true && lofi == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4qxwiQjhdc5sl5wlUJaAVO?si=WkE99M4LQ4W4Kou5Bur6aQ" target="_blank">⚙️🎛️</a>'
+        );
+        return;
+      }
+      //focus noise
+      if (focus == true && noise == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">⚙️⬜</a>'
+        );
+        return;
+      }
+      //focus Classical
+      if (focus == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/7j1OEbOgLc5t9JyKO44Drs?si=qd-S_K4CSril83ManfL2CQ" target="_blank">⚙️🎼</a>'
+        );
+        return;
+      }
+      //focus Acoustic
+      if (focus == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6Vq29HxIYglzjzv7hrKLIk?si=5OtgqQp6TkuQC-_83I-SHQ" target="_blank">⚙️🎵</a>'
+        );
+        return;
+      }
+      //focus Jazz
+      if (focus == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4zUQl020wtbJddIa9q1EOe?si=XAQXXFJhSe2mwkwF2JiVnA" target="_blank">⚙️🎷</a>'
+        );
+        return;
+      }
+      //focus Electronic
+      if (focus == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/3N01SL7HiBRk2yxgINK62z?si=3ct-JJQpRbyequ9fJ7FwJw" target="_blank">⚙️🎚️</a>'
+        );
+        return;
+      }
+      //relax Piano
+      if (relax == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/1uYHZcGvHRpQvmZgKVxJPv?si=w0TQam4DRqSc5zVtx-c9RA" target="_blank">🕯️🎹</a>'
+        );
+        return;
+      }
+      //relax Lofi
+      if (relax == true && lofi == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0hjElzknFVtdwWmgciGgSt?si=YAtUJM8KSS2mnV76_a3m-A" target="_blank">🕯️🎛️</a>'
+        );
+        return;
+      }
+      //relax Classical
+      if (relax == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0Qx1UAHKQBmzgqlbbSB043?si=xpYBZDqrTrSYRYUPLK6eSg" target="_blank">🕯️🎼</a>'
+        );
+        return;
+      }
+      //relax Acoustic
+      if (relax == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/5mE3qfnuetseWf1dCj21PF?si=VRFqbv33RMGg2FzhXlw4EA" target="_blank">🕯️🎵</a>'
+        );
+        return;
+      }
+      //relax Jazz
+      if (relax == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6MVnNmLrUBCoJ68R7AOj2N?si=gRzP5QNtT0ykQnGuqJCHOA" target="_blank">🕯️🎷</a>'
+        );
+        return;
+      }
+      //relax Electronic
+      if (relax == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0x4XvzgNNLiTZQ7W2lncBk?si=1Jpl5VTTQtiIrCVjtpcEqw" target="_blank">🕯️🎚️</a>'
+        );
+        return;
+      }
+      //relax Nature
+      if (relax == true && nature == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/1XgWwvsFOMy60UQP93c6RO?si=vN-rCOPGSsaT9jcCrH7fBQ" target="_blank">🕯️🍃</a>'
+        );
+        return;
+      }
+      //cooking Piano
+      if (cooking == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/6fM8K7HaLr3c6wy4a4rzBX?si=DMo29ypRT--MMQ4K3F4WOQ" target="_blank">👩‍🍳🎹</a>'
+        );
+        return;
+      }
+      //cooking Lofi
+      if (cooking == true && lofi == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/5BMiqIJKwuMKnlItTphaaL?si=rtnNloCOS-2EuRmIS6wJQg" target="_blank">"👩‍🍳🎛️</a>'
+        );
+        return;
+      }
+      //cooking Classical
+      if (cooking == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/5qq7akiiqd6UAaFfxBXj4F?si=lHITDW-FS3qVq7avL-R5oQ" target="_blank">👩‍🍳🎼</a>'
+        );
+        return;
+      }
+      //cooking Acoustic
+      if (cooking == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0Ew4yuXL6ZLUzRnHGDX34B?si=UDc_-dFRRAmFcG4FDUdqKA" target="_blank">👩‍🍳🎵</a>'
+        );
+        return;
+      }
+      //cooking Jazz
+      if (cooking == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/0qeQG3PRn6A66cmPP8mRHi?si=EM2JAJn1SQOK_Ww9Ttsedg" target="_blank">👩‍🍳🎷</a>'
+        );
+        return;
+      }
+      //cooking Electronic
+      if (cooking == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/3oDm3tPsWSkYYpx8VwYhF5?si=bNmTHYDjSai_EBWVf2xqiA" target="_blank">👩‍🍳🎚️</a>'
+        );
+        return;
+      }
+      //meditate Piano
+      if (meditate == true && piano == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/7G1QDdawSJh7MGnzjYKoJv?si=84VV8skZRPWcJyhuv_MrVA" target="_blank">☮️🎹</a>'
+        );
+        return;
+      }
+      //meditate Lofi
+      if (meditate == true && lofi == true) {
+        $("#link").html('<a href="" target="_blank">☮️🎛️</a>');
+        return;
+      }
+      //meditate noise
+      if (meditate == true && noise == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">☮️⬜</a>'
+        );
+        return;
+      }
+      //meditate Classical
+      if (meditate == true && classic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/7dKgBG7Q0jwhVwDCIpqape?si=lNGChPNaQC2jlIQpvFrN9Q" target="_blank">☮️🎼</a>'
+        );
+        return;
+      }
+      //meditate Acoustic
+      if (meditate == true && acoustic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/3oWLvrgBKmsoBJIehwNOJ7?si=a04YjBTVRG-L0BXWFMv_1g" target="_blank">☮️🎵</a>'
+        );
+        return;
+      }
+      //meditate Jazz
+      if (meditate == true && jazz == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/4COa3cD7fi2z1ncPLkNXmz?si=2wgoRue0Sw2cVjnQgLKREg" target="_blank">☮️🎷</a>'
+        );
+        return;
+      }
+      //meditate Electronic
+      if (meditate == true && electronic == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/1ZI70EGWfGYHol3ytKed1b?si=Vv1B-sKRRbWQTqK-chh64g" target="_blank">☮️🎚️</a>'
+        );
+        return;
+      }
+      //meditate Nature
+      if (meditate == true && nature == true) {
+        $("#link").html(
+          '<a href="https://open.spotify.com/playlist/2x9Qc9Ttt25xuoGpFpIMtq?si=c0gtJsu0TD2s_NVnCLwkNw" target="_blank">☮️🍃</a>'
+        );
+        return;
+      } else {
+        $("#link").text("❔❔").show();
+      }
+      //event.preventDefault();
+    });
   })
-
-    .trigger( "change" );
+  .trigger( "change" );
 
 }
 
