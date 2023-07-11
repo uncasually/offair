@@ -484,8 +484,8 @@ header nav li a[href]:not(:hover) {
   border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
   border-image-slice: 1 1 1;
   bottom: -.16em;
-	left: .16rem;
-  width: 102%;
+	left: .15rem;
+  width: 101%;
   height: 0.15em;
   transform: skewX(45deg);
 }
@@ -568,7 +568,7 @@ header nav li a[href]:not(:hover) {
   right: -0.16em;
   top: 0.04em;
   width: 0.15em;
-  height: 104%;
+  height: 101%;
   transform: skewY(45deg);
 }
 .link-btn:after {
