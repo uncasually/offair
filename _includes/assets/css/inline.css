@@ -1227,7 +1227,7 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 
 /* FLEXSLIDER */
 .flexslider {
-	width: 90vw;
+	width: 80vw;
   max-width: 1000px;
 	margin: 20px auto;
 	background-color: rgba(0,0,0,0);
@@ -1284,12 +1284,12 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 }
 
 .flex-viewport {
-	max-height: 90vh;
+	max-height: 80vh;
 }
 
 .flexslider .slides img {
 	width: 100%;
-	height: 90vh;
+	height: 80vh;
   object-fit: cover;
 	object-position: center;
   object-position: 50% 30%;
