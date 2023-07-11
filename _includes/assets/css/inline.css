@@ -535,19 +535,19 @@ header nav li a[href]:not(:hover) {
 }
 
 .link-btn {
-  background-color: #637668;
   color: var(--primary);
+  background-color: #637668;
+  font-size: 3.25rem;
+  width: 100%;
   cursor: pointer;
-  padding: 0.8em 1em;
-  margin: auto 2em;
+  padding: 0;
+  margin: 0;
   position: relative;
   align-self: center;
-  text-transform: uppercase;
   border: 2px white solid;
   border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
   border-image-slice: 1 0 0 1;
   z-index: 1;
-  box-shadow: 0.25em 0.25em rgba(255, 255, 255, 0);
   transform-origin: left bottom;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
