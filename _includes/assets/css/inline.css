@@ -93,7 +93,7 @@ body {
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 85% 15%;
+  grid-template-rows: auto 15%;
   background-color: var(--background);
   background-image: url(https://offair.netlify.app/static/img/background.jpg);
   background-attachment: fixed;
