@@ -716,7 +716,6 @@ textarea {
 
 button {
   border: 1px solid var(--primary);
-  background-color: var(--primary);
   color: var(--secondary);
   cursor: pointer;
 }
@@ -1300,4 +1299,9 @@ a:target > img.cssbox_thumb + span.cssbox_full {
 
 .bit-widget.bit-layout-desktop .bit-rsvp-container {
   display: none !important;
+}
+
+@media (min-width: 768px) {
+.contact-form {
+  width: 50vw;
 }
