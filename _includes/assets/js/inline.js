@@ -972,7 +972,7 @@ if( $('body').hasClass('generator') ){
       } else {
         //$("#link").text("❔❔").show();
         $("#link").html(
-          '<a href="#" id="link">❔❔</a>'
+          '<a href="#" class="link-select">❔❔</a>'
         );
       }
       //event.preventDefault();
