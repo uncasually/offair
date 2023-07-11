@@ -483,11 +483,11 @@ if( $('body').hasClass('generator') ){
         value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic", "nature"]
       },
       sleep: {
-        text: ["❔", "🎹", "⬜", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        text: ["❔", "🎹", "🌫️", "🎼", "🎵", "🎷", "🎚️", "🍃"],
         value: [ "0", "piano", "noise", "classical", "acoustic", "jazz", "electronic", "nature"]
       },
       focus: {
-        text: ["❔", "🎹", "🎛️", "⬜", "🎼", "🎵", "🎷", "🎚️"],
+        text: ["❔", "🎹", "🎛️", "🌫️", "🎼", "🎵", "🎷", "🎚️"],
         value: [ "0", "piano", "lofi", "noise", "classical", "acoustic", "jazz", "electronic"]
       },
       relax: {
@@ -499,7 +499,7 @@ if( $('body').hasClass('generator') ){
         value: [ "0", "piano", "lofi", "classical", "acoustic", "jazz", "electronic"]
       },
       meditation: {
-        text: ["❔", "🎹", "🎛️", "⬜", "🎼", "🎵", "🎷", "🎚️", "🍃"],
+        text: ["❔", "🎹", "🎛️", "🌫️", "🎼", "🎵", "🎷", "🎚️", "🍃"],
         value: [ "0", "piano", "lofi", "noise", "classical", "acoustic", "jazz", "electronic", "nature"]
       }
     }
@@ -737,7 +737,7 @@ if( $('body').hasClass('generator') ){
       //sleep noise
       if (sleep == true && noise == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/6PgjFCYoZPQZMpKMBZlyx5?si=N8Dv6ZQVQEGNnTMDkte_cQ" target="_blank">💤⬜</a>'
+          '<a href="https://open.spotify.com/playlist/6PgjFCYoZPQZMpKMBZlyx5?si=N8Dv6ZQVQEGNnTMDkte_cQ" target="_blank">💤🌫️</a>'
         );
         return;
       }
@@ -793,7 +793,7 @@ if( $('body').hasClass('generator') ){
       //focus noise
       if (focus == true && noise == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">💡⬜</a>'
+          '<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">💡🌫️</a>'
         );
         return;
       }
@@ -931,7 +931,7 @@ if( $('body').hasClass('generator') ){
       //meditate noise
       if (meditate == true && noise == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">🪷⬜</a>'
+          '<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">🪷🌫️</a>'
         );
         return;
       }
