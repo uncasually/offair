@@ -779,49 +779,49 @@ if( $('body').hasClass('generator') ){
       //focus Piano
       if (focus == true && piano == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/6FGWDti2QLIZBrOe71Uhi5?si=E5DqezJwSJezfjIJjsEQxA" target="_blank">⚙️🎹</a>'
+          '<a href="https://open.spotify.com/playlist/6FGWDti2QLIZBrOe71Uhi5?si=E5DqezJwSJezfjIJjsEQxA" target="_blank">💡🎹</a>'
         );
         return;
       }
       //focus Lofi
       if (focus == true && lofi == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/4qxwiQjhdc5sl5wlUJaAVO?si=WkE99M4LQ4W4Kou5Bur6aQ" target="_blank">⚙️🎛️</a>'
+          '<a href="https://open.spotify.com/playlist/4qxwiQjhdc5sl5wlUJaAVO?si=WkE99M4LQ4W4Kou5Bur6aQ" target="_blank">💡🎛️</a>'
         );
         return;
       }
       //focus noise
       if (focus == true && noise == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">⚙️⬜</a>'
+          '<a href="https://open.spotify.com/playlist/1yn8hdB7jOZ6iFRp27NetD?si=WCKWAM2SQ9ixdHr02l80bA" target="_blank">💡⬜</a>'
         );
         return;
       }
       //focus Classical
       if (focus == true && classic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/7j1OEbOgLc5t9JyKO44Drs?si=qd-S_K4CSril83ManfL2CQ" target="_blank">⚙️🎼</a>'
+          '<a href="https://open.spotify.com/playlist/7j1OEbOgLc5t9JyKO44Drs?si=qd-S_K4CSril83ManfL2CQ" target="_blank">💡🎼</a>'
         );
         return;
       }
       //focus Acoustic
       if (focus == true && acoustic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/6Vq29HxIYglzjzv7hrKLIk?si=5OtgqQp6TkuQC-_83I-SHQ" target="_blank">⚙️🎵</a>'
+          '<a href="https://open.spotify.com/playlist/6Vq29HxIYglzjzv7hrKLIk?si=5OtgqQp6TkuQC-_83I-SHQ" target="_blank">💡🎵</a>'
         );
         return;
       }
       //focus Jazz
       if (focus == true && jazz == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/4zUQl020wtbJddIa9q1EOe?si=XAQXXFJhSe2mwkwF2JiVnA" target="_blank">⚙️🎷</a>'
+          '<a href="https://open.spotify.com/playlist/4zUQl020wtbJddIa9q1EOe?si=XAQXXFJhSe2mwkwF2JiVnA" target="_blank">💡🎷</a>'
         );
         return;
       }
       //focus Electronic
       if (focus == true && electronic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/3N01SL7HiBRk2yxgINK62z?si=3ct-JJQpRbyequ9fJ7FwJw" target="_blank">⚙️🎚️</a>'
+          '<a href="https://open.spotify.com/playlist/3N01SL7HiBRk2yxgINK62z?si=3ct-JJQpRbyequ9fJ7FwJw" target="_blank">💡🎚️</a>'
         );
         return;
       }
@@ -919,54 +919,54 @@ if( $('body').hasClass('generator') ){
       //meditate Piano
       if (meditate == true && piano == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/7G1QDdawSJh7MGnzjYKoJv?si=84VV8skZRPWcJyhuv_MrVA" target="_blank">☮️🎹</a>'
+          '<a href="https://open.spotify.com/playlist/7G1QDdawSJh7MGnzjYKoJv?si=84VV8skZRPWcJyhuv_MrVA" target="_blank">🪷🎹</a>'
         );
         return;
       }
       //meditate Lofi
       if (meditate == true && lofi == true) {
-        $("#link").html('<a href="" target="_blank">☮️🎛️</a>');
+        $("#link").html('<a href="" target="_blank">🪷🎛️</a>');
         return;
       }
       //meditate noise
       if (meditate == true && noise == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">☮️⬜</a>'
+          '<a href="https://open.spotify.com/playlist/4Az5HG3PB97VXQiOue9JlW?si=AnSm3g8XR2-X21iDzXwR2Q" target="_blank">🪷⬜</a>'
         );
         return;
       }
       //meditate Classical
       if (meditate == true && classic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/7dKgBG7Q0jwhVwDCIpqape?si=lNGChPNaQC2jlIQpvFrN9Q" target="_blank">☮️🎼</a>'
+          '<a href="https://open.spotify.com/playlist/7dKgBG7Q0jwhVwDCIpqape?si=lNGChPNaQC2jlIQpvFrN9Q" target="_blank">🪷🎼</a>'
         );
         return;
       }
       //meditate Acoustic
       if (meditate == true && acoustic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/3oWLvrgBKmsoBJIehwNOJ7?si=a04YjBTVRG-L0BXWFMv_1g" target="_blank">☮️🎵</a>'
+          '<a href="https://open.spotify.com/playlist/3oWLvrgBKmsoBJIehwNOJ7?si=a04YjBTVRG-L0BXWFMv_1g" target="_blank">🪷🎵</a>'
         );
         return;
       }
       //meditate Jazz
       if (meditate == true && jazz == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/4COa3cD7fi2z1ncPLkNXmz?si=2wgoRue0Sw2cVjnQgLKREg" target="_blank">☮️🎷</a>'
+          '<a href="https://open.spotify.com/playlist/4COa3cD7fi2z1ncPLkNXmz?si=2wgoRue0Sw2cVjnQgLKREg" target="_blank">🪷🎷</a>'
         );
         return;
       }
       //meditate Electronic
       if (meditate == true && electronic == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/1ZI70EGWfGYHol3ytKed1b?si=Vv1B-sKRRbWQTqK-chh64g" target="_blank">☮️🎚️</a>'
+          '<a href="https://open.spotify.com/playlist/1ZI70EGWfGYHol3ytKed1b?si=Vv1B-sKRRbWQTqK-chh64g" target="_blank">🪷🎚️</a>'
         );
         return;
       }
       //meditate Nature
       if (meditate == true && nature == true) {
         $("#link").html(
-          '<a href="https://open.spotify.com/playlist/2x9Qc9Ttt25xuoGpFpIMtq?si=c0gtJsu0TD2s_NVnCLwkNw" target="_blank">☮️🍃</a>'
+          '<a href="https://open.spotify.com/playlist/2x9Qc9Ttt25xuoGpFpIMtq?si=c0gtJsu0TD2s_NVnCLwkNw" target="_blank">🪷🍃</a>'
         );
         return;
       } else {
