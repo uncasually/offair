@@ -92,12 +92,13 @@ body {
 body {
   display: grid;
   width: 100vw;
-	overflow-x: hidden;
-  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  grid-template-rows: 85% 15%;
   background-color: var(--background);
   background-image: url(https://offair.netlify.app/static/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -148,7 +149,7 @@ footer {
 }
 @media only screen and (min-width: 1170px) {
   header, main, footer {
-    padding: 3em 3em 4em;
+    padding: 2em 3em 2em;
   }
 }
 
@@ -560,14 +561,14 @@ header nav li a[href]:not(:hover) {
   right: -0.16em;
   top: 0.04em;
   width: 0.15em;
-  height: 101%;
+  height: 104%;
   transform: skewY(45deg);
 }
 .link-btn:after {
   border-image: linear-gradient(45deg, var(--primary) 0%, var(--primary) 100%);
   border-image-slice: 1 1 1;
-  bottom: -.16em;
-	left: .17rem;
+  bottom: -0.16em;
+  left: 0.15rem;
   width: 101%;
   height: 0.15em;
   transform: skewX(45deg);
@@ -592,6 +593,7 @@ header nav li a[href]:not(:hover) {
 	height: .13em;
 }
 .link-select {
+  display: block;
   font-size: 3rem;
   width: 100%;
   margin: 0px;
