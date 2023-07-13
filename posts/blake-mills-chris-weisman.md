@@ -12,6 +12,7 @@ gallery:
   - /static/img/2023_7_12_offair_chris-blake_205.jpg
   - /static/img/2023_7_12_offair_chris-blake_183.jpg
   - /static/img/2023_7_12_offair_chris-blake_163.jpg
+  - /static/img/2023_7_12_offair_chris-blake_201.jpg
 ---
 Blake Mills and Chris Weisman moved a roomful of fans who were frozen in the stillness of awe—the Sound Room was quiet. You could hear every detail in the duo’s effects, until the audience erupted in cheers and howls between songs.
 
