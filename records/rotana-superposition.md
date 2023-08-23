@@ -1,7 +1,7 @@
 ---
 title: ROTANA & SUPERPOSITION
 image: /static/img/offair-rotana-album-artwork-2.jpg
-summary: Opening
+summary: OPENING
 year: "2023"
 date: 2023-08-23T19:55:12.534Z
 instagram: https://www.instagram.com/iamRotana/
