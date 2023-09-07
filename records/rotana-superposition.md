@@ -5,7 +5,7 @@ summary: OPENING
 year: "2023"
 date: 2023-08-23T19:55:12.534Z
 instagram: iamrotana
-spotify: https://platoon.lnk.to/atubu
+spotify: https://platoon.lnk.to/offair-opening
 ---
 “Opening" is a transcendent new collaboration between Saudi-Arabian vocalist, artist and songwriter Rotana and Superposition, the duo made up of Justin Boreta and LA Philharmonic’s Matt Davis.\
 \
