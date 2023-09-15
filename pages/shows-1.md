@@ -1,6 +1,6 @@
 ---
 layout: layouts/shows.njk
-title: shows
+title: Rotana presented by OFFAIR + Floating
 date: 2021-10-20T23:50:29.573Z
 permalink: /shows/index.html
 showlink: |-
