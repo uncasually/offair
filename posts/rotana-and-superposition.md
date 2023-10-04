@@ -8,6 +8,10 @@ tags:
   - events
 instagram: iamrotana
 spotify: https://platoon.lnk.to/offair-opening
+gallery:
+  - /static/img/2023_10_03_offair_rotana_©laurajunekirsch244.jpg
+  - /static/img/2023_10_03_offair_rotana_©laurajunekirsch60.jpg
+  - /static/img/2023_10_03_offair_rotana_©laurajunekirsch20.jpg
 ---
 “Ever since I could remember I have wanted to use my body and voice to make people come alive.”
 
