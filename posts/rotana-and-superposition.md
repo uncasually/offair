@@ -21,6 +21,4 @@ Alongside Lebanese composer, activist and educator, Hamed Sinno, the two discuss
 
 Big thanks to Public Records, Dice, Platoon and Floating for this collab.
 
-
-
-[V﻿IEW EVENT PHOTOS](https://drive.google.com/drive/folders/1YP1HajdwubQ3y9wZVgMMQLI3kh4sSWQV)
+[V﻿IEW EVENT PHOTOS](https://www.dropbox.com/sh/d8qg702uksagi53/AAA77HzJn8sFfJ_5CVhgxtIoa?dl=0)
