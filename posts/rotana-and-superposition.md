@@ -1,5 +1,5 @@
 ---
-title: Rotana and Superposition
+title: Rotana
 image: /static/img/offair-show-rotanasuperposition-4x5-2.jpg
 date: 2023-10-04T16:12:01.597Z
 location: Public Records, NY
