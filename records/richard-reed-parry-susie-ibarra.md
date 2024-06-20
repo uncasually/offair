@@ -4,7 +4,7 @@ image: /static/img/001-offair-r-s-artwork-fulllp-3000x3000.jpg
 summary: "Heart and Breath: Rhythm and Tone Fields (OFFAIR)"
 year: "2022"
 date: 2022-07-15T18:27:16.268Z
-instagram: rrparry susie.ibarra
+instagram: rrparry
 spotify: "https://offairrecords.lnk.to/RichardReedParrySusieIbarra "
 ---
 Multi-instrumentalist and composer Richard Reed Parry of Arcade Fire and world renowned percussionist and composer Susie Ibarra's record *Heart and Breath: Rhythm and Tone Fields (OFFAIR).*
