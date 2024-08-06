@@ -7,6 +7,6 @@ date: 2024-08-06T20:25:01.813Z
 instagram: superposition.world
 spotify: https://open.spotify.com/track/2yzAl0kmqstuo9bHCSf2SX?si=83b04da075924965
 ---
-[Superposition](https://www.instagram.com/superposition.world/?hl=en&mc_cid=568204f448&mc_eid=UNIQID) sends listeners on a deeply reflective and intimate sonic journey with their new single, "Drift," out everywhere now.\
+Superposition sends listeners on a deeply reflective and intimate sonic journey with their new single, "Drift," out everywhere now.\
 \
-The Grammy-nominated duo of [Justin Boreta](https://www.instagram.com/boreta/?hl=en&mc_cid=568204f448&mc_eid=UNIQID) and [Matthew Davis](https://www.instagram.com/davisville/?hl=en&mc_cid=568204f448&mc_eid=UNIQID) recognized their "shared desire to craft a personal, introspective, deep listening experience" in their new album *Altered*, out August 23rd.
+The Grammy-nominated duo of Justin Boreta and Matthew Davis recognized their "shared desire to craft a personal, introspective, deep listening experience" in their new album *Altered*, out August 23rd.
