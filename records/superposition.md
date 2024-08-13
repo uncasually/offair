@@ -1,6 +1,6 @@
 ---
 title: SUPERPOSITION
-image: /static/img/superposition-artwork-fulllp-3000x3000.jpg
+image: /static/img/001-offair-r-s-artwork-fulllp-3000x3000.jpg
 summary: DRIFT
 year: "2024"
 date: 2024-08-06T20:25:01.813Z
