@@ -1,5 +1,5 @@
 ---
-title: Superposition
+title: SUPERPOSITIOn
 image: /static/img/superposition-altered-artwork.png
 summary: Drift
 year: "2024"
