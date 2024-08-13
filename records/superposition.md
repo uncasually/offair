@@ -1,6 +1,6 @@
 ---
 title: SUPERPOSITION
-image: /static/img/superpositionaltered-artwork.png
+image: /static/img/superposition-altered-artwork.jpg
 summary: DRIFT
 year: "2024"
 date: 2024-08-06T20:25:01.813Z
