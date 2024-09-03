@@ -8,7 +8,7 @@ location: |-
 summary: TBD
 tags:
   - events
-instagram: https://www.instagram.com/ravynlenae
+instagram: ravynlenae
 spotify: https://open.spotify.com/artist/5RTLRtXjbXI2lSXc6jxlAz?si=UAsSRabYT3mkn1mW9JP5dg
 ---
 T﻿BD
