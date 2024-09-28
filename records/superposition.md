@@ -5,7 +5,7 @@ summary: DRIFT
 year: "2024"
 date: 2024-08-06T20:25:01.813Z
 instagram: superposition.world
-spotify: https://platoon.lnk.to/drift-superposition
+spotify: https://platoon.lnk.to/superposition-altered
 ---
 Superposition sends listeners on a deeply reflective and intimate sonic journey with their new single, "Drift," out everywhere now.\
 \
